@@ -3,7 +3,7 @@
 //  Hackfest-swvl
 //
 //  Created by ZaeemZafar on 19/04/2018.
-//  Copyright © 2018 Citrusbits. All rights reserved.
+//  Copyright © 2018 maskers. All rights reserved.
 //
 
 import Foundation

@@ -30,7 +30,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.citrusbits.Hackfest-swvl.app</string>
+			<string>com.maskers.Hackfest-swvl.app</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>Hackfest-swvl</string>

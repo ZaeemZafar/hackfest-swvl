@@ -997,21 +997,17 @@
 		F307B8E526F538E7008727E5 /* UIButton+JF.swift in Sources */ = {isa = PBXBuildFile; fileRef = F307B4C126F538E6008727E5 /* UIButton+JF.swift */; };
 		F307B8E626F538E7008727E5 /* Hackfest-swvlStaging-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C426F538E6008727E5 /* Hackfest-swvlStaging-Info.plist */; };
 		F307B8E726F538E7008727E5 /* Hackfest-swvlStaging-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C426F538E6008727E5 /* Hackfest-swvlStaging-Info.plist */; };
-		F307B8E826F538E7008727E5 /* Hackfest-swvlStaging-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C426F538E6008727E5 /* Hackfest-swvlStaging-Info.plist */; };
 		F307B8E926F538E7008727E5 /* Hackfest-swvlStaging-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C426F538E6008727E5 /* Hackfest-swvlStaging-Info.plist */; };
 		F307B8EA26F538E7008727E5 /* Hackfest-swvlQA-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C526F538E6008727E5 /* Hackfest-swvlQA-Info.plist */; };
-		F307B8EB26F538E7008727E5 /* Hackfest-swvlQA-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C526F538E6008727E5 /* Hackfest-swvlQA-Info.plist */; };
 		F307B8EC26F538E7008727E5 /* Hackfest-swvlQA-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C526F538E6008727E5 /* Hackfest-swvlQA-Info.plist */; };
 		F307B8ED26F538E7008727E5 /* Hackfest-swvlQA-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C526F538E6008727E5 /* Hackfest-swvlQA-Info.plist */; };
 		F307B8EE26F538E7008727E5 /* Hackfest-swvlAppStore-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C626F538E6008727E5 /* Hackfest-swvlAppStore-Info.plist */; };
 		F307B8EF26F538E7008727E5 /* Hackfest-swvlAppStore-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C626F538E6008727E5 /* Hackfest-swvlAppStore-Info.plist */; };
 		F307B8F026F538E7008727E5 /* Hackfest-swvlAppStore-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C626F538E6008727E5 /* Hackfest-swvlAppStore-Info.plist */; };
-		F307B8F126F538E7008727E5 /* Hackfest-swvlAppStore-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C626F538E6008727E5 /* Hackfest-swvlAppStore-Info.plist */; };
 		F307B8F226F538E7008727E5 /* FAQ_Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C726F538E6008727E5 /* FAQ_Data.plist */; };
 		F307B8F326F538E7008727E5 /* FAQ_Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C726F538E6008727E5 /* FAQ_Data.plist */; };
 		F307B8F426F538E7008727E5 /* FAQ_Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C726F538E6008727E5 /* FAQ_Data.plist */; };
 		F307B8F526F538E7008727E5 /* FAQ_Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C726F538E6008727E5 /* FAQ_Data.plist */; };
-		F307B8F626F538E7008727E5 /* Hackfest-swvlDev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C826F538E6008727E5 /* Hackfest-swvlDev-Info.plist */; };
 		F307B8F726F538E7008727E5 /* Hackfest-swvlDev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C826F538E6008727E5 /* Hackfest-swvlDev-Info.plist */; };
 		F307B8F826F538E7008727E5 /* Hackfest-swvlDev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C826F538E6008727E5 /* Hackfest-swvlDev-Info.plist */; };
 		F307B8F926F538E7008727E5 /* Hackfest-swvlDev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B4C826F538E6008727E5 /* Hackfest-swvlDev-Info.plist */; };
@@ -2578,7 +2574,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = Citrusbits;
 				TargetAttributes = {
 					801D83BF2072279C00AAA8A5 = {
@@ -2714,7 +2710,6 @@
 				F307B64326F538E6008727E5 /* JFUserWithImageCustomCell.xib in Resources */,
 				F307B63B26F538E6008727E5 /* JFLogoutCustomCell.xib in Resources */,
 				F307B93B26F538E7008727E5 /* MontserratAlternates-ExtraLight.otf in Resources */,
-				F307B8EB26F538E7008727E5 /* Hackfest-swvlQA-Info.plist in Resources */,
 				801D840420722DE100AAA8A5 /* Podfile in Resources */,
 				F307B94726F538E7008727E5 /* Montserrat-SemiBold.otf in Resources */,
 				F307B92726F538E7008727E5 /* MontserratAlternates-SemiBold.otf in Resources */,
@@ -2775,7 +2770,6 @@
 				F307B6C826F538E6008727E5 /* JFChooseCategoryCustumCell.xib in Resources */,
 				F307B74426F538E6008727E5 /* JFFooterCustomCell.xib in Resources */,
 				F307B71026F538E6008727E5 /* JFPersonalInfoTextFieldCustomCell.xib in Resources */,
-				F307B8E826F538E7008727E5 /* Hackfest-swvlStaging-Info.plist in Resources */,
 				F307B92C26F538E7008727E5 /* Montserrat-Regular.otf in Resources */,
 				F307B94C26F538E7008727E5 /* OpenSans-Italic.ttf in Resources */,
 				F307B53026F538E6008727E5 /* UserRegistration.storyboard in Resources */,
@@ -2863,7 +2857,6 @@
 				F307B7C126F538E7008727E5 /* EmptyCurrentNetworkCell.xib in Resources */,
 				F307B67D26F538E6008727E5 /* JFProfilePrivacyCustomCell.xib in Resources */,
 				F307B75126F538E6008727E5 /* JFFollowRequestBasicCustomCell.xib in Resources */,
-				F307B8F126F538E7008727E5 /* Hackfest-swvlAppStore-Info.plist in Resources */,
 				F307B9B926F538E7008727E5 /* NormalHeader.bundle in Resources */,
 				F307B9E126F538E7008727E5 /* Info.plist in Resources */,
 				F307B9C526F538E7008727E5 /* NormalFooter.bundle in Resources */,
@@ -2910,7 +2903,6 @@
 				F307B91626F538E7008727E5 /* Montserrat-ExtraLight.otf in Resources */,
 				F307B73626F538E6008727E5 /* JFFollowRequestsConfirmCustomCell.xib in Resources */,
 				F307B51626F538E6008727E5 /* LaunchScreen.storyboard in Resources */,
-				F307B8F626F538E7008727E5 /* Hackfest-swvlDev-Info.plist in Resources */,
 				F307B91226F538E7008727E5 /* Montserrat-Thin.otf in Resources */,
 				F307B6E626F538E6008727E5 /* JFPersonalInfoTextViewCustomCell.xib in Resources */,
 				F307B51A26F538E6008727E5 /* Portfolio.storyboard in Resources */,
@@ -4186,12 +4178,28 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_WARNINGS = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = NO;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
 				CODE_SIGN_ENTITLEMENTS = "Hackfest-swvlQA.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJTPUA5PDF;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				IBC_WARNINGS = NO;
+				IBSC_WARNINGS = NO;
 				INFOPLIST_FILE = "Hackfest-swvl/Supporting Files/Hackfest-swvlQA-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -4203,6 +4211,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/Hackfest-swvl-Bridging-Header.h";
+				SWIFT_SUPPRESS_WARNINGS = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -4214,12 +4223,28 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_WARNINGS = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = NO;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
 				CODE_SIGN_ENTITLEMENTS = "Hackfest-swvlQA.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJTPUA5PDF;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				IBC_WARNINGS = NO;
+				IBSC_WARNINGS = NO;
 				INFOPLIST_FILE = "Hackfest-swvl/Supporting Files/Hackfest-swvlQA-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -4231,6 +4256,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/Hackfest-swvl-Bridging-Header.h";
+				SWIFT_SUPPRESS_WARNINGS = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -4246,8 +4272,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJTPUA5PDF;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				INFOPLIST_FILE = "Hackfest-swvl/Supporting Files/Hackfest-swvlStaging-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -4274,8 +4301,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJTPUA5PDF;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				INFOPLIST_FILE = "Hackfest-swvl/Supporting Files/Hackfest-swvlStaging-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -4302,8 +4330,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJTPUA5PDF;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				INFOPLIST_FILE = "Hackfest-swvl/Supporting Files/Hackfest-swvlAppStore-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -4330,8 +4359,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJTPUA5PDF;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				INFOPLIST_FILE = "Hackfest-swvl/Supporting Files/Hackfest-swvlAppStore-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -4362,6 +4392,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -4369,8 +4400,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -4396,7 +4429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -4419,6 +4452,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -4426,8 +4460,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -4447,7 +4483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -4465,8 +4501,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJTPUA5PDF;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				INFOPLIST_FILE = "Hackfest-swvl/Supporting Files/Hackfest-swvlDev-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -4493,8 +4530,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJTPUA5PDF;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				INFOPLIST_FILE = "Hackfest-swvl/Supporting Files/Hackfest-swvlDev-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",

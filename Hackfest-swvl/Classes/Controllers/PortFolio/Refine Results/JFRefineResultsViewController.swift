@@ -3,7 +3,7 @@
 //  Hackfest-swvl
 //
 //  Created by zaktech on 6/1/18.
-//  Copyright © 2018 Citrusbits. All rights reserved.
+//  Copyright © 2018 maskers. All rights reserved.
 //
 
 import UIKit
