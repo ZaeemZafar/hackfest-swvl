@@ -4,7 +4,7 @@
 //  Hackfest-swvl
 //
 //  Created by Umair on 02/04/2018.
-//  Copyright © 2018 Citrusbits. All rights reserved.
+//  Copyright © 2018 maskers. All rights reserved.
 //
 
 #ifndef Hackfest-swvl_Bridging_Header_h

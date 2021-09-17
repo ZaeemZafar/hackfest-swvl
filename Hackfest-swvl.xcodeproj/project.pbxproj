@@ -4207,7 +4207,7 @@
 					"-l\"c++\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DQA -DDEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.justfamous.jvf-qa";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackfest.qa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/Hackfest-swvl-Bridging-Header.h";
@@ -4252,7 +4252,7 @@
 					"-l\"c++\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DQA";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.justfamous.jvf-qa";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackfest.qa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/Hackfest-swvl-Bridging-Header.h";
@@ -4282,7 +4282,7 @@
 					"-l\"c++\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DSTAGING -DDEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.justfamous.jvf-staging";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackfest.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/Hackfest-swvl-Bridging-Header.h";
@@ -4311,7 +4311,7 @@
 					"-l\"c++\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DSTAGING";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.justfamous.jvf-staging";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackfest.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/Hackfest-swvl-Bridging-Header.h";
@@ -4340,7 +4340,7 @@
 					"-l\"c++\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DAPPSTORE -DDEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.justfamous.jvf;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackfest.swvl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/Hackfest-swvl-Bridging-Header.h";
@@ -4369,7 +4369,7 @@
 					"-l\"c++\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DAPPSTORE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.justfamous.jvf;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackfest.swvl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/Hackfest-swvl-Bridging-Header.h";
@@ -4511,7 +4511,7 @@
 					"-l\"c++\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DDEVELOPMENT -DDEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.justfamous.jvf-dev";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackfest.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/Hackfest-swvl-Bridging-Header.h";
@@ -4540,7 +4540,7 @@
 					"-l\"c++\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DDEVELOPMENT";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.justfamous.jvf-dev";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackfest.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/Hackfest-swvl-Bridging-Header.h";

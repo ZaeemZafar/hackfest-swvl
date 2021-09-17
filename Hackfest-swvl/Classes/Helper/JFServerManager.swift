@@ -3,7 +3,7 @@
 //  Hackfest-swvl
 //
 //  Created by Umair on 02/04/2018.
-//  Copyright © 2018 Citrusbits. All rights reserved.
+//  Copyright © 2018 maskers. All rights reserved.
 //
 
 import Foundation
@@ -48,7 +48,7 @@ struct JFServerSettings {
     static let ExpiryTime: TimeInterval = 30 // in second
     static let ErrorCode = 1234567
     static let ErrorMessage = NSLocalizedString("An error occured. Please Try again.", comment: "")
-    static let APIDomain = "com.citrusbits.Hackfest-swvl.app.servermanager"
+    static let APIDomain = "com.maskers.Hackfest-swvl.app.servermanager"
 }
 
 // MARK: -

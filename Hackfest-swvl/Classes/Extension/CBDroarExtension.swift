@@ -17,7 +17,7 @@ extension AppDelegate: DroarKnob {
     }
     
     func droarKnobTitle() -> String {
-        return "Citrusbits Droar"
+        return "maskers Droar"
     }
     
     func droarKnobPosition() -> PositionInfo {

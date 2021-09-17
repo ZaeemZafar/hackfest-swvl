@@ -63,7 +63,7 @@
 	<key>NSCameraUsageDescription</key>
 	<string>Hackfest-swvl uses your camera to take photos.</string>
 	<key>NSContactsUsageDescription</key>
-	<string>Upload your contacts to Hackfest-swvl&apos;s server to help you quickly get in touch with your friends and help us provide a better experience</string>
+	<string>Upload your contacts to Hackfest-swvl's server to help you quickly get in touch with your friends and help us provide a better experience</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Hackfest-swvl uses this to help you find people near you, connect with friends, and more.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
