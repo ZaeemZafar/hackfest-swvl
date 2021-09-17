@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="myI-UL-3K8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="sIY-te-9l4">
+            <objects>
+                <viewController id="DUn-j2-Xo2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lXz-l8-hVQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.59444859368361458" green="1" blue="0.63626999344130919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="XjN-p3-DH6"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="iFh-fb-801"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asB-ng-Kc3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="493" y="-1675"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="58p-wc-vT1">
+            <objects>
+                <viewController id="tuq-Rp-JLR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DDv-gs-hZU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.97647505690637804" green="1" blue="0.21189135643074275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Aip-5L-d2s"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="kFK-wz-R0W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="88P-Po-qrX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="488.80000000000001" y="-941.37931034482767"/>
+        </scene>
+        <!--Demo View Controller-->
+        <scene sceneID="h9z-UP-7jG">
+            <objects>
+                <viewController storyboardIdentifier="DemoViewController" id="pRO-ki-y9t" customClass="DemoViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VwE-vZ-ywq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igb-nO-acB">
+                                <rect key="frame" x="16" y="120" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                                <color key="textColor" red="0.792156862745098" green="0.51764705882352935" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gG3-Sx-uwU">
+                                <rect key="frame" x="16" y="323" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                                <color key="textColor" red="0.792156862745098" green="0.51764705882352935" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKo-PU-YSJ">
+                                <rect key="frame" x="16" y="546" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                                <color key="textColor" red="0.792156862745098" green="0.51764705882352935" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fKo-PU-YSJ" firstAttribute="leading" secondItem="boM-cj-tZf" secondAttribute="leading" constant="16" id="2UG-uu-cNT"/>
+                            <constraint firstItem="gG3-Sx-uwU" firstAttribute="leading" secondItem="boM-cj-tZf" secondAttribute="leading" constant="16" id="IFt-pt-JtZ"/>
+                            <constraint firstItem="gG3-Sx-uwU" firstAttribute="centerY" secondItem="VwE-vZ-ywq" secondAttribute="centerY" id="IMz-js-vhK"/>
+                            <constraint firstItem="boM-cj-tZf" firstAttribute="bottom" secondItem="fKo-PU-YSJ" secondAttribute="bottom" constant="100" id="Slc-rr-gXO"/>
+                            <constraint firstItem="boM-cj-tZf" firstAttribute="trailing" secondItem="igb-nO-acB" secondAttribute="trailing" constant="16" id="Yos-WU-PN4"/>
+                            <constraint firstItem="boM-cj-tZf" firstAttribute="trailing" secondItem="fKo-PU-YSJ" secondAttribute="trailing" constant="16" id="ezs-oT-ci8"/>
+                            <constraint firstItem="boM-cj-tZf" firstAttribute="trailing" secondItem="gG3-Sx-uwU" secondAttribute="trailing" constant="16" id="lf2-hR-Rwu"/>
+                            <constraint firstItem="igb-nO-acB" firstAttribute="leading" secondItem="boM-cj-tZf" secondAttribute="leading" constant="16" id="o9N-y5-gxy"/>
+                            <constraint firstItem="igb-nO-acB" firstAttribute="top" secondItem="boM-cj-tZf" secondAttribute="top" constant="100" id="xm7-uC-5i7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="boM-cj-tZf"/>
+                    </view>
+                    <connections>
+                        <outlet property="midMessageLabel" destination="gG3-Sx-uwU" id="GDB-Bf-Nbc"/>
+                        <outlet property="noteLablel" destination="fKo-PU-YSJ" id="ZcB-ZA-mYW"/>
+                        <outlet property="titleLabel" destination="igb-nO-acB" id="hFj-fQ-afu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Mu-n5-Lnr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-262" y="20"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ABZ-7f-gYx">
+            <objects>
+                <viewController id="rIA-pM-gUh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5uT-Mp-Tdf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.48692510889517449" blue="0.31861048013736715" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="eTY-GS-d4X"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="93v-SO-kV3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4YB-zB-6Wr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="493" y="-218"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="HGz-zC-5s6">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="myI-UL-3K8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="64G-2t-4HD">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="DUn-j2-Xo2" kind="relationship" relationship="viewControllers" id="72R-E6-4yo"/>
+                        <segue destination="tuq-Rp-JLR" kind="relationship" relationship="viewControllers" id="3TF-1t-gMc"/>
+                        <segue destination="rIA-pM-gUh" kind="relationship" relationship="viewControllers" id="0x1-PS-Yad"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GqU-Tc-s8I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-386" y="-941"/>
+        </scene>
+    </scenes>
+</document>

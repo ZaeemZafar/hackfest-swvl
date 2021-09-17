@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JFUserRatingTableViewCell" rowHeight="50" id="KGk-i7-Jjw" customClass="JFUserRatingTableViewCell" customModule="JvstFamovsAppStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nWK-xv-xRT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJ8-A5-5Fx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Xvh-N7-oNP"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAM-Ew-8FN" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
+                                <rect key="frame" x="16" y="10" width="137" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
+                                <state key="normal" title="RATE USER"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="orangeButton" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="addTextSpacing">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="rateUserButtonTappedWithSender:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1Tl-uv-FwF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOR-51-4X9" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
+                                <rect key="frame" x="167" y="10.5" width="137" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
+                                <state key="normal" title="REQUEST RATING"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="orangeButton" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="addTextSpacing">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="requestRatingButtonTapWithSender:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fsp-4T-ykV"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvU-VS-juf" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
+                                <rect key="frame" x="16" y="10" width="288" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
+                                <state key="normal" title="REQUEST RATING"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="orangeButton" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="addTextSpacing">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="requestRatingButtonTapWithSender:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="OGt-4c-PZZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OOR-51-4X9" secondAttribute="trailing" constant="16" id="3qa-H7-4jS"/>
+                            <constraint firstAttribute="trailing" secondItem="fvU-VS-juf" secondAttribute="trailing" constant="16" id="4ES-J0-E1g"/>
+                            <constraint firstItem="OOR-51-4X9" firstAttribute="centerY" secondItem="nWK-xv-xRT" secondAttribute="centerY" id="7Xs-Jq-vgn"/>
+                            <constraint firstItem="OOR-51-4X9" firstAttribute="height" secondItem="nWK-xv-xRT" secondAttribute="height" multiplier="30:50" id="K6d-BV-tFA"/>
+                            <constraint firstItem="bAM-Ew-8FN" firstAttribute="width" secondItem="nWK-xv-xRT" secondAttribute="width" multiplier="137:320" id="L3p-WG-XzV"/>
+                            <constraint firstItem="fvU-VS-juf" firstAttribute="leading" secondItem="nWK-xv-xRT" secondAttribute="leading" constant="16" id="Puy-LE-PQ4"/>
+                            <constraint firstItem="OOR-51-4X9" firstAttribute="centerY" secondItem="bAM-Ew-8FN" secondAttribute="centerY" id="Ru4-Xb-Yla"/>
+                            <constraint firstItem="qJ8-A5-5Fx" firstAttribute="top" secondItem="nWK-xv-xRT" secondAttribute="top" id="Tiv-xs-AQL"/>
+                            <constraint firstItem="fvU-VS-juf" firstAttribute="centerY" secondItem="nWK-xv-xRT" secondAttribute="centerY" id="hEG-fO-Btf"/>
+                            <constraint firstItem="bAM-Ew-8FN" firstAttribute="height" secondItem="nWK-xv-xRT" secondAttribute="height" multiplier="30:50" id="kVp-gE-iRR"/>
+                            <constraint firstItem="qJ8-A5-5Fx" firstAttribute="leading" secondItem="nWK-xv-xRT" secondAttribute="leading" id="lFf-NX-7sK"/>
+                            <constraint firstItem="OOR-51-4X9" firstAttribute="width" secondItem="nWK-xv-xRT" secondAttribute="width" multiplier="137:320" id="lir-ug-bny"/>
+                            <constraint firstAttribute="trailing" secondItem="qJ8-A5-5Fx" secondAttribute="trailing" id="o5p-U7-FtS"/>
+                            <constraint firstItem="fvU-VS-juf" firstAttribute="height" secondItem="OOR-51-4X9" secondAttribute="height" id="o8U-x0-EFb"/>
+                            <constraint firstItem="bAM-Ew-8FN" firstAttribute="leading" secondItem="nWK-xv-xRT" secondAttribute="leading" constant="16" id="obn-Q1-TRt"/>
+                            <constraint firstItem="bAM-Ew-8FN" firstAttribute="centerY" secondItem="nWK-xv-xRT" secondAttribute="centerY" id="wNa-P6-8f5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nWK-xv-xRT" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="50:320" id="5a2-yt-TuI"/>
+                    <constraint firstItem="nWK-xv-xRT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="D32-ag-zTq"/>
+                    <constraint firstItem="nWK-xv-xRT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZBY-u3-EiG"/>
+                    <constraint firstAttribute="trailing" secondItem="nWK-xv-xRT" secondAttribute="trailing" id="axy-un-Aou"/>
+                    <constraint firstAttribute="bottom" secondItem="nWK-xv-xRT" secondAttribute="bottom" id="iUL-6H-DYL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="rateUserButton" destination="bAM-Ew-8FN" id="gXA-DE-84k"/>
+                <outlet property="rateUserButtonConstraint" destination="L3p-WG-XzV" id="BPn-o3-J49"/>
+                <outlet property="requestRatingButton" destination="fvU-VS-juf" id="Fhm-N0-8h3"/>
+                <outlet property="requestRatingButtonConstraint" destination="lir-ug-bny" id="VBA-7a-IJx"/>
+                <outlet property="requestRatings" destination="OOR-51-4X9" id="JRo-yA-blC"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JFCheckBoxCustomCell" id="KGk-i7-Jjw" customClass="JFCheckBoxCustomCell" customModule="JvstFamovsAppStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="48.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYs-Fn-Gpp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uncheckbox_grey" translatesAutoresizingMaskIntoConstraints="NO" id="y8q-2k-Y2S">
+                                <rect key="frame" x="18" y="15" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="y8q-2k-Y2S" secondAttribute="height" multiplier="1:1" id="Z0z-gY-c2H"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMk-5N-F9t">
+                                <rect key="frame" x="50" y="15" width="37" height="20"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                                <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wMk-5N-F9t" firstAttribute="top" secondItem="y8q-2k-Y2S" secondAttribute="top" id="77B-cc-l4r"/>
+                            <constraint firstItem="y8q-2k-Y2S" firstAttribute="top" secondItem="lYs-Fn-Gpp" secondAttribute="top" constant="15" id="Fr6-LT-guh"/>
+                            <constraint firstItem="y8q-2k-Y2S" firstAttribute="leading" secondItem="lYs-Fn-Gpp" secondAttribute="leading" constant="18" id="MIf-vi-7C7"/>
+                            <constraint firstItem="wMk-5N-F9t" firstAttribute="bottom" secondItem="y8q-2k-Y2S" secondAttribute="bottom" id="NoO-Qa-UK3"/>
+                            <constraint firstItem="wMk-5N-F9t" firstAttribute="leading" secondItem="y8q-2k-Y2S" secondAttribute="trailing" constant="12" id="aeI-3T-5R7"/>
+                            <constraint firstItem="y8q-2k-Y2S" firstAttribute="width" secondItem="lYs-Fn-Gpp" secondAttribute="width" multiplier="20:375" id="xYY-13-tn5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="lYs-Fn-Gpp" secondAttribute="trailing" id="S9A-Uv-2Jk"/>
+                    <constraint firstAttribute="bottom" secondItem="lYs-Fn-Gpp" secondAttribute="bottom" id="c2k-pt-PqR"/>
+                    <constraint firstItem="lYs-Fn-Gpp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rja-eN-q9K"/>
+                    <constraint firstItem="lYs-Fn-Gpp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vvw-4r-ywW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkBoxImageView" destination="y8q-2k-Y2S" id="2ss-Yx-mUg"/>
+                <outlet property="titleLabel" destination="wMk-5N-F9t" id="tXd-Ed-Xl2"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="111.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="uncheckbox_grey" width="21" height="21"/>
+    </resources>
+</document>

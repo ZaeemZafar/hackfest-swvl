@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JFUserWithImageCustomCell" id="KGk-i7-Jjw" customClass="JFUserWithImageCustomCell" customModule="JvstFamovsAppStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QTe-u7-bSy" userLabel="containerView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_icon_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="hRA-4Z-kZC">
+                                <rect key="frame" x="20" y="16.5" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hRA-4Z-kZC" secondAttribute="height" multiplier="1:1" id="jIM-Tv-fcW"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="USJ-B6-ey6">
+                                <rect key="frame" x="80" y="27" width="172" height="32.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eliza handson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhJ-ZF-pOd">
+                                        <rect key="frame" x="0.0" y="0.0" width="172" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                        <color key="textColor" red="0.28627450980392155" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JF Index: 0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="Yw4-TC-fS6">
+                                        <rect key="frame" x="0.0" y="17.5" width="172" height="15"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                                        <color key="textColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000, " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmN-ch-OQJ">
+                                        <rect key="frame" x="0.0" y="32.5" width="172" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                                        <color key="textColor" red="0.93725490196078431" green="0.47843137254901957" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOD-FU-YAa">
+                                <rect key="frame" x="260" y="27.5" width="95" height="31"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.29803921568627451" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BOD-FU-YAa" secondAttribute="height" multiplier="93:30" id="bD4-85-VXD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                                <state key="normal" title="dasfafdasfa"/>
+                                <connections>
+                                    <action selector="buttonTappedWithSender:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dQT-tk-Sls"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+0.06%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="ap9-RX-0tb" customClass="JFPercentageLabel" customModule="JvstFamovsAppStore" customModuleProvider="target">
+                                <rect key="frame" x="285" y="35" width="70" height="16"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hRA-4Z-kZC" firstAttribute="centerY" secondItem="QTe-u7-bSy" secondAttribute="centerY" id="7AP-hh-mwJ"/>
+                            <constraint firstItem="hRA-4Z-kZC" firstAttribute="top" secondItem="QTe-u7-bSy" secondAttribute="top" constant="16.5" id="8cR-lf-hKd"/>
+                            <constraint firstItem="hRA-4Z-kZC" firstAttribute="leading" secondItem="QTe-u7-bSy" secondAttribute="leading" constant="20" id="FlF-0H-cQq"/>
+                            <constraint firstItem="ap9-RX-0tb" firstAttribute="centerY" secondItem="QTe-u7-bSy" secondAttribute="centerY" id="Hsj-Dw-cu6"/>
+                            <constraint firstItem="ap9-RX-0tb" firstAttribute="width" secondItem="QTe-u7-bSy" secondAttribute="width" multiplier="70:375" id="I8t-fK-FTB"/>
+                            <constraint firstItem="BOD-FU-YAa" firstAttribute="leading" secondItem="USJ-B6-ey6" secondAttribute="trailing" constant="8" id="LWI-Y0-J0u"/>
+                            <constraint firstAttribute="trailing" secondItem="ap9-RX-0tb" secondAttribute="trailing" constant="20" id="T13-j1-wXl"/>
+                            <constraint firstItem="USJ-B6-ey6" firstAttribute="leading" secondItem="hRA-4Z-kZC" secondAttribute="trailing" constant="8" id="UJY-9j-7KM"/>
+                            <constraint firstAttribute="bottom" secondItem="hRA-4Z-kZC" secondAttribute="bottom" constant="16.5" id="UNQ-cH-1Oi"/>
+                            <constraint firstItem="BOD-FU-YAa" firstAttribute="centerY" secondItem="QTe-u7-bSy" secondAttribute="centerY" id="hTQ-GF-eFc"/>
+                            <constraint firstItem="USJ-B6-ey6" firstAttribute="centerY" secondItem="QTe-u7-bSy" secondAttribute="centerY" id="hhs-JV-eIk"/>
+                            <constraint firstItem="BOD-FU-YAa" firstAttribute="width" secondItem="QTe-u7-bSy" secondAttribute="height" multiplier="95:85" id="tA1-Ma-fIG"/>
+                            <constraint firstAttribute="trailing" secondItem="BOD-FU-YAa" secondAttribute="trailing" constant="20" id="tOH-Ag-Z0n"/>
+                            <constraint firstItem="hRA-4Z-kZC" firstAttribute="width" secondItem="QTe-u7-bSy" secondAttribute="height" multiplier="52:85" id="tmB-SG-X7j"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QTe-u7-bSy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8zx-YL-1bm"/>
+                    <constraint firstItem="QTe-u7-bSy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AKD-DO-hwV"/>
+                    <constraint firstAttribute="bottom" secondItem="QTe-u7-bSy" secondAttribute="bottom" id="nXq-y4-N2i"/>
+                    <constraint firstAttribute="trailing" secondItem="QTe-u7-bSy" secondAttribute="trailing" id="rRv-PL-A54"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="coloredCategoriesIndexLabel" destination="TmN-ch-OQJ" id="tMW-YP-3hd"/>
+                <outlet property="indexLabel" destination="ap9-RX-0tb" id="wuo-jv-81u"/>
+                <outlet property="indexoRArrowButton" destination="BOD-FU-YAa" id="3sP-G3-fCL"/>
+                <outlet property="subTitleLabel" destination="Yw4-TC-fS6" id="dPe-Ub-2DC"/>
+                <outlet property="titleLabel" destination="KhJ-ZF-pOd" id="mMb-QQ-kKK"/>
+                <outlet property="userImageView" destination="hRA-4Z-kZC" id="N32-rt-Si5"/>
+            </connections>
+            <point key="canvasLocation" x="111.5" y="54"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile_icon_placeholder" width="303" height="303"/>
+    </resources>
+</document>

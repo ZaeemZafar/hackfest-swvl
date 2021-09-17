@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Who is Hackfest-swvl?</string>
+		<key>description</key>
+		<array>
+			<string>A young, ambitious and creative Company founded in 2018 (Justfamous Inc.) who is bringing to the World a disruptive social network.</string>
+		</array>
+		<key>opened</key>
+		<false/>
+		<key>showBullets</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>What is the Mission of Hackfest-swvl?</string>
+		<key>description</key>
+		<array>
+			<string>We want to create Human Brand Equity through Honesty.</string>
+		</array>
+		<key>opened</key>
+		<false/>
+		<key>showBullets</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>What is the Vision of Hackfest-swvl?</string>
+		<key>description</key>
+		<array>
+			<string>We want the World to embrace us as the Universal measure to unlock potential for personal, professional and business growth.</string>
+		</array>
+		<key>opened</key>
+		<false/>
+		<key>showBullets</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>How does Hackfest-swvl work?</string>
+		<key>description</key>
+		<array>
+			<string>You will get and give honest, multi-dimensional feedback by selecting from a menu of 21 words in three categories: Appearance, Personality and Intelligence. All 21 words have a different value from each other. You can choose up to 3 words every time you want to rate someone. Then the Hackfest-swvl Algorithms will instantly transform your ratings into scores. These scores will continually update as more people rate you, and you can see how your scores in each category as well as your JF Index evolve over time.</string>
+		</array>
+		<key>opened</key>
+		<false/>
+		<key>showBullets</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>What is the JF Index all about?</string>
+		<key>description</key>
+		<array>
+			<string>The JF Index is “your number”. A universal measure that lets you understand and then improve Human Brand Equity for yourself and also for people around you. It is measured and obtained exclusively through the Hackfest-swvl app. The sophisticated algorithms will first take into account your category specific scores and then layer in behavioral data from your in-app activities. You will then witness your personal Human Brand Equity evolve in real time.</string>
+		</array>
+		<key>opened</key>
+		<false/>
+		<key>showBullets</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Who would be thrilled to join Hackfest-swvl?</string>
+		<key>description</key>
+		<array>
+			<string>You enjoy dishing and receiving honest feedback</string>
+			<string>You like to understand how others see and experience them as a person</string>
+			<string>You believe in the transformative power of artificial intelligence (AI) to help us understand each other and ourselves better</string>
+			<string>You desire better intel on the people in life</string>
+			<string>You are convinced that 5-star rating systems are inadequate or inappropriate when it comes to evaluating people</string>
+			<string>You want to understand your Human Brand Equity, learn from it, improve it, and use it to seek new opportunities</string>
+		</array>
+		<key>opened</key>
+		<false/>
+		<key>showBullets</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>How is Hackfest-swvl taking social harassment and bullying seriously?</string>
+		<key>description</key>
+		<array>
+			<string>Hackfest-swvl is age-restricted to users who are at least 18 years old</string>
+			<string>Our privacy customization features let you opt out of receiving anonymous feedback</string>
+			<string>You can have either a private or public profile</string>
+			<string>You can also opt out of being rated entirely, choosing instead to participate only as a truth giver</string>
+			<string>Hackfest-swvl prevents users from rating the same person more than once every 60 minutes, encouraging thoughtful ratings</string>
+			<string>You are also given the option to block users if needed</string>
+			<string>Any suspected harassment or bullying could be immediately reported to Hackfest-swvl: support@justfamous.com</string>
+		</array>
+		<key>opened</key>
+		<false/>
+		<key>showBullets</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Could I suggest Hackfest-swvl ways to improve the Product?</string>
+		<key>description</key>
+		<array>
+			<string>Yes, you can share your thoughts with us directly: support@justfamous.com</string>
+		</array>
+		<key>opened</key>
+		<false/>
+		<key>showBullets</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Are you open for financial Investments?</string>
+		<key>description</key>
+		<array>
+			<string>Always happy to consider, thanks to contact us directly: support@justfamous.com</string>
+		</array>
+		<key>opened</key>
+		<false/>
+		<key>showBullets</key>
+		<false/>
+	</dict>
+</array>
+</plist>

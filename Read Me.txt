@@ -1,0 +1,95 @@
+Hackfest-swvl
+
+
+DESCRIPTION
+------------------------------
+
+
+BUILD REQUIREMENTS
+------------------------------
+Swift 3.0+
+Xcode 9.0+
+iOS 10.0 SDK or later
+
+
+RUNTIME REQUIREMENTS
+------------------------------
+iOS 10.0 or later
+
+
+THIRD PARTY LIBRARIES/ FRAMEWORKS
+------------------------------
+For correct version see Podfile.lock.
+Alamofire (4.6.0)
+AlamofireImage (3.3.0)
+AlamofireNetworkActivityIndicator (2.2.0)
+Instabug (7.8.4)
+SDWebImage (4.3.0)
+SwiftyJSON (4.0.0)
+Droar (1.3.3)
+Following Libraries are added without pod
+
+
+DEVELOPER NOTES
+------------------------------
+* Generally, follow Apple's general coding guidelines
+* The prefix for this project is "JF"
+* Class name should start with a product initials in capital letter, and follow camel case notation
+* Variable and method names should start with a small letter, and follow camel case notation
+* Use control name as the variable suffix i.e. while naming a UITextField use the following variable name: myVariableTextField
+* Use super class name as the custom class suffix i.e. while naming a class which is inheriting from UIView use the following class name: MyClassView, while naming a class which is inheriting from UIViewController use the following class name: MyClassViewController
+
+* Use NSLocalizedString as much as possible, because it'll allow us to "contain" all the strings in one place (and supporting multiple languages will be easy although it doesn't apply in this application)
+
+FOLDER HIERARCHY
+------------------------------
+* Assets: This includes the assets, fonts, db model file and another resources used in the app
+* Storyboards: This includes the storyboards used in the app
+* Supporting Files: This includes plist files, bridging header file, Artwork fuke
+* Third Party: This inlcudes all the third party files/projects that are not added using pod
+* Classes: This inluces all the class files used in the project. This folder contains the sub folders specific to functionalities.
+
+Clases Folder Hierarchy:
+
+* Application: This include the appdelegate class and any other classes that are related to application
+* Categories: This include the extension files
+* Controllers: This include the controller classes. The folder has sub folders that are specific to each module level
+* Helper: This include the helper classes like const, API client, session manager, network manager, etc
+* Models: This include the  model files
+* Views: This include the element classes like view, button, etc
+
+Design Patterns:
+We are following MVC design pattern for the app. We are also using observer pattern and singleton pattern in app.
+
+TO-DOs
+------------------------------
+* Optimise Social share class CBSocialManager
+* Optimise Networking library
+
+
+TECHNICAL/ NON-TECHNICAL QUERIES
+------------------------------
+None
+
+
+KNOWN ISSUES
+------------------------------
+None
+
+
+PENDING CHANGE REQUESTS
+------------------------------
+None
+
+
+CHANGE HISTORY
+------------------------------
+None
+
+
+RELEASES
+------------------------------
+None
+
+
+Copyright (C) 2018 Citrusbits Inc. All rights reserved.
