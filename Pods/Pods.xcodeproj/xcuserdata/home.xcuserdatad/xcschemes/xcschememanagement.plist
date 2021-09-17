@@ -6,113 +6,270 @@
 	<dict>
 		<key>Alamofire.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>22</integer>
 		</dict>
 		<key>AlamofireImage.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
 		<key>AlamofireNetworkActivityIndicator.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>12</integer>
 		</dict>
 		<key>Droar-Droar.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
 		<key>Droar.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
 		<key>ExpandableCell.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
 		<key>Firebase.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>13</integer>
 		</dict>
 		<key>FirebaseAnalytics.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
 		<key>FirebaseCore.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>25</integer>
 		</dict>
 		<key>FirebaseInstanceID.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
 		<key>FirebaseMessaging.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>18</integer>
 		</dict>
 		<key>GoogleToolboxForMac.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
 		<key>Pods-Hackfest-swvlAppStore.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
 		<key>Pods-Hackfest-swvlDev.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>15</integer>
 		</dict>
 		<key>Pods-Hackfest-swvlQA.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>19</integer>
 		</dict>
 		<key>Pods-Hackfest-swvlStaging.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>20</integer>
 		</dict>
 		<key>Protobuf.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
 		<key>SDVersion.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>16</integer>
 		</dict>
 		<key>SwiftLocation.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>21</integer>
 		</dict>
 		<key>SwiftyContacts.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
 		<key>SwiftyJSON.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>24</integer>
 		</dict>
 		<key>nanopb.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>072CEA044D2EF26F03496D5996BBF59F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2BD8D5CFD407AFE942798F7206772EC9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>338E600D6CF9F1A9B1C0A76C0DDE1B4E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4402AFF83DBDC4DD07E198685FDC2DF2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>470FE31978DC918618A329D8B55C85FF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5895B432FE4D2F6826C8FF25A09DB6D2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>72BEF6CBACBFC83C8C73A41A39D3B3ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74DCEA35188D73A4B2B105D07FB63825</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8C796CDB90777AB5D92691D3F8F2DDA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9E25537BF40D1A3B30CF43FD3E6ACD94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A77DC3FBE3DFD1D1CA8D8812A6CF0776</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8762FFC917071C3DA8BEB36CCF49DCF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C49E7A4D59E5C8BE8DE9FB1EFB150185</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C9778AE8394BE451567650E0B239BA21</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD0164454ED111DDD83689C4F9D98A87</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D118A6A04828FD3CDA8640CD2B6796D2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D2B5E7DCCBBFB32341D857D01211A1A3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D47C581D39D227080F83B16A22A56664</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D9818F8F9D886E8470ABB1CB3F67E946</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DFF85942C3DBD7BC536539A79C5122F0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EAAA1AD3A8A1B59AB91319EE40752C6D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F1AF3B7650BDFBF8B76B95E5E445176F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
