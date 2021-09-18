@@ -8,11 +8,8 @@
 
 import UIKit
 
-enum JFChooseCategoryRows: Int {
-    case appearance = 0
-    case personality
-    case intelligence
-    case count
+enum JFChooseCategoryRows: Int, CaseIterable {
+    case friendly = 0, dressing, iqLevel, communication, personality, behavior, cleanliness, punctuality, appearance
 }
 
 class JFChooseCategoryViewController: JFViewController {
@@ -86,9 +83,19 @@ class JFChooseCategoryViewController: JFViewController {
     
     func setupDataSourceArrayAndRatings() {
         dataSourceArray.removeAll()
-        if ratedUser.trait[.appearance] == true { dataSourceArray.append(.appearance) } else { ratings.removeValue(forKey: .appearance) }
-        if ratedUser.trait[.personality] == true { dataSourceArray.append(.personality) } else { ratings.removeValue(forKey: .personality) }
-        if ratedUser.trait[.intelligence] == true { dataSourceArray.append(.intelligence) } else { ratings.removeValue(forKey: .intelligence) }
+        
+        Trait.allCases.forEach { trait in
+            if case .none = trait {
+                print("None")
+            } else {
+                if ratedUser.trait[trait] == true {
+                    dataSourceArray.append(trait.categoryType)
+                } else {
+                    ratings.removeValue(forKey: trait.categoryType)
+                }
+            }
+            
+        }
     }
     
     @objc func cancelButtonTapped() {

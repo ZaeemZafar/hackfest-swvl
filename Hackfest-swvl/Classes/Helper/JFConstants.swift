@@ -132,51 +132,83 @@ enum SortFilter: Int {
 }
 
 enum Trait: Int, Codable, CaseIterable {
-    case appearance = 0, personality, intelligence, none
+    case friendly = 0, dressing, iqLevel, communication, personality, behavior, cleanliness, punctuality, appearance, none
     
     var stringValue: String {
         switch self {
-        case .appearance: return "appearance"
-        case .intelligence: return "intelligence"
+        case .friendly: return "friendly"
+        case .dressing: return "dressing"
+        case .iqLevel: return "iqLevel"
+        case .communication: return "communication"
         case .personality: return "personality"
-        case .none: return ""
+        case .behavior: return "behavior"
+        case .cleanliness: return "cleanliness"
+        case .punctuality: return "punctuality"
+        case .appearance: return "appearance"
+        case .none: return "none"
         }
     }
     
     var icon: UIImage {
+        return UIImage()
+//        switch self {
+//        case .friendly: return "friendly"
+//        case .dressing: return "dressing"
+//        case .iqLevel: return "iqLevel"
+//        case .communication: return "communication"
+//        case .personality: return "personality"
+//        case .behavior: return "behavior"
+//        case .cleanliness: return "cleanliness"
+//        case .punctuality: return "punctuality"
+//        case .appearance: return "appearance"
+//        case .none: return "none"
+//        }
+    }
+    
+    var categoryType: CategoryTypes {
         switch self {
-        case .appearance: return #imageLiteral(resourceName: "appearance_icon_yellow")
-        case .intelligence: return #imageLiteral(resourceName: "intelligence_bulb_icon_lightblue")
-        case .personality: return #imageLiteral(resourceName: "personality_icon_lightred")
-        case .none: return UIImage()
+        case .friendly: return .friendly
+        case .dressing: return .dressing
+        case .iqLevel: return .iqLevel
+        case .communication: return .communication
+        case .personality: return .personality
+        case .behavior: return .behavior
+        case .cleanliness: return .cleanliness
+        case .punctuality: return .punctuality
+        case .appearance: return .appearance
+        default:
+            return .appearance
         }
     }
     
     var typeDataSource: MyProfileTableDataSourceEnum {
         switch self {
-        case .appearance:
-            return MyProfileTableDataSourceEnum.appearanceCategory
-        case .intelligence:
-            return MyProfileTableDataSourceEnum.intelligenceCategory
-            
-        case .personality:
-            return MyProfileTableDataSourceEnum.personalityCategory
+        case .friendly: return .friendly
+        case .dressing: return .dressing
+        case .iqLevel: return .iqLevel
+        case .communication: return .communication
+        case .personality: return .personality
+        case .behavior: return .behavior
+        case .cleanliness: return .cleanliness
+        case .punctuality: return .punctuality
+        case .appearance: return .appearance
         default:
-            return MyProfileTableDataSourceEnum.appearanceCategory
+            return .appearance
         }
     }
     
     var indexMultiplierType: JFIndexMultiplierType {
         switch self {
-        case .appearance:
-            return JFIndexMultiplierType.appearance
-            
-        case .intelligence:
-            return JFIndexMultiplierType.intelligence
-            
-        case .personality:
-            return JFIndexMultiplierType.personality
-            
+        
+        case .friendly: return .friendly
+        case .dressing: return .dressing
+        case .iqLevel: return .iqLevel
+        case .communication: return .communication
+        case .personality: return .personality
+        case .behavior: return .behavior
+        case .cleanliness: return .cleanliness
+        case .punctuality: return .punctuality
+        case .appearance: return .appearance
         default:
             return JFIndexMultiplierType.jfIndex
         }
@@ -234,78 +266,10 @@ struct JFSelectedCategory {
 //MARK:- Rating category words
 
 struct JFCategoryWords {
-    static let wordsScoreAtIndex = [19, 20, 21, 18, 17, 16, 13, 14, 15, 12, 11, 10, 7, 8, 9, 6, 5, 4, 1, 2, 3]
     
-//    static let appearanceWords = ["Fabulous", "Stunning", "Spectacular", "Magnificent", "Sublime", "Elegant", "Great", "Beautiful", "Chic", "Good", "Average", "Basic", "Mediocre", "Neglected", "Strange", "Bad", "Embarrassing", "Ridiculous", "Unacceptable", "Unpleasant", "Unsuitable"]
-//    static let personalityWords = ["Charismatic", "Outstanding", "Amazing", "Awesome", "Fantastic", "Terrific", "Commendable", "Admirable", "Excellent", "Good", "Average", "Basic", "Awful", "Bizarre", "Boring", "Horrible", "Odd", "Awkward", "Scandalous", "Disastrous", "Frightening"]
-//    static let intelligenceWords = ["Phenomenal", "Brilliant", "Genius", "Incredible", "Impressive", "Astonishing", "Smart", "Sharp", "Remarkable", "Good", "Average", "Basic", "Disappointing", "Limited", "Questionable", "Lacking", "Insufficient", "Negligible", "Deficient", "Inadequate", "Alarming"]
+    static let wordsScoreAtIndex = [-1, 0, 1, 2]
     
-    
-    static let appearanceWords = ["Fabulous",
-                                  "Stunning",
-                                  "Spectacular",
-                                  "Magnificent",
-                                  "Sublime",
-                                  "Elegant",
-                                  "Great",
-                                  "Beautiful",
-                                  "Chic",
-                                  "Handsome",
-                                  "Delightful",
-                                  "Cheerful",
-                                  "Graceful",
-                                  "Gorgeous",
-                                  "Foxy",
-                                    "Appealing",
-                                    "Darling",
-                                    "Cute",
-                                    "Good",
-                                    "Average",
-                                    "Basic"]
-    
-    static let personalityWords = ["Charismatic",
-                                   "Outstanding",
-                                   "Amazing",
-                                   "Awesome",
-                                   "Fantastic",
-                                   "Terrific",
-                                   "Commendable",
-                                   "Admirable",
-                                   "Excellent",
-                                   "Favorable",
-                                   "Positive",
-                                   "Gracious",
-                                   "Pleasant",
-                                   "Considerate",
-                                   "Welcoming",
-                                   "Kind",
-                                   "Helpful",
-                                   "Becoming",
-                                   "Good",
-                                   "Average",
-                                   "Basic"]
-    
-    static let intelligenceWords = ["Phenomenal",
-                                    "Brilliant",
-                                    "Genius",
-                                    "Incredible",
-                                    "Impressive",
-                                    "Astonishing",
-                                    "Smart",
-                                    "Sharp",
-                                    "Remarkable",
-                                    "Talented",
-                                    "Wise",
-                                    "Adept",
-                                    "Bright",
-                                    "Brainy",
-                                    "Alert",
-                                    "Astute",
-                                    "Nimble",
-                                    "Crafty",
-                                    "Good",
-                                    "Average",
-                                    "Basic",]
+    static let words = ["Bad", "Average", "Good", "Excellent"]
 }
 
 // MARK:- Loading Titles

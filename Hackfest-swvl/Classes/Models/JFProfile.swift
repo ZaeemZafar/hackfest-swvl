@@ -20,8 +20,15 @@ class JFProfile: Hashable, Equatable {
     private var locationLatitude: CLLocationDegrees?
     private var locationLongitude: CLLocationDegrees?
     private var jfIndex: JFIndexInfo?
-    private var intelligenceIndex: JFIndexInfo?
+    
+    private var friendlyIndex: JFIndexInfo?
+    private var dressingIndex: JFIndexInfo?
+    private var iqLevelIndex: JFIndexInfo?
+    private var communicationIndex: JFIndexInfo?
     private var personalityIndex: JFIndexInfo?
+    private var behaviorIndex: JFIndexInfo?
+    private var cleanlinessIndex: JFIndexInfo?
+    private var punctualityIndex: JFIndexInfo?
     private var appearanceIndex: JFIndexInfo?
     
     //MARK:- Public properties
@@ -175,9 +182,9 @@ class JFProfile: Hashable, Equatable {
         locationLatitude = nil
         locationLongitude = nil
         
-        ratings[.appearance] = [Int]()
-        ratings[.intelligence] = [Int]()
-        ratings[.personality] = [Int]()
+        CategoryTypes.allCases.forEach { categoryType in
+            ratings[categoryType] = [Int]()
+        }
     }
 }
 
@@ -198,9 +205,16 @@ extension JFProfile {
         
         jfIndex = JFIndexInfo(withJFIndex: profileData.indexMultiplier?.jfIndex, jfMultiplier: profileData.indexMultiplier?.jfMultiplier, jfRateOfChange: profileData.indexMultiplier?.rateOfChange)
         
-        appearanceIndex = JFIndexInfo(withJFIndex: profileData.indexMultiplier?.appearanceAverage, jfMultiplier: nil, jfRateOfChange: nil)
-        intelligenceIndex = JFIndexInfo(withJFIndex: profileData.indexMultiplier?.intelligenceAverage, jfMultiplier: nil, jfRateOfChange: nil)
-        personalityIndex = JFIndexInfo(withJFIndex: profileData.indexMultiplier?.personalityAverage, jfMultiplier: nil, jfRateOfChange: nil)
+        
+        friendlyIndex = JFIndexInfo(withJFIndex: profileData.indexMultiplier?.trait1Average, jfMultiplier: nil, jfRateOfChange: nil)
+        dressingIndex = JFIndexInfo(withJFIndex: profileData.indexMultiplier?.trait2Average, jfMultiplier: nil, jfRateOfChange: nil)
+        iqLevelIndex = JFIndexInfo(withJFIndex: profileData.indexMultiplier?.trait3Average, jfMultiplier: nil, jfRateOfChange: nil)
+        communicationIndex = JFIndexInfo(withJFIndex: profileData.indexMultiplier?.trait4Average, jfMultiplier: nil, jfRateOfChange: nil)
+        personalityIndex = JFIndexInfo(withJFIndex: profileData.indexMultiplier?.trait5Average, jfMultiplier: nil, jfRateOfChange: nil)
+        behaviorIndex = JFIndexInfo(withJFIndex: profileData.indexMultiplier?.trait6Average, jfMultiplier: nil, jfRateOfChange: nil)
+        cleanlinessIndex = JFIndexInfo(withJFIndex: profileData.indexMultiplier?.trait7Average, jfMultiplier: nil, jfRateOfChange: nil)
+        punctualityIndex = JFIndexInfo(withJFIndex: profileData.indexMultiplier?.trait8Average, jfMultiplier: nil, jfRateOfChange: nil)
+        appearanceIndex = JFIndexInfo(withJFIndex: profileData.indexMultiplier?.trait9Average, jfMultiplier: nil, jfRateOfChange: nil)
         
         followingState = profileData.followingRelation != nil ? ((profileData.followingRelation?.acceptRequest ?? false) ? .following : .requested) : FollowingStatus.none
         followedByState = profileData.followedByRelation != nil ? ((profileData.followedByRelation?.acceptRequest ?? false) ? .following : .requested) : FollowingStatus.none
@@ -208,10 +222,15 @@ extension JFProfile {
         ratingsGiven = profileData.multiplierInfo?.ratingsGiven ?? 0
         ratingsReceived = profileData.multiplierInfo?.ratingsReceived ?? 0
         
-        trait[.intelligence] = profileData.settings?.traitIntelligence ?? false
-        trait[.appearance] = profileData.settings?.traitAppearance ?? false
-        trait[.personality] = profileData.settings?.traitPersonality ?? false
-        trait[.none] = profileData.settings?.traitNone ?? false
+        trait[.friendly] = profileData.settings?.trait1 ?? false
+        trait[.dressing] = profileData.settings?.trait2 ?? false
+        trait[.iqLevel] = profileData.settings?.trait3 ?? false
+        trait[.communication] = profileData.settings?.trait4 ?? false
+        trait[.personality] = profileData.settings?.trait5 ?? false
+        trait[.behavior] = profileData.settings?.trait6 ?? false
+        trait[.cleanliness] = profileData.settings?.trait7 ?? false
+        trait[.punctuality] = profileData.settings?.trait8 ?? false
+        trait[.appearance] = profileData.settings?.trait9 ?? false
     }
     
     convenience init(profileData: NetworkProfileAPIResponse, graphDataRetrieved: SimpleCompletionBlock?) {
@@ -255,10 +274,17 @@ extension JFProfile {
             blockedByMe = false
         }
         
-        trait[.intelligence] = profileData.settings?.traitIntelligence ?? false
-        trait[.appearance] = profileData.settings?.traitAppearance ?? false
-        trait[.personality] = profileData.settings?.traitPersonality ?? false
-        trait[.none] = profileData.settings?.traitNone ?? false
+        
+        
+        trait[.friendly] = profileData.settings?.trait1 ?? false
+        trait[.dressing] = profileData.settings?.trait2 ?? false
+        trait[.iqLevel] = profileData.settings?.trait3 ?? false
+        trait[.communication] = profileData.settings?.trait4 ?? false
+        trait[.personality] = profileData.settings?.trait5 ?? false
+        trait[.behavior] = profileData.settings?.trait6 ?? false
+        trait[.cleanliness] = profileData.settings?.trait7 ?? false
+        trait[.punctuality] = profileData.settings?.trait8 ?? false
+        trait[.appearance] = profileData.settings?.trait9 ?? false
         
         if let ratingData = profileData.rateButtonInfo {
             // isAnonymous: Previous rate status
@@ -267,9 +293,17 @@ extension JFProfile {
                 lastRatingDate = Date(fromString: dateTimeString, format: DateFormatType.isoDateTimeMilliSec)
             }
             
-            ratings[.appearance] = ratingData.traitAppearance ?? [Int]()
-            ratings[.intelligence] = ratingData.traitIntelligence ?? [Int]()
-            ratings[.personality] = ratingData.traitPersonality ?? [Int]()
+            
+            ratings[.friendly] = ratingData.trait1 ?? []
+            ratings[.dressing] = ratingData.trait2 ?? []
+            ratings[.iqLevel] = ratingData.trait3 ?? []
+            ratings[.communication] = ratingData.trait4 ?? []
+            ratings[.personality] = ratingData.trait5 ?? []
+            ratings[.behavior] = ratingData.trait6 ?? []
+            ratings[.cleanliness] = ratingData.trait7 ?? []
+            ratings[.punctuality] = ratingData.trait8 ?? []
+            ratings[.appearance] = ratingData.trait9 ?? []
+
             
         } else {
             // Normal rating scenarios
@@ -338,15 +372,15 @@ extension JFProfile {
     
     func indexMultiplier(forType type: JFIndexMultiplierType) -> JFIndexInfo? {
         switch type {
-        case .appearance:
-            return appearanceIndex
-            
-        case .personality:
-            return personalityIndex
-            
-        case .intelligence:
-            return intelligenceIndex
-            
+        case .friendly: return friendlyIndex
+        case .dressing: return dressingIndex
+        case .iqLevel: return iqLevelIndex
+        case .communication: return communicationIndex
+        case .personality: return personalityIndex
+        case .behavior: return behaviorIndex
+        case .cleanliness: return cleanlinessIndex
+        case .punctuality: return punctualityIndex
+        case .appearance: return appearanceIndex
         case .jfIndex:
             return jfIndex
         }
@@ -356,16 +390,41 @@ extension JFProfile {
         var graphArray = [JFGraph?]()
         graphArray.append(jfIndex?.graphData)
         
-        if trait[.appearance] ?? false {
-            graphArray.append(appearanceIndex?.graphData)
+        if trait[.friendly] ?? false {
+            graphArray.append(friendlyIndex?.graphData)
+            
         }
-        
+        if trait[.dressing] ?? false {
+            graphArray.append(dressingIndex?.graphData)
+            
+        }
+        if trait[.iqLevel] ?? false {
+            graphArray.append(iqLevelIndex?.graphData)
+            
+        }
+        if trait[.communication] ?? false {
+            graphArray.append(communicationIndex?.graphData)
+            
+        }
         if trait[.personality] ?? false {
             graphArray.append(personalityIndex?.graphData)
+            
         }
-        
-        if trait[.intelligence] ?? false {
-            graphArray.append(intelligenceIndex?.graphData)
+        if trait[.behavior] ?? false {
+            graphArray.append(behaviorIndex?.graphData)
+            
+        }
+        if trait[.cleanliness] ?? false {
+            graphArray.append(cleanlinessIndex?.graphData)
+            
+        }
+        if trait[.punctuality] ?? false {
+            graphArray.append(punctualityIndex?.graphData)
+            
+        }
+        if trait[.appearance] ?? false {
+            graphArray.append(appearanceIndex?.graphData)
+            
         }
         
         return graphArray.compactMap({$0})
@@ -380,9 +439,19 @@ extension JFProfile {
                 guard let userIndexData = response.data?.graphUserData else {return}
                 
                 self?.jfIndex = JFIndexInfo(withJFIndex: userIndexData.jfIndex, jfMultiplier: userIndexData.jfMultiplier, jfRateOfChange: userIndexData.rateOfChange)
-                self?.intelligenceIndex = JFIndexInfo(withJFIndex: userIndexData.intelligenceAverage, jfMultiplier: nil, jfRateOfChange: userIndexData.intelligenceRateOfChange)
-                self?.personalityIndex = JFIndexInfo(withJFIndex: userIndexData.personalityAverage, jfMultiplier: nil, jfRateOfChange: userIndexData.personalityRateOfChange)
-                self?.appearanceIndex = JFIndexInfo(withJFIndex: userIndexData.appearanceAverage, jfMultiplier: nil, jfRateOfChange: userIndexData.appearanceRateOfChange)
+                
+                self?.friendlyIndex = JFIndexInfo(withJFIndex: userIndexData.trait1Average, jfMultiplier: nil, jfRateOfChange: userIndexData.trait1RateOfChange)
+                self?.dressingIndex = JFIndexInfo(withJFIndex: userIndexData.trait2Average, jfMultiplier: nil, jfRateOfChange: userIndexData.trait2RateOfChange)
+                self?.iqLevelIndex = JFIndexInfo(withJFIndex: userIndexData.trait3Average, jfMultiplier: nil, jfRateOfChange: userIndexData.trait3RateOfChange)
+                self?.communicationIndex = JFIndexInfo(withJFIndex: userIndexData.trait4Average, jfMultiplier: nil, jfRateOfChange: userIndexData.trait4RateOfChange)
+                self?.personalityIndex = JFIndexInfo(withJFIndex: userIndexData.trait5Average, jfMultiplier: nil, jfRateOfChange: userIndexData.trait5RateOfChange)
+                self?.behaviorIndex = JFIndexInfo(withJFIndex: userIndexData.trait6Average, jfMultiplier: nil, jfRateOfChange: userIndexData.trait6RateOfChange)
+                self?.cleanlinessIndex = JFIndexInfo(withJFIndex: userIndexData.trait7Average, jfMultiplier: nil, jfRateOfChange: userIndexData.trait7RateOfChange)
+                self?.punctualityIndex = JFIndexInfo(withJFIndex: userIndexData.trait8Average, jfMultiplier: nil, jfRateOfChange: userIndexData.trait8RateOfChange)
+                self?.appearanceIndex = JFIndexInfo(withJFIndex: userIndexData.trait9Average, jfMultiplier: nil, jfRateOfChange: userIndexData.trait9RateOfChange)
+                
+                
+                
                 
                 
                 // Graphdata manipulation
@@ -394,14 +463,32 @@ extension JFProfile {
                 let originProcessingDate = Date(fromString: originprocessingTimeString, format: DateFormatType.isoDateTimeMilliSec) ?? Date()
                 
                 let jfGraphDataPoint = userGraphData.compactMap({$0.jfim})
-                let jfIntelDataPoint = userGraphData.compactMap({$0.intelligenceAverage})
-                let jfAppearDataPoint = userGraphData.compactMap({$0.appearanceAverage})
-                let jfPersonDataPoint = userGraphData.compactMap({$0.personalityAverage})
+                
+                
+                let friendlyDataPoints = userGraphData.compactMap({$0.trait1Average})
+                let dressingDataPoints = userGraphData.compactMap({$0.trait2Average})
+                let iqLevelDataPoints = userGraphData.compactMap({$0.trait3Average})
+                let communicationDataPoints = userGraphData.compactMap({$0.trait4Average})
+                let personalityDataPoints = userGraphData.compactMap({$0.trait5Average})
+                let behaviorDataPoints = userGraphData.compactMap({$0.trait6Average})
+                let cleanlinessDataPoints = userGraphData.compactMap({$0.trait7Average})
+                let punctualityDataPoints = userGraphData.compactMap({$0.trait8Average})
+                let appearanceDataPoints = userGraphData.compactMap({$0.trait9Average})
+                
                 
                 self?.jfIndex?.graphData = JFGraph(with: .jfIndex, data_points: jfGraphDataPoint, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
-                self?.intelligenceIndex?.graphData = JFGraph(with: .intelligence, data_points: jfIntelDataPoint, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
-                self?.personalityIndex?.graphData = JFGraph(with: .personality, data_points: jfPersonDataPoint, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
-                self?.appearanceIndex?.graphData = JFGraph(with: .appearance, data_points: jfAppearDataPoint, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
+                
+                
+                self?.friendlyIndex?.graphData = JFGraph(with: .friendly, data_points: friendlyDataPoints, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
+                self?.dressingIndex?.graphData = JFGraph(with: .dressing, data_points: dressingDataPoints, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
+                self?.iqLevelIndex?.graphData = JFGraph(with: .iqLevel, data_points: iqLevelDataPoints, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
+                self?.communicationIndex?.graphData = JFGraph(with: .communication, data_points: communicationDataPoints, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
+                self?.personalityIndex?.graphData = JFGraph(with: .personality, data_points: personalityDataPoints, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
+                self?.behaviorIndex?.graphData = JFGraph(with: .behavior, data_points: behaviorDataPoints, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
+                self?.cleanlinessIndex?.graphData = JFGraph(with: .cleanliness, data_points: cleanlinessDataPoints, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
+                self?.punctualityIndex?.graphData = JFGraph(with: .punctuality, data_points: punctualityDataPoints, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
+                self?.appearanceIndex?.graphData = JFGraph(with: .appearance, data_points: appearanceDataPoints, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
+                
                 
             }
             

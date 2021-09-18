@@ -178,9 +178,35 @@ class JFUserProfileViewController: JFViewController {
                 
                 datasourceEnumArray.append(.graphCell)
                 
-                if userData.trait[.appearance] ?? false { datasourceEnumArray.append(.categoryCell(trait: .appearance)) }
-                if userData.trait[.personality] ?? false { datasourceEnumArray.append(.categoryCell(trait: .personality)) }
-                if userData.trait[.intelligence] ?? false { datasourceEnumArray.append(.categoryCell(trait: .intelligence)) }
+                
+                if userData.trait[.friendly] ?? false {
+                    datasourceEnumArray.append(.categoryCell(trait: .friendly))
+                }
+                if userData.trait[.dressing] ?? false {
+                    datasourceEnumArray.append(.categoryCell(trait: .dressing))
+                }
+                if userData.trait[.iqLevel] ?? false {
+                    datasourceEnumArray.append(.categoryCell(trait: .iqLevel))
+                }
+                if userData.trait[.communication] ?? false {
+                    datasourceEnumArray.append(.categoryCell(trait: .communication))
+                }
+                if userData.trait[.personality] ?? false {
+                    datasourceEnumArray.append(.categoryCell(trait: .personality))
+                }
+                if userData.trait[.behavior] ?? false {
+                    datasourceEnumArray.append(.categoryCell(trait: .behavior))
+                }
+                if userData.trait[.cleanliness] ?? false {
+                    datasourceEnumArray.append(.categoryCell(trait: .cleanliness))
+                }
+                if userData.trait[.punctuality] ?? false {
+                    datasourceEnumArray.append(.categoryCell(trait: .punctuality))
+                }
+                if userData.trait[.appearance] ?? false {
+                    datasourceEnumArray.append(.categoryCell(trait: .appearance))
+                }
+
             }
             
             if userData.profilePrivacy == .privateProfile {
@@ -419,15 +445,16 @@ class JFUserProfileViewController: JFViewController {
     
     func isRowTypeSelected(rowType: MyProfileTableDataSourceEnum) -> Bool {
         switch rowType {
-        case .appearanceCategory:
-            return selectedGraphs.contains(.appearance)
-            
-        case .intelligenceCategory:
-            return selectedGraphs.contains(.intelligence)
-            
-        case .personalityCategory:
-            return selectedGraphs.contains(.personality)
-            
+        case .friendly: return selectedGraphs.contains(.friendly)
+        case .dressing: return selectedGraphs.contains(.dressing)
+        case .iqLevel: return selectedGraphs.contains(.iqLevel)
+        case .communication: return selectedGraphs.contains(.communication)
+        case .personality: return selectedGraphs.contains(.personality)
+        case .behavior: return selectedGraphs.contains(.behavior)
+        case .cleanliness: return selectedGraphs.contains(.cleanliness)
+        case .punctuality: return selectedGraphs.contains(.punctuality)
+        case .appearance: return selectedGraphs.contains(.appearance)
+        
         default:
             return false
         }

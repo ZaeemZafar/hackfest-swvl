@@ -16,8 +16,15 @@ class ProfileInfo: Codable {
     private var _imageData: Data?
     private var displayFbLink: Bool
     private var jfIndex: JFIndexInfo?
-    private var intelligenceIndex: JFIndexInfo?
+    
+    private var friendlyIndex: JFIndexInfo?
+    private var dressingIndex: JFIndexInfo?
+    private var iqLevelIndex: JFIndexInfo?
+    private var communicationIndex: JFIndexInfo?
     private var personalityIndex: JFIndexInfo?
+    private var behaviorIndex: JFIndexInfo?
+    private var cleanlinessIndex: JFIndexInfo?
+    private var punctualityIndex: JFIndexInfo?
     private var appearanceIndex: JFIndexInfo?
     
     private var locationLatitude: CLLocationDegrees?
@@ -34,10 +41,16 @@ class ProfileInfo: Codable {
     var email: String
     var imagePath: String
     var phone: String
-    var traitAppearance: Bool
-    var traitPersonality: Bool
-    var traitIntelligence: Bool
-    var traitNone: Bool
+    var trait1: Bool
+    var trait2: Bool
+    var trait3: Bool
+    var trait4: Bool
+    var trait5: Bool
+    var trait6: Bool
+    var trait7: Bool
+    var trait8: Bool
+    var trait9: Bool
+    
     var notficationEnabled: Bool
     var locationEnabled: Bool
     var scoreScope: String
@@ -76,22 +89,38 @@ class ProfileInfo: Codable {
         
         graphArray.append(jfIndex?.graphData)
         
-        if traitAppearance {
-            graphArray.append(appearanceIndex?.graphData)
+        if trait1 {
+            graphArray.append(friendlyIndex?.graphData)
         }
-        
-        if traitPersonality {
+        if trait2 {
+            graphArray.append(dressingIndex?.graphData)
+        }
+        if trait3 {
+            graphArray.append(iqLevelIndex?.graphData)
+        }
+        if trait4 {
+            graphArray.append(communicationIndex?.graphData)
+        }
+        if trait5 {
             graphArray.append(personalityIndex?.graphData)
         }
-        
-        if traitIntelligence {
-            graphArray.append(intelligenceIndex?.graphData)
+        if trait6 {
+            graphArray.append(behaviorIndex?.graphData)
+        }
+        if trait7 {
+            graphArray.append(cleanlinessIndex?.graphData)
+        }
+        if trait8 {
+            graphArray.append(punctualityIndex?.graphData)
+        }
+        if trait9 {
+            graphArray.append(appearanceIndex?.graphData)
         }
         
         return graphArray.compactMap({$0})
     }
     
-    var displayFBProfileLink:Bool {
+    var displayFBProfileLink: Bool {
         get {
             
             // Developer Note:
@@ -123,14 +152,15 @@ class ProfileInfo: Codable {
     //MARK:- Helper methods
     func indexMultiplier(forType type: JFIndexMultiplierType) -> JFIndexInfo? {
         switch type {
-        case .appearance:
-            return appearanceIndex
-            
-        case .personality:
-            return personalityIndex
-            
-        case .intelligence:
-            return intelligenceIndex
+        case .friendly: return friendlyIndex
+        case .dressing: return dressingIndex
+        case .iqLevel: return iqLevelIndex
+        case .communication: return communicationIndex
+        case .personality: return personalityIndex
+        case .behavior: return behaviorIndex
+        case .cleanliness: return cleanlinessIndex
+        case .punctuality: return punctualityIndex
+        case .appearance: return appearanceIndex
             
         case .jfIndex:
             return jfIndex
@@ -147,10 +177,15 @@ class ProfileInfo: Codable {
         email = ""
         imagePath = ""
         phone = ""
-        traitAppearance = false
-        traitPersonality = false
-        traitIntelligence = false
-        traitNone = false
+        trait1 = false
+        trait2 = false
+        trait3 = false
+        trait4 = false
+        trait5 = false
+        trait6 = false
+        trait7 = false
+        trait8 = false
+        trait9 = false
         notficationEnabled = false
         locationEnabled = false
         isPublicProfile = false
@@ -166,7 +201,7 @@ class ProfileInfo: Codable {
         fbProfileLink = ""
     }
     
-    init(image: UIImage?, id: String, firstName: String, lastName: String, facebookID: String, isFacebookUser: Bool, email: String, imagePath: String, phone: String, traitAppearance: Bool, traitPersonality: Bool, traitIntelligence: Bool, traitNone: Bool, notficationEnabled: Bool, locationEnabled: Bool, scoreScope: String, location: String, bio: String, given: Int, received: Int, displayFbLink: Bool, jfGraph: Bool, jfIndex: String, jfIndexPercentage: String, appearanceIndex: String, appearanceIndexPercentage: String, personalityIndex: String, personalityIndexPercentage: String, intelligenceIndex: String, intelligenceIndexPercentage: String, profile_public: Bool) {
+    init(image: UIImage?, id: String, firstName: String, lastName: String, facebookID: String, isFacebookUser: Bool, email: String, imagePath: String, phone: String, trait1: Bool, trait2: Bool,  trait3: Bool,  trait4: Bool,  trait5: Bool,  trait6: Bool,  trait7: Bool,  trait8: Bool,  trait9: Bool, notficationEnabled: Bool, locationEnabled: Bool, scoreScope: String, location: String, bio: String, given: Int, received: Int, displayFbLink: Bool, jfGraph: Bool, jfIndex: String, jfIndexPercentage: String, appearanceIndex: String, appearanceIndexPercentage: String, personalityIndex: String, personalityIndexPercentage: String, intelligenceIndex: String, intelligenceIndexPercentage: String, profile_public: Bool) {
         
         self.id = id
         self.firstName = firstName
@@ -176,10 +211,18 @@ class ProfileInfo: Codable {
         self.email = email
         self.imagePath = imagePath
         self.phone = phone
-        self.traitAppearance = traitAppearance
-        self.traitPersonality = traitPersonality
-        self.traitIntelligence = traitIntelligence
-        self.traitNone = traitNone
+        
+        self.trait1 = trait1
+        self.trait2 = trait2
+        self.trait3 = trait3
+        self.trait4 = trait4
+        self.trait5 = trait5
+        self.trait6 = trait6
+        self.trait7 = trait7
+        self.trait8 = trait8
+        self.trait9 = trait9
+        
+        
         self.notficationEnabled = notficationEnabled
         self.locationEnabled = locationEnabled
         self.scoreScope = scoreScope
@@ -217,10 +260,17 @@ class ProfileInfo: Codable {
         let settingsInfo = (info["settings"] as? [String: Any]) ?? [String: Any]()
         let multiplierInfo = (info["multiplierInfo"] as? [String: Any]) ?? [String: Any]()
         
-        traitAppearance = (settingsInfo["traitAppearance"] as? Bool) ?? false
-        traitPersonality = (settingsInfo["traitPersonality"] as? Bool) ?? false
-        traitIntelligence = (settingsInfo["traitIntelligence"] as? Bool) ?? false
-        traitNone = (settingsInfo["traitNone"] as? Bool) ?? false
+        trait1 = (settingsInfo["trait1"] as? Bool) ?? false
+        trait2 = (settingsInfo["trait2"] as? Bool) ?? false
+        trait3 = (settingsInfo["trait3"] as? Bool) ?? false
+        trait4 = (settingsInfo["trait4"] as? Bool) ?? false
+        trait5 = (settingsInfo["trait5"] as? Bool) ?? false
+        trait6 = (settingsInfo["trait6"] as? Bool) ?? false
+        trait7 = (settingsInfo["trait7"] as? Bool) ?? false
+        trait8 = (settingsInfo["trait8"] as? Bool) ?? false
+        trait9 = (settingsInfo["trait9"] as? Bool) ?? false
+        
+        
         notficationEnabled = (settingsInfo["notificationsEnabled"] as? Bool) ?? false
         locationEnabled = (settingsInfo["locationEnabled"] as? Bool) ?? false
         isPublicProfile = (settingsInfo["isPublicProfile"] as? Bool) ?? false
@@ -235,9 +285,18 @@ class ProfileInfo: Codable {
         
         // Initialize graph data from cache
         self.jfIndex = JFSession.shared.myProfile?.jfIndex
-        self.intelligenceIndex = JFSession.shared.myProfile?.intelligenceIndex
-        self.personalityIndex = JFSession.shared.myProfile?.personalityIndex
-        self.appearanceIndex = JFSession.shared.myProfile?.appearanceIndex
+        
+        
+        friendlyIndex = JFSession.shared.myProfile?.friendlyIndex
+        dressingIndex = JFSession.shared.myProfile?.dressingIndex
+        iqLevelIndex = JFSession.shared.myProfile?.iqLevelIndex
+        communicationIndex = JFSession.shared.myProfile?.communicationIndex
+        personalityIndex = JFSession.shared.myProfile?.personalityIndex
+        behaviorIndex = JFSession.shared.myProfile?.behaviorIndex
+        cleanlinessIndex = JFSession.shared.myProfile?.cleanlinessIndex
+        punctualityIndex = JFSession.shared.myProfile?.punctualityIndex
+        appearanceIndex = JFSession.shared.myProfile?.appearanceIndex
+        
         
         let placeHolderImageView = UIImageView()
         
@@ -256,9 +315,16 @@ class ProfileInfo: Codable {
                 guard let userIndexData = response.data?.graphUserData else {return}
                 
                 self?.jfIndex = JFIndexInfo(withJFIndex: userIndexData.jfIndex, jfMultiplier: userIndexData.jfMultiplier, jfRateOfChange: userIndexData.rateOfChange)
-                self?.intelligenceIndex = JFIndexInfo(withJFIndex: userIndexData.intelligenceAverage, jfMultiplier: nil, jfRateOfChange: userIndexData.intelligenceRateOfChange)
-                self?.personalityIndex = JFIndexInfo(withJFIndex: userIndexData.personalityAverage, jfMultiplier: nil, jfRateOfChange: userIndexData.personalityRateOfChange)
-                self?.appearanceIndex = JFIndexInfo(withJFIndex: userIndexData.appearanceAverage, jfMultiplier: nil, jfRateOfChange: userIndexData.appearanceRateOfChange)
+                
+                self?.friendlyIndex = JFIndexInfo(withJFIndex: userIndexData.trait1Average, jfMultiplier: nil, jfRateOfChange: userIndexData.trait1RateOfChange)
+                self?.dressingIndex = JFIndexInfo(withJFIndex: userIndexData.trait2Average, jfMultiplier: nil, jfRateOfChange: userIndexData.trait2RateOfChange)
+                self?.iqLevelIndex = JFIndexInfo(withJFIndex: userIndexData.trait3Average, jfMultiplier: nil, jfRateOfChange: userIndexData.trait3RateOfChange)
+                self?.communicationIndex = JFIndexInfo(withJFIndex: userIndexData.trait4Average, jfMultiplier: nil, jfRateOfChange: userIndexData.trait4RateOfChange)
+                self?.personalityIndex = JFIndexInfo(withJFIndex: userIndexData.trait5Average, jfMultiplier: nil, jfRateOfChange: userIndexData.trait5RateOfChange)
+                self?.behaviorIndex = JFIndexInfo(withJFIndex: userIndexData.trait6Average, jfMultiplier: nil, jfRateOfChange: userIndexData.trait6RateOfChange)
+                self?.cleanlinessIndex = JFIndexInfo(withJFIndex: userIndexData.trait7Average, jfMultiplier: nil, jfRateOfChange: userIndexData.trait7RateOfChange)
+                self?.punctualityIndex = JFIndexInfo(withJFIndex: userIndexData.trait8Average, jfMultiplier: nil, jfRateOfChange: userIndexData.trait8RateOfChange)
+                self?.appearanceIndex = JFIndexInfo(withJFIndex: userIndexData.trait9Average, jfMultiplier: nil, jfRateOfChange: userIndexData.trait9RateOfChange)
                 
                
                 // Graphdata manipulation
@@ -270,14 +336,28 @@ class ProfileInfo: Codable {
                 let originProcessingDate = Date(fromString: originprocessingTimeString, format: DateFormatType.isoDateTimeMilliSec) ?? Date()
                 
                 let jfGraphDataPoint = userGraphData.compactMap({$0.jfim})
-                let jfIntelDataPoint = userGraphData.compactMap({$0.intelligenceAverage})
-                let jfAppearDataPoint = userGraphData.compactMap({$0.appearanceAverage})
-                let jfPersonDataPoint = userGraphData.compactMap({$0.personalityAverage})
+                
+                let friendlyDataPoint = userGraphData.compactMap({$0.trait1Average})
+                let dressingDataPoint = userGraphData.compactMap({$0.trait2Average})
+                let iqLevelDataPoint = userGraphData.compactMap({$0.trait3Average})
+                let communicationDataPoint = userGraphData.compactMap({$0.trait4Average})
+                let personalityDataPoint = userGraphData.compactMap({$0.trait5Average})
+                let behaviorDataPoint = userGraphData.compactMap({$0.trait6Average})
+                let cleanlinessDataPoint = userGraphData.compactMap({$0.trait7Average})
+                let punctualityDataPoint = userGraphData.compactMap({$0.trait8Average})
+                let appearanceDataPoint = userGraphData.compactMap({$0.trait9Average})
                 
                 self?.jfIndex?.graphData = JFGraph(with: .jfIndex, data_points: jfGraphDataPoint, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
-                self?.intelligenceIndex?.graphData = JFGraph(with: .intelligence, data_points: jfIntelDataPoint, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
-                self?.personalityIndex?.graphData = JFGraph(with: .personality, data_points: jfPersonDataPoint, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
-                self?.appearanceIndex?.graphData = JFGraph(with: .appearance, data_points: jfAppearDataPoint, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
+
+                self?.friendlyIndex?.graphData = JFGraph(with: .friendly, data_points: friendlyDataPoint, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
+                self?.dressingIndex?.graphData = JFGraph(with: .dressing, data_points: dressingDataPoint, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
+                self?.iqLevelIndex?.graphData = JFGraph(with: .iqLevel, data_points: iqLevelDataPoint, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
+                self?.communicationIndex?.graphData = JFGraph(with: .communication, data_points: communicationDataPoint, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
+                self?.personalityIndex?.graphData = JFGraph(with: .personality, data_points: personalityDataPoint, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
+                self?.behaviorIndex?.graphData = JFGraph(with: .behavior, data_points: behaviorDataPoint, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
+                self?.cleanlinessIndex?.graphData = JFGraph(with: .cleanliness, data_points: cleanlinessDataPoint, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
+                self?.punctualityIndex?.graphData = JFGraph(with: .punctuality, data_points: punctualityDataPoint, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
+                self?.appearanceIndex?.graphData = JFGraph(with: .appearance, data_points: appearanceDataPoint, recent_processing_date: processingDate, origin_processing_date: originProcessingDate)
                 
                 self?.graphLoaded = true
             }

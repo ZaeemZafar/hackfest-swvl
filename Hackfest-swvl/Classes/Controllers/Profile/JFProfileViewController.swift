@@ -10,44 +10,51 @@ import UIKit
 import Droar
 
 enum MyProfileTableDataSourceEnum: Int, CaseIterable {
-    case profileInfo = 0, graph, appearanceCategory, personalityCategory, intelligenceCategory
+    case profileInfo = 0, graph, friendly, dressing, iqLevel, communication, personality, behavior, cleanliness, punctuality, appearance, none
     
     var indexUI: (icon: UIImage, text: String) {
         switch self {
-        case .personalityCategory:
-            return ( #imageLiteral(resourceName: "personality_icon_lightred"), "Personality")
-        case .appearanceCategory:
-            return ( #imageLiteral(resourceName: "appearance_icon_yellow") ,"Appearance")
-        case .intelligenceCategory:
-            return ( #imageLiteral(resourceName: "intelligence_bulb_icon_lightblue") , "Intelligence")
+        
+        case .friendly: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "Friendly")
+        case .dressing: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "Dressing")
+        case .iqLevel: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "IQ Level")
+        case .communication: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "Communication")
+        case .personality: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "Personality")
+        case .behavior: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "Behavior")
+        case .cleanliness: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "Cleanliness")
+        case .punctuality: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "Puctuality")
+        case .appearance: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "Appearance")
+        
         default:
             return (UIImage(), "")
         }
     }
     
     var highLightColor: UIColor {
-        switch self {
-        case .personalityCategory:
-            return UIColor.jfCategoryRed
-        case .appearanceCategory:
-            return UIColor.jfCategoryOrange
-        case .intelligenceCategory:
-            return UIColor.jfCategoryBlue
-        default:
-            return UIColor.clear
-        }
+        return UIColor.green
+        //        switch self {
+//        case .personalityCategory:
+//            return UIColor.jfCategoryRed
+//        case .appearanceCategory:
+//            return UIColor.jfCategoryOrange
+//        case .intelligenceCategory:
+//            return UIColor.jfCategoryBlue
+//        default:
+//            return UIColor.clear
+//        }
     }
     
     var indexMultiplierType: JFIndexMultiplierType {
         switch self {
-        case .appearanceCategory:
-            return JFIndexMultiplierType.appearance
-            
-        case .intelligenceCategory:
-            return JFIndexMultiplierType.intelligence
-            
-        case .personalityCategory:
-            return JFIndexMultiplierType.personality
+        case .friendly: return .friendly
+        case .dressing: return .dressing
+        case .iqLevel: return .iqLevel
+        case .communication: return .communication
+        case .personality: return .personality
+        case .behavior: return .behavior
+        case .cleanliness: return .cleanliness
+        case .punctuality: return .punctuality
+        case .appearance: return .appearance
             
         default:
             return JFIndexMultiplierType.jfIndex
@@ -196,9 +203,15 @@ class JFProfileViewController: JFViewController {
         profileTableDataSource.removeAll()
         profileTableDataSource.append(contentsOf: [.profileInfo, .graph])
         
-        if profileInfo.traitAppearance { profileTableDataSource.append(.appearanceCategory) }
-        if profileInfo.traitPersonality { profileTableDataSource.append(.personalityCategory) }
-        if profileInfo.traitIntelligence { profileTableDataSource.append(.intelligenceCategory) }
+        if profileInfo.trait1 { profileTableDataSource.append(.friendly) }
+        if profileInfo.trait2 { profileTableDataSource.append(.dressing) }
+        if profileInfo.trait3 { profileTableDataSource.append(.iqLevel) }
+        if profileInfo.trait4 { profileTableDataSource.append(.communication) }
+        if profileInfo.trait5 { profileTableDataSource.append(.personality) }
+        if profileInfo.trait6 { profileTableDataSource.append(.behavior) }
+        if profileInfo.trait7 { profileTableDataSource.append(.cleanliness) }
+        if profileInfo.trait8 { profileTableDataSource.append(.punctuality) }
+        if profileInfo.trait9 { profileTableDataSource.append(.appearance) }
     }
     
     @objc func openNotifications() {
@@ -213,16 +226,19 @@ class JFProfileViewController: JFViewController {
     }
     
     func isRowTypeSelected(rowType: MyProfileTableDataSourceEnum) -> Bool {
-        switch rowType {
-        case .appearanceCategory:
-            return selectedGraphs.contains(.appearance)
         
-        case .intelligenceCategory:
-            return selectedGraphs.contains(.intelligence)
-            
-        case .personalityCategory:
-            return selectedGraphs.contains(.personality)
-            
+        switch rowType {
+        
+        case .friendly: return selectedGraphs.contains(.friendly)
+        case .dressing: return selectedGraphs.contains(.dressing)
+        case .iqLevel: return selectedGraphs.contains(.iqLevel)
+        case .communication: return selectedGraphs.contains(.communication)
+        case .personality: return selectedGraphs.contains(.personality)
+        case .behavior: return selectedGraphs.contains(.behavior)
+        case .cleanliness: return selectedGraphs.contains(.cleanliness)
+        case .punctuality: return selectedGraphs.contains(.punctuality)
+        case .appearance: return selectedGraphs.contains(.appearance)
+        
         default:
             return false
         }
@@ -367,7 +383,7 @@ extension JFProfileViewController: UITableViewDataSource, UITableViewDelegate {
             cell.configure(with: profileInfo, types: selectedGraphs)
             return cell
             
-        case .intelligenceCategory, .appearanceCategory, .personalityCategory:
+        case .friendly, .dressing, .iqLevel, .communication, .personality, .behavior, .cleanliness, .punctuality, .appearance, .none:
             let cell = profileTableView.dequeueReusableCell(withIdentifier: "JFCategoryCustomCell") as! JFCategoryCustomCell
             
             let isSelected = isRowTypeSelected(rowType: rowType)

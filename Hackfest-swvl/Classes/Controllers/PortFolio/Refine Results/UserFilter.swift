@@ -39,8 +39,10 @@ class UserFilter {
         }
         
         if self.traitIntelligence {
-            imArray.append(.intelligence)
+            imArray.append(.iqLevel)
         }
+        
+        // TODO: Zaeem handle all traits here
         
         return imArray
     }

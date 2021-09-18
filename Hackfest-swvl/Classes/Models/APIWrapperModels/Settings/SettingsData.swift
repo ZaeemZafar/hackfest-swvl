@@ -15,11 +15,16 @@ import Foundation
 struct SettingsData : Codable {
 	let id : Int?
 	let userId : Int?
-	var traitAppearance : Bool?
-	var traitPersonality : Bool?
-	var traitIntelligence : Bool?
-	let traitNone : Bool?
-	var notificationsEnabled : Bool?
+    var trait1 : Bool?
+    var trait2 : Bool?
+    var trait3 : Bool?
+    var trait4 : Bool?
+    var trait5 : Bool?
+    var trait6 : Bool?
+    var trait7 : Bool?
+    var trait8 : Bool?
+    var trait9 : Bool?
+    var notificationsEnabled : Bool?
 	var locationEnabled : Bool?
 	let scoreScope : String?
     var isPublicProfile : Bool?
@@ -33,10 +38,15 @@ struct SettingsData : Codable {
         
         case id = "id"
         case userId = "userId"
-        case traitAppearance = "traitAppearance"
-        case traitPersonality = "traitPersonality"
-        case traitIntelligence = "traitIntelligence"
-        case traitNone = "traitNone"
+        case trait1 = "trait1"
+        case trait2 = "trait2"
+        case trait3 = "trait3"
+        case trait4 = "trait4"
+        case trait5 = "trait5"
+        case trait6 = "trait6"
+        case trait7 = "trait7"
+        case trait8 = "trait8"
+        case trait9 = "trait9"
         case notificationsEnabled = "notificationsEnabled"
         case locationEnabled = "locationEnabled"
         case scoreScope = "scoreScope"
@@ -52,11 +62,18 @@ struct SettingsData : Codable {
 
         id = try container.decodeIfPresent(Int.self, forKey: .id)
 		userId = try container.decodeIfPresent(Int.self, forKey: .userId)
-		traitAppearance = try container.decodeIfPresent(Bool.self, forKey: .traitAppearance)
-		traitPersonality = try container.decodeIfPresent(Bool.self, forKey: .traitPersonality)
-		traitIntelligence = try container.decodeIfPresent(Bool.self, forKey: .traitIntelligence)
-		traitNone = try container.decodeIfPresent(Bool.self, forKey: .traitNone)
-		notificationsEnabled = try container.decodeIfPresent(Bool.self, forKey: .notificationsEnabled)
+        
+        trait1 = try container.decodeIfPresent(Bool.self, forKey: .trait1)
+        trait2 = try container.decodeIfPresent(Bool.self, forKey: .trait2)
+        trait3 = try container.decodeIfPresent(Bool.self, forKey: .trait3)
+        trait4 = try container.decodeIfPresent(Bool.self, forKey: .trait4)
+        trait5 = try container.decodeIfPresent(Bool.self, forKey: .trait5)
+        trait6 = try container.decodeIfPresent(Bool.self, forKey: .trait6)
+        trait7 = try container.decodeIfPresent(Bool.self, forKey: .trait7)
+        trait8 = try container.decodeIfPresent(Bool.self, forKey: .trait8)
+        trait9 = try container.decodeIfPresent(Bool.self, forKey: .trait9)
+        
+        notificationsEnabled = try container.decodeIfPresent(Bool.self, forKey: .notificationsEnabled)
 		locationEnabled = try container.decodeIfPresent(Bool.self, forKey: .locationEnabled)
 		scoreScope = try container.decodeIfPresent(String.self, forKey: .scoreScope)
 		isPublicProfile = try container.decodeIfPresent(Bool.self, forKey: .isPublicProfile)
@@ -71,9 +88,15 @@ struct SettingsData : Codable {
             if acceptRating == true {
                 var numberOfCategoriesOn = 0
                 numberOfCategoriesOn += (
-                    (traitAppearance! ? 1 : 0) +
-                    (traitPersonality! ? 1 : 0) +
-                    (traitIntelligence! ? 1 : 0)
+                    (trait1! ? 1 : 0) +
+                    (trait2! ? 1 : 0) +
+                    (trait3! ? 1 : 0) +
+                    (trait4! ? 1 : 0) +
+                    (trait5! ? 1 : 0) +
+                    (trait6! ? 1 : 0) +
+                    (trait7! ? 1 : 0) +
+                    (trait8! ? 1 : 0) +
+                    (trait9! ? 1 : 0)
                 )
                 
                 return (numberOfCategoriesOn == 0) ? "On" : (numberOfCategoriesOn == 1 ? "On, 1 Category" : (numberOfCategoriesOn > 1) ? "On, \(numberOfCategoriesOn) Categories" : "On")

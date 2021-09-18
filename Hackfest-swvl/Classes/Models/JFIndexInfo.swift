@@ -13,14 +13,15 @@ private let kMonthDaysCount = 31
 private let kYearDataPointCount = 365
 
 enum JFIndexMultiplierType: Int, Codable {
-    case jfIndex, intelligence, appearance, personality
+    case jfIndex, friendly, dressing, iqLevel, communication, personality, behavior, cleanliness, punctuality, appearance
     
     var graphLineColor: UIColor {
         switch self {
         case .jfIndex: return UIColor.jfChooseWordsBlack
-        case .intelligence: return UIColor.jfCategoryBlue
+        case .iqLevel: return UIColor.jfCategoryBlue
         case .personality: return UIColor.jfCategoryRed
         case .appearance: return UIColor.jfCategoryOrange
+        default: return UIColor.red
         }
     }
     
@@ -33,12 +34,15 @@ enum JFIndexMultiplierType: Int, Codable {
     
     var indexUI: (icon: UIImage, text: String) {
         switch self {
-        case .personality:
-            return ( #imageLiteral(resourceName: "personality_icon_lightred"), "personality")
-        case .appearance:
-            return ( #imageLiteral(resourceName: "appearance_icon_yellow") ,"appearance")
-        case .intelligence:
-            return ( #imageLiteral(resourceName: "intelligence_bulb_icon_lightblue") , "intelligence")
+        case .friendly: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "friendly")
+        case .dressing: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "dressing")
+        case .iqLevel: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "iqLevel")
+        case .communication: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "communication")
+        case .personality: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "personality")
+        case .behavior: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "behavior")
+        case .cleanliness: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "cleanliness")
+        case .punctuality: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "puctuality")
+        case .appearance: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "appearance")
         default:
             return (UIImage(), "")
         }

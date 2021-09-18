@@ -16,19 +16,33 @@ struct IndexMultiplier : Codable {
 	let jfIndex : Double?
 	let jfMultiplier : Double?
 	let rateOfChange : Double?
-    let appearanceAverage: Double?
-    let personalityAverage: Double?
-    let intelligenceAverage: Double?
+    
+    let trait1Average: Double?
+    let trait2Average: Double?
+    let trait3Average: Double?
+    let trait4Average: Double?
+    let trait5Average: Double?
+    let trait6Average: Double?
+    let trait7Average: Double?
+    let trait8Average: Double?
+    let trait9Average: Double?
     
 	enum CodingKeys: String, CodingKey {
 
 		case jfIndex = "jfIndex"
 		case jfMultiplier = "jfMultiplier"
 		case rateOfChange = "rateOfChange"
-        case appearanceAverage = "appearanceAverage"
-        case personalityAverage = "personalityAverage"
-        case intelligenceAverage = "intelligenceAverage"
-	}
+        case trait1Average = "trait1Average"
+        case trait2Average = "trait2Average"
+        case trait3Average = "trait3Average"
+        case trait4Average = "trait4Average"
+        case trait5Average = "trait5Average"
+        case trait6Average = "trait6Average"
+        case trait7Average = "trait7Average"
+        case trait8Average = "trait8Average"
+        case trait9Average = "trait9Average"
+        
+    }
 
 	init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -36,8 +50,14 @@ struct IndexMultiplier : Codable {
 		jfIndex = try container.decodeIfPresent(Double.self, forKey: .jfIndex)
 		jfMultiplier = try container.decodeIfPresent(Double.self, forKey: .jfMultiplier)
 		rateOfChange = try container.decodeIfPresent(Double.self, forKey: .rateOfChange)
-        appearanceAverage = try container.decodeIfPresent(Double.self, forKey: .appearanceAverage)
-        personalityAverage = try container.decodeIfPresent(Double.self, forKey: .personalityAverage)
-        intelligenceAverage = try container.decodeIfPresent(Double.self, forKey: .intelligenceAverage)
+        trait1Average = try container.decodeIfPresent(Double.self, forKey: .trait1Average)
+        trait2Average = try container.decodeIfPresent(Double.self, forKey: .trait2Average)
+        trait3Average = try container.decodeIfPresent(Double.self, forKey: .trait3Average)
+        trait4Average = try container.decodeIfPresent(Double.self, forKey: .trait4Average)
+        trait5Average = try container.decodeIfPresent(Double.self, forKey: .trait5Average)
+        trait6Average = try container.decodeIfPresent(Double.self, forKey: .trait6Average)
+        trait7Average = try container.decodeIfPresent(Double.self, forKey: .trait7Average)
+        trait8Average = try container.decodeIfPresent(Double.self, forKey: .trait8Average)
+        trait9Average = try container.decodeIfPresent(Double.self, forKey: .trait9Average)
 	}
 }

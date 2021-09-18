@@ -9,28 +9,28 @@
 import UIKit
 
 enum CategoryTypes: Int, Codable, CaseIterable {
-    case appearance = 0
-    case personality
-    case intelligence
+    case friendly = 0, dressing, iqLevel, communication, personality, behavior, cleanliness, punctuality, appearance
 }
 
 //MARK:- CategoryTypes
 extension CategoryTypes {
     var wordsArray: [String] {
         get {
-            switch self {
-            case .appearance: return JFCategoryWords.appearanceWords
-            case .personality: return JFCategoryWords.personalityWords
-            case .intelligence: return JFCategoryWords.intelligenceWords
-            }
+            return ["bad", "average", "good", "excellent"]
         }
     }
     
     var name: String {
         switch self {
-        case .appearance: return "appearance"
+        case .friendly: return "friendly"
+        case .dressing: return "dressing"
+        case .iqLevel: return "iqLevel"
+        case .communication: return "communication"
         case .personality: return "personality"
-        case .intelligence: return "intelligence"
+        case .behavior: return "behavior"
+        case .cleanliness: return "cleanliness"
+        case .punctuality: return "punctuality"
+        case .appearance: return "appearance"
         }
     }
     
@@ -38,7 +38,7 @@ extension CategoryTypes {
         switch self {
         case .appearance: return UIColor.jfCategoryOrange
         case .personality: return UIColor.jfCategoryRed
-        case .intelligence: return UIColor.jfCategoryBlue
+        default: return UIColor.red
         }
     }
     

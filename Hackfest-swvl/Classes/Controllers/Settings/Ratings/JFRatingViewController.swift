@@ -9,16 +9,20 @@
 import UIKit
 
 enum JFRatingTypes {
-    case accept, anonymous, appearance, personality, intelligence
+    case accept, anonymous, friendly, dressing, iqLevel, communication, personality, behavior, cleanliness, punctuality, appearance
     
     func getImage(isEnabled: Bool) -> UIImage? {
         switch self {
-        case .personality:
-            return isEnabled ? #imageLiteral(resourceName: "personality_icon_lightred") : #imageLiteral(resourceName: "personality_icon_grey")
-        case .appearance:
-            return isEnabled ? #imageLiteral(resourceName: "appearance_icon_yellow") : #imageLiteral(resourceName: "appearance_icon_grey")
-        case .intelligence:
-            return isEnabled ? #imageLiteral(resourceName: "intelligence_bulb_icon_lightblue") : #imageLiteral(resourceName: "intellignce_bulb_icon_grey")
+        case .friendly: return isEnabled ? #imageLiteral(resourceName: "personality_icon_lightred") : #imageLiteral(resourceName: "personality_icon_grey")
+        case .dressing: return isEnabled ? #imageLiteral(resourceName: "personality_icon_lightred") : #imageLiteral(resourceName: "personality_icon_grey")
+        case .iqLevel: return isEnabled ? #imageLiteral(resourceName: "personality_icon_lightred") : #imageLiteral(resourceName: "personality_icon_grey")
+        case .communication: return isEnabled ? #imageLiteral(resourceName: "personality_icon_lightred") : #imageLiteral(resourceName: "personality_icon_grey")
+        case .personality: return isEnabled ? #imageLiteral(resourceName: "personality_icon_lightred") : #imageLiteral(resourceName: "personality_icon_grey")
+        case .behavior: return isEnabled ? #imageLiteral(resourceName: "personality_icon_lightred") : #imageLiteral(resourceName: "personality_icon_grey")
+        case .cleanliness: return isEnabled ? #imageLiteral(resourceName: "personality_icon_lightred") : #imageLiteral(resourceName: "personality_icon_grey")
+        case .punctuality: return isEnabled ? #imageLiteral(resourceName: "personality_icon_lightred") : #imageLiteral(resourceName: "personality_icon_grey")
+        case .appearance: return isEnabled ? #imageLiteral(resourceName: "personality_icon_lightred") : #imageLiteral(resourceName: "personality_icon_grey")
+        
         default:
             return nil
         }
@@ -30,12 +34,15 @@ enum JFRatingTypes {
             return "Accept Ratings"
         case .anonymous:
             return "Accept Anonymous Ratings"
-        case .appearance:
-            return "Appearance"
-        case .personality:
-            return "Personality"
-        case .intelligence:
-            return "Intelligence"
+        case .friendly: return "Friendly"
+        case .dressing: return "Dressing"
+        case .iqLevel: return "IQ Level"
+        case .communication: return "Communication"
+        case .personality: return "Personality"
+        case .behavior: return "Behavior"
+        case .cleanliness: return "Cleanliness"
+        case .punctuality: return "Puctuality"
+        case .appearance: return "Appearance"
         }
     }
 }
@@ -62,9 +69,17 @@ class JFRatingViewController: JFViewController {
     var model: [[RatingTuple]] = [
         [RatingTuple(rating_type: .accept)],
         [RatingTuple(rating_type: .anonymous)],
-        [RatingTuple(rating_type: .appearance),
-         RatingTuple(rating_type: .personality),
-         RatingTuple(rating_type: .intelligence)]
+        [
+            RatingTuple(rating_type: .friendly),
+            RatingTuple(rating_type: .dressing),
+            RatingTuple(rating_type: .iqLevel),
+            RatingTuple(rating_type: .communication),
+            RatingTuple(rating_type: .personality),
+            RatingTuple(rating_type: .behavior),
+            RatingTuple(rating_type: .cleanliness),
+            RatingTuple(rating_type: .punctuality),
+            RatingTuple(rating_type: .appearance),
+        ]
     ]
     
     //MARK:- UIViewController lifecycle
@@ -101,9 +116,16 @@ class JFRatingViewController: JFViewController {
     func loadRatingsData() {
         ratingUpdate(type: .accept, isOn: settingsData?.acceptRating ?? false)
         ratingUpdate(type: .anonymous, isOn: settingsData?.acceptAnonymousRating ?? false)
-        ratingUpdate(type: .appearance, isOn: settingsData?.traitAppearance ?? false)
-        ratingUpdate(type: .personality, isOn: settingsData?.traitPersonality ?? false)
-        ratingUpdate(type: .intelligence, isOn: settingsData?.traitIntelligence ?? false)
+        
+        ratingUpdate(type: .friendly, isOn: settingsData?.trait1 ?? false)
+        ratingUpdate(type: .dressing, isOn: settingsData?.trait2 ?? false)
+        ratingUpdate(type: .iqLevel, isOn: settingsData?.trait3 ?? false)
+        ratingUpdate(type: .communication, isOn: settingsData?.trait4 ?? false)
+        ratingUpdate(type: .personality, isOn: settingsData?.trait5 ?? false)
+        ratingUpdate(type: .behavior, isOn: settingsData?.trait6 ?? false)
+        ratingUpdate(type: .cleanliness, isOn: settingsData?.trait7 ?? false)
+        ratingUpdate(type: .punctuality, isOn: settingsData?.trait8 ?? false)
+        ratingUpdate(type: .appearance, isOn: settingsData?.trait9 ?? false)
     }
     
     func handleCellAction(cellState isOn:Bool, tableView: UITableView, ratingData: RatingTuple, indexPath: IndexPath) {
