@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "report-unselected-icn@3x.png",
+      "filename" : "report.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "report@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "report@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

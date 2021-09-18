@@ -4528,7 +4528,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Hackfest-swvlDev.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UJTPUA5PDF;
+				DEVELOPMENT_TEAM = 3M6K7264C7;
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				INFOPLIST_FILE = "Hackfest-swvl/Supporting Files/Hackfest-swvlDev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -4557,7 +4557,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Hackfest-swvlDev.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UJTPUA5PDF;
+				DEVELOPMENT_TEAM = 3M6K7264C7;
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				INFOPLIST_FILE = "Hackfest-swvl/Supporting Files/Hackfest-swvlDev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
