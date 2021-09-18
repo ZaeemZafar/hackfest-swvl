@@ -40,7 +40,7 @@ enum JFAppTarget: Int {
         switch self {
             
         case .development:
-            return "http://dev.justfamous.com:4000/"
+            return "http://18.234.149.76:4000/"
             
         case .qa:
             return "http://dev.justfamous.com:4001/"
@@ -361,7 +361,7 @@ class JFConstants: NSObject {
     static let formattedPhoneNumberDigits = 16
     static let maximumRating = 20
     static let portfolioTitles = [
-        "Following", "My Network", "Discover"
+        "Friends", "Community", "Discover"
     ]
     
     struct JFUserDefaults {

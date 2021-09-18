@@ -15,7 +15,7 @@ import Foundation
 struct MultiplierInfos : Codable {
 	let id : Int?
 	let userId : Int?
-	let isPublicProfile : Bool?
+	let isCaptainProfile : Bool?
 	let anonymousRatingGiven : Bool?
 	let acceptAnonymousFeedback : Bool?
 	let ratingsRequested : Int?
@@ -33,7 +33,7 @@ struct MultiplierInfos : Codable {
 
 		case id = "id"
 		case userId = "userId"
-		case isPublicProfile = "isPublicProfile"
+		case isCaptainProfile = "isCaptainProfile"
 		case anonymousRatingGiven = "anonymousRatingGiven"
 		case acceptAnonymousFeedback = "acceptAnonymousFeedback"
 		case ratingsRequested = "ratingsRequested"
@@ -52,7 +52,7 @@ struct MultiplierInfos : Codable {
 		let values = try decoder.container(keyedBy: CodingKeys.self)
 		id = try values.decodeIfPresent(Int.self, forKey: .id)
 		userId = try values.decodeIfPresent(Int.self, forKey: .userId)
-		isPublicProfile = try values.decodeIfPresent(Bool.self, forKey: .isPublicProfile)
+		isCaptainProfile = try values.decodeIfPresent(Bool.self, forKey: .isCaptainProfile)
 		anonymousRatingGiven = try values.decodeIfPresent(Bool.self, forKey: .anonymousRatingGiven)
 		acceptAnonymousFeedback = try values.decodeIfPresent(Bool.self, forKey: .acceptAnonymousFeedback)
 		ratingsRequested = try values.decodeIfPresent(Int.self, forKey: .ratingsRequested)

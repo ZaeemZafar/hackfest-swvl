@@ -38,14 +38,14 @@ class JFPrivacySettingsViewController: JFViewController {
     @IBAction func everyoneButtonTapped(_ sender: JFCategoryButton) {
         sender.select = true
         privacyButtons[1].select = false
-        self.signUpUser.isPublicProfile = true
+        self.signUpUser.isCaptainProfile = true
         nextButton.isEnabled = true
     }
     
     @IBAction func onlyPeopleButtonTapped(_ sender: JFCategoryButton) {
         sender.select = true
         privacyButtons[0].select = false
-        self.signUpUser.isPublicProfile = false
+        self.signUpUser.isCaptainProfile = false
         nextButton.isEnabled = true
     }
     

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ROB-hr-zY9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--CHOOSE-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="JFReportCategoryViewController" title="CHOOSE" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="JFReportCategoryViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="brf-P7-q8q">
+                                <rect key="frame" x="0.0" y="88" width="414" height="715"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tnZ-Ap-gZU">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="231.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" image="emergency-call" translatesAutoresizingMaskIntoConstraints="NO" id="Lca-4m-iUp">
+                                                <rect key="frame" x="30" y="30" width="354" height="120.5"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REPORT CRITICAL EMERGENCY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSF-zo-YF9">
+                                                <rect key="frame" x="20" y="180.5" width="374" height="21"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdU-Mc-baZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="231.5"/>
+                                                <connections>
+                                                    <action selector="emergencyReportButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="PFY-U0-NGj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="sdU-Mc-baZ" firstAttribute="top" secondItem="tnZ-Ap-gZU" secondAttribute="top" id="FZs-px-87U"/>
+                                            <constraint firstItem="Lca-4m-iUp" firstAttribute="top" secondItem="tnZ-Ap-gZU" secondAttribute="top" constant="30" id="Ibo-5X-2N8"/>
+                                            <constraint firstItem="TSF-zo-YF9" firstAttribute="centerX" secondItem="tnZ-Ap-gZU" secondAttribute="centerX" id="Lfa-Zg-1JU"/>
+                                            <constraint firstItem="sdU-Mc-baZ" firstAttribute="leading" secondItem="tnZ-Ap-gZU" secondAttribute="leading" id="Rnj-zR-w6x"/>
+                                            <constraint firstItem="Lca-4m-iUp" firstAttribute="leading" secondItem="tnZ-Ap-gZU" secondAttribute="leading" constant="30" id="VRO-kU-3ZZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="TSF-zo-YF9" secondAttribute="bottom" constant="30" id="XcH-2T-pEw"/>
+                                            <constraint firstAttribute="trailing" secondItem="sdU-Mc-baZ" secondAttribute="trailing" id="eGJ-l2-efv"/>
+                                            <constraint firstItem="Lca-4m-iUp" firstAttribute="centerX" secondItem="tnZ-Ap-gZU" secondAttribute="centerX" id="kli-PU-I9l"/>
+                                            <constraint firstItem="TSF-zo-YF9" firstAttribute="leading" secondItem="tnZ-Ap-gZU" secondAttribute="leading" constant="20" id="nCx-qW-RN0"/>
+                                            <constraint firstAttribute="bottom" secondItem="sdU-Mc-baZ" secondAttribute="bottom" id="sQk-fG-Kq1"/>
+                                            <constraint firstItem="TSF-zo-YF9" firstAttribute="top" secondItem="Lca-4m-iUp" secondAttribute="bottom" constant="30" id="ygO-Tj-Rm7"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eyt-7p-16h">
+                                        <rect key="frame" x="0.0" y="241.5" width="414" height="232"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" image="suspicious" translatesAutoresizingMaskIntoConstraints="NO" id="Qgp-DZ-dT9">
+                                                <rect key="frame" x="30" y="30" width="354" height="121"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REPORT SUSPECIOUS RIDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGf-UD-xxi">
+                                                <rect key="frame" x="20" y="181" width="374" height="21"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6P6-Au-ftY">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="232"/>
+                                                <connections>
+                                                    <action selector="reportSuspeciousDriverButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="e59-ik-iAU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="KGf-UD-xxi" firstAttribute="leading" secondItem="Eyt-7p-16h" secondAttribute="leading" constant="20" id="7vF-vh-Za4"/>
+                                            <constraint firstItem="KGf-UD-xxi" firstAttribute="top" secondItem="Qgp-DZ-dT9" secondAttribute="bottom" constant="30" id="9J7-7Y-CTb"/>
+                                            <constraint firstItem="KGf-UD-xxi" firstAttribute="centerX" secondItem="Eyt-7p-16h" secondAttribute="centerX" id="Fvz-fQ-w0I"/>
+                                            <constraint firstItem="6P6-Au-ftY" firstAttribute="leading" secondItem="Eyt-7p-16h" secondAttribute="leading" id="NKO-Eo-2Vx"/>
+                                            <constraint firstItem="6P6-Au-ftY" firstAttribute="top" secondItem="Eyt-7p-16h" secondAttribute="top" id="aw4-r8-ZgJ"/>
+                                            <constraint firstItem="Qgp-DZ-dT9" firstAttribute="top" secondItem="Eyt-7p-16h" secondAttribute="top" constant="30" id="dUI-fi-SoK"/>
+                                            <constraint firstItem="Qgp-DZ-dT9" firstAttribute="centerX" secondItem="Eyt-7p-16h" secondAttribute="centerX" id="eGD-H8-1jz"/>
+                                            <constraint firstAttribute="bottom" secondItem="6P6-Au-ftY" secondAttribute="bottom" id="i9y-zD-puN"/>
+                                            <constraint firstAttribute="bottom" secondItem="KGf-UD-xxi" secondAttribute="bottom" constant="30" id="kRh-37-B0d"/>
+                                            <constraint firstAttribute="trailing" secondItem="6P6-Au-ftY" secondAttribute="trailing" id="oK1-RY-egS"/>
+                                            <constraint firstItem="Qgp-DZ-dT9" firstAttribute="leading" secondItem="Eyt-7p-16h" secondAttribute="leading" constant="30" id="wDw-OC-PWv"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7OA-Y6-afP">
+                                        <rect key="frame" x="0.0" y="483.5" width="414" height="231.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" image="Mask Group 9" translatesAutoresizingMaskIntoConstraints="NO" id="zAX-53-zWS">
+                                                <rect key="frame" x="30" y="30" width="354" height="120.5"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOST / FOUND SOMETHING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RB0-7K-NYY">
+                                                <rect key="frame" x="20" y="180.5" width="374" height="21"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EA0-2P-9TH">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="231.5"/>
+                                                <connections>
+                                                    <action selector="lostFoundButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pA7-GI-VdC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="EA0-2P-9TH" firstAttribute="top" secondItem="7OA-Y6-afP" secondAttribute="top" id="4mJ-iB-xF6"/>
+                                            <constraint firstItem="EA0-2P-9TH" firstAttribute="leading" secondItem="7OA-Y6-afP" secondAttribute="leading" id="Bf5-CR-hOE"/>
+                                            <constraint firstAttribute="bottom" secondItem="RB0-7K-NYY" secondAttribute="bottom" constant="30" id="By2-lf-eKe"/>
+                                            <constraint firstItem="zAX-53-zWS" firstAttribute="leading" secondItem="7OA-Y6-afP" secondAttribute="leading" constant="30" id="Ckj-Lt-9x1"/>
+                                            <constraint firstItem="zAX-53-zWS" firstAttribute="top" secondItem="7OA-Y6-afP" secondAttribute="top" constant="30" id="PmV-Lo-pSp"/>
+                                            <constraint firstItem="RB0-7K-NYY" firstAttribute="centerX" secondItem="7OA-Y6-afP" secondAttribute="centerX" id="VU0-42-OWf"/>
+                                            <constraint firstAttribute="trailing" secondItem="EA0-2P-9TH" secondAttribute="trailing" id="VoO-GP-ZPp"/>
+                                            <constraint firstItem="RB0-7K-NYY" firstAttribute="top" secondItem="zAX-53-zWS" secondAttribute="bottom" constant="30" id="f95-uQ-iLe"/>
+                                            <constraint firstAttribute="bottom" secondItem="EA0-2P-9TH" secondAttribute="bottom" id="gry-Yh-Yxe"/>
+                                            <constraint firstItem="RB0-7K-NYY" firstAttribute="leading" secondItem="7OA-Y6-afP" secondAttribute="leading" constant="20" id="kXJ-aG-1Rj"/>
+                                            <constraint firstItem="zAX-53-zWS" firstAttribute="centerX" secondItem="7OA-Y6-afP" secondAttribute="centerX" id="wlu-fR-zhU"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="brf-P7-q8q" secondAttribute="bottom" constant="10" id="0hO-5f-hdv"/>
+                            <constraint firstItem="brf-P7-q8q" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="1JH-BZ-MMc"/>
+                            <constraint firstItem="brf-P7-q8q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="VG8-Uu-eYt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="brf-P7-q8q" secondAttribute="trailing" id="qbZ-8G-XT2"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="REPORT" image="report-unselected-icn" selectedImage="report-selected-icn" id="tAz-T5-jWI"/>
+                    <navigationItem key="navigationItem" id="G9l-J9-N1J"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="emergencyReportImageView" destination="Lca-4m-iUp" id="Jxy-j9-4JH"/>
+                        <outlet property="emergencyReportLabel" destination="TSF-zo-YF9" id="a6B-T4-xal"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-113.04347826086958" y="79.6875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="P72-Qn-ihU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ROB-hr-zY9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bpG-zi-6xh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="LwT-7c-420"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Id6-nd-eDu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1023" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Mask Group 9" width="53.5" height="50"/>
+        <image name="emergency-call" width="50" height="50"/>
+        <image name="report-selected-icn" width="20" height="18"/>
+        <image name="report-unselected-icn" width="20" height="18"/>
+        <image name="suspicious" width="53.5" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -60,7 +60,7 @@ class ProfileInfo: Codable {
     
     var given: Int
     var received: Int
-    var isPublicProfile: Bool
+    var isCaptainProfile: Bool
     var graphLoaded: Bool
     
     func imageURL(thumbnail: Bool = false) -> URL? {
@@ -188,7 +188,7 @@ class ProfileInfo: Codable {
         trait9 = false
         notficationEnabled = false
         locationEnabled = false
-        isPublicProfile = false
+        isCaptainProfile = false
         scoreScope = ""
         location = ""
         bio = ""
@@ -233,7 +233,7 @@ class ProfileInfo: Codable {
         self.received = received
         self.displayFbLink = displayFbLink
 
-        self.isPublicProfile = profile_public
+        self.isCaptainProfile = profile_public
         self.facebookConnected = false
         
         graphLoaded = false
@@ -273,7 +273,7 @@ class ProfileInfo: Codable {
         
         notficationEnabled = (settingsInfo["notificationsEnabled"] as? Bool) ?? false
         locationEnabled = (settingsInfo["locationEnabled"] as? Bool) ?? false
-        isPublicProfile = (settingsInfo["isPublicProfile"] as? Bool) ?? false
+        isCaptainProfile = (settingsInfo["isCaptainProfile"] as? Bool) ?? false
         scoreScope = (settingsInfo["scoreScope"] as? String) ?? ""
         displayFbLink = (settingsInfo["displayFacebookProfile"] as? Bool) ?? false
         

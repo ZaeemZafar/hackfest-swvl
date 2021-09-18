@@ -33,7 +33,7 @@ struct NetworkProfileAPIResponse : Codable {
 	let rateButtonInfo : RateButtonInfo?
 	let requestButtonInfo : RequestButtonInfo?
     
-    let followingRelation : FollowingRelation?
+    let friendRelation : FollowingRelation?
     let followedByRelation : FollowedByRelation?
 
 	enum CodingKeys: String, CodingKey {
@@ -51,7 +51,7 @@ struct NetworkProfileAPIResponse : Codable {
 		case settings = "settings"
         case blockedByMe = "blockedByMe"
         case blockedByThem = "blockedByThem"
-		case followingRelation = "followingRelation"
+		case friendRelation = "friendRelation"
         case followedByRelation = "followedByRelation"
 		case rateButtonInfo = "rateButtonInfo"
 		case requestButtonInfo = "requestButtonInfo"
@@ -93,8 +93,8 @@ struct NetworkProfileAPIResponse : Codable {
         } catch {blockedByThem = nil}
 		
         do {
-            followingRelation = try values.decodeIfPresent(FollowingRelation.self, forKey: .followingRelation)
-        } catch {followingRelation = nil}
+            friendRelation = try values.decodeIfPresent(FollowingRelation.self, forKey: .friendRelation)
+        } catch {friendRelation = nil}
         
         do {
             followedByRelation = try values.decodeIfPresent(FollowedByRelation.self, forKey: .followedByRelation)

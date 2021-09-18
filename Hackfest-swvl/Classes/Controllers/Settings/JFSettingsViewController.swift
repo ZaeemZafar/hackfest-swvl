@@ -294,7 +294,7 @@ extension JFSettingsViewController: UITableViewDelegate, UITableViewDataSource {
         
         if type == .profilePrivacy {
             if settingsData != nil {
-                cell.subLabel.text = settingsData?.isPublicProfile ?? false ? "Public" : "Private"
+                cell.subLabel.text = settingsData?.isCaptainProfile ?? false ? "Public" : "Private"
             } else {
                 cell.subLabel.text = "--"
             }

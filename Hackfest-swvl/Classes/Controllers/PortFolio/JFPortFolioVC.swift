@@ -178,7 +178,7 @@ class JFPortFolioVC: JFViewController, XMSegmentedControlDelegate {
         segmentedControl.segmentTitle = JFConstants.portfolioTitles
         segmentedControl.backgroundColor = UIColor.clear
         segmentedControl.highlightTint = .jfDarkGray
-        segmentedControl.highlightColor = .jfMediumBrown
+        segmentedControl.highlightColor = .swvlMediumRed
         segmentedControl.tint = .lightGray
         segmentedControl.font = UIFont.normal(fontSize: 14.0)
         segmentedControl.delegate = self
@@ -187,8 +187,8 @@ class JFPortFolioVC: JFViewController, XMSegmentedControlDelegate {
     
     func setupNavigation() {
         title = "PORTFOLIO"
-        addRightBarButton(withImage: #imageLiteral(resourceName: "search_icon_grey"), text: nil, action: #selector(searchPorfolio))
-        addLeftBarButton(withImage: #imageLiteral(resourceName: "profile_icon_with_plus_icon"), text: nil, action: #selector(invitePeople))
+        addRightBarButton(withImage: #imageLiteral(resourceName: "search_icon_grey").withRenderingMode(.alwaysTemplate), text: nil, action: #selector(searchPorfolio))
+        addLeftBarButton(withImage: #imageLiteral(resourceName: "profile_icon_with_plus_icon").withRenderingMode(.alwaysTemplate), text: nil, action: #selector(invitePeople))
     }
    
     @objc func searchPorfolio() {

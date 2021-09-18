@@ -21,7 +21,7 @@ struct ExistingUsers : Codable {
     let image : String?
     let indexMultiplier : IndexMultiplier?
     let settings : Settings?
-    let followingRelation : FollowingRelation?
+    let friendRelation : FollowingRelation?
         
     enum CodingKeys: String, CodingKey {
         
@@ -33,7 +33,7 @@ struct ExistingUsers : Codable {
         case image = "image"
         case indexMultiplier = "indexMultiplier"
         case settings = "settings"
-        case followingRelation = "followingRelation"
+        case friendRelation = "friendRelation"
     }
     
     init(from decoder: Decoder) throws {
@@ -55,7 +55,7 @@ struct ExistingUsers : Codable {
         } catch {settings = nil}
         
         do {
-            followingRelation = try container.decodeIfPresent(FollowingRelation.self, forKey: .followingRelation)
-        } catch {followingRelation = nil}
+            friendRelation = try container.decodeIfPresent(FollowingRelation.self, forKey: .friendRelation)
+        } catch {friendRelation = nil}
     }
 }

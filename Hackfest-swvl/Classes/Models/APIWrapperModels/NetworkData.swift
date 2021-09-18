@@ -24,7 +24,7 @@ struct NetworkData : Codable {
     let location: String?
 	let indexMultiplier : IndexMultiplier?
 	let settings : SettingsData? // previously it was "Settings"
-	let followingRelation : FollowingRelation?
+	let friendRelation : FollowingRelation?
     let followedByRelation : FollowedByRelation?
     let multiplierInfo: MultiplierInfo?
 
@@ -39,7 +39,7 @@ struct NetworkData : Codable {
         case multiplierInfo = "multiplierInfo"
 		case indexMultiplier
 		case settings
-		case followingRelation
+		case friendRelation
         case followedByRelation
 	}
 
@@ -62,8 +62,8 @@ struct NetworkData : Codable {
         } catch {settings = nil}
         
         do {
-            followingRelation = try container.decodeIfPresent(FollowingRelation.self, forKey: .followingRelation)
-        } catch {followingRelation = nil}
+            friendRelation = try container.decodeIfPresent(FollowingRelation.self, forKey: .friendRelation)
+        } catch {friendRelation = nil}
         
         do {
             followedByRelation = try container.decodeIfPresent(FollowedByRelation.self, forKey: .followedByRelation)

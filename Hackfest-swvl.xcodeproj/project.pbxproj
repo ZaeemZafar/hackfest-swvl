@@ -1243,6 +1243,14 @@
 		F307B9DF26F538E7008727E5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B51526F538E6008727E5 /* Info.plist */; };
 		F307B9E026F538E7008727E5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B51526F538E6008727E5 /* Info.plist */; };
 		F307B9E126F538E7008727E5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F307B51526F538E6008727E5 /* Info.plist */; };
+		F40D077326F65D3D00C8CC13 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40D077226F65D3D00C8CC13 /* Report.storyboard */; };
+		F40D077426F65D3D00C8CC13 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40D077226F65D3D00C8CC13 /* Report.storyboard */; };
+		F40D077526F65D3D00C8CC13 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40D077226F65D3D00C8CC13 /* Report.storyboard */; };
+		F40D077626F65D3D00C8CC13 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40D077226F65D3D00C8CC13 /* Report.storyboard */; };
+		F40D077926F6710200C8CC13 /* JFReportCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40D077826F6710200C8CC13 /* JFReportCategoryViewController.swift */; };
+		F40D077A26F6710200C8CC13 /* JFReportCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40D077826F6710200C8CC13 /* JFReportCategoryViewController.swift */; };
+		F40D077B26F6710200C8CC13 /* JFReportCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40D077826F6710200C8CC13 /* JFReportCategoryViewController.swift */; };
+		F40D077C26F6710200C8CC13 /* JFReportCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40D077826F6710200C8CC13 /* JFReportCategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1584,6 +1592,8 @@
 		F307B9E326F539EF008727E5 /* Hackfest-swvlQA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hackfest-swvlQA.entitlements"; sourceTree = "<group>"; };
 		F307B9E426F539EF008727E5 /* Hackfest-swvlAppStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hackfest-swvlAppStore.entitlements"; sourceTree = "<group>"; };
 		F307B9E526F539EF008727E5 /* Hackfest-swvlDev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hackfest-swvlDev.entitlements"; sourceTree = "<group>"; };
+		F40D077226F65D3D00C8CC13 /* Report.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
+		F40D077826F6710200C8CC13 /* JFReportCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFReportCategoryViewController.swift; sourceTree = "<group>"; };
 		FA3C273585F6F9528F5B91EB /* Pods-JvstFamovsStaging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JvstFamovsStaging.release.xcconfig"; path = "Pods/Target Support Files/Pods-JvstFamovsStaging/Pods-JvstFamovsStaging.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1707,6 +1717,7 @@
 				F307B3AA26F538E5008727E5 /* Settings.storyboard */,
 				F307B3AB26F538E5008727E5 /* UserRegistration.storyboard */,
 				F307B3AC26F538E5008727E5 /* Storyboard.storyboard */,
+				F40D077226F65D3D00C8CC13 /* Report.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -1909,6 +1920,7 @@
 		F307B3FD26F538E5008727E5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F40D077726F670E300C8CC13 /* Report */,
 				F307B3FE26F538E5008727E5 /* Settings */,
 				F307B41926F538E5008727E5 /* ViewController.swift */,
 				F307B41A26F538E5008727E5 /* DemoViewController.swift */,
@@ -2488,6 +2500,14 @@
 			path = NormalAnimator;
 			sourceTree = "<group>";
 		};
+		F40D077726F670E300C8CC13 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				F40D077826F6710200C8CC13 /* JFReportCategoryViewController.swift */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2715,6 +2735,7 @@
 				F307B92726F538E7008727E5 /* MontserratAlternates-SemiBold.otf in Resources */,
 				F307B90326F538E7008727E5 /* Montserrat-Bold.otf in Resources */,
 				F307B7B726F538E7008727E5 /* JFUserRatingTableViewCell.xib in Resources */,
+				F40D077426F65D3D00C8CC13 /* Report.storyboard in Resources */,
 				801D840020722DE100AAA8A5 /* Read Me.txt in Resources */,
 				F307B6FF26F538E6008727E5 /* JFPersonalInfoTwoTextFieldCustomCell.xib in Resources */,
 				F307B53326F538E6008727E5 /* Storyboard.storyboard in Resources */,
@@ -2793,6 +2814,7 @@
 				F307B92826F538E7008727E5 /* MontserratAlternates-SemiBold.otf in Resources */,
 				F307B90426F538E7008727E5 /* Montserrat-Bold.otf in Resources */,
 				F307B7B826F538E7008727E5 /* JFUserRatingTableViewCell.xib in Resources */,
+				F40D077526F65D3D00C8CC13 /* Report.storyboard in Resources */,
 				801D840120722DE100AAA8A5 /* Read Me.txt in Resources */,
 				F307B70026F538E6008727E5 /* JFPersonalInfoTwoTextFieldCustomCell.xib in Resources */,
 				F307B53426F538E6008727E5 /* Storyboard.storyboard in Resources */,
@@ -2871,6 +2893,7 @@
 				F307B92926F538E7008727E5 /* MontserratAlternates-SemiBold.otf in Resources */,
 				F307B90526F538E7008727E5 /* Montserrat-Bold.otf in Resources */,
 				F307B7B926F538E7008727E5 /* JFUserRatingTableViewCell.xib in Resources */,
+				F40D077626F65D3D00C8CC13 /* Report.storyboard in Resources */,
 				801D840220722DE100AAA8A5 /* Read Me.txt in Resources */,
 				F307B70126F538E6008727E5 /* JFPersonalInfoTwoTextFieldCustomCell.xib in Resources */,
 				F307B53526F538E6008727E5 /* Storyboard.storyboard in Resources */,
@@ -2949,6 +2972,7 @@
 				F307B92626F538E7008727E5 /* MontserratAlternates-SemiBold.otf in Resources */,
 				F307B90226F538E7008727E5 /* Montserrat-Bold.otf in Resources */,
 				F307B7B626F538E7008727E5 /* JFUserRatingTableViewCell.xib in Resources */,
+				F40D077326F65D3D00C8CC13 /* Report.storyboard in Resources */,
 				801D83FF20722DE100AAA8A5 /* Read Me.txt in Resources */,
 				F307B6FE26F538E6008727E5 /* JFPersonalInfoTwoTextFieldCustomCell.xib in Resources */,
 				F307B53226F538E6008727E5 /* Storyboard.storyboard in Resources */,
@@ -3331,6 +3355,7 @@
 				F307B65326F538E6008727E5 /* JFFAQAndHelpViewController.swift in Sources */,
 				F307B6F726F538E6008727E5 /* JFPersonalInfoTextFieldCustomCell.swift in Sources */,
 				F307B9D326F538E7008727E5 /* CRRefreshProtocol.swift in Sources */,
+				F40D077A26F6710200C8CC13 /* JFReportCategoryViewController.swift in Sources */,
 				F307B7C326F538E7008727E5 /* EmptyInviteCell.swift in Sources */,
 				F307B67F26F538E6008727E5 /* JFProfilePrivacyCustomCell.swift in Sources */,
 				F307B54F26F538E6008727E5 /* URLExtension.swift in Sources */,
@@ -3575,6 +3600,7 @@
 				F307B65426F538E6008727E5 /* JFFAQAndHelpViewController.swift in Sources */,
 				F307B6F826F538E6008727E5 /* JFPersonalInfoTextFieldCustomCell.swift in Sources */,
 				F307B9D426F538E7008727E5 /* CRRefreshProtocol.swift in Sources */,
+				F40D077B26F6710200C8CC13 /* JFReportCategoryViewController.swift in Sources */,
 				F307B7C426F538E7008727E5 /* EmptyInviteCell.swift in Sources */,
 				F307B68026F538E6008727E5 /* JFProfilePrivacyCustomCell.swift in Sources */,
 				F307B55026F538E6008727E5 /* URLExtension.swift in Sources */,
@@ -3819,6 +3845,7 @@
 				F307B65526F538E6008727E5 /* JFFAQAndHelpViewController.swift in Sources */,
 				F307B6F926F538E6008727E5 /* JFPersonalInfoTextFieldCustomCell.swift in Sources */,
 				F307B9D526F538E7008727E5 /* CRRefreshProtocol.swift in Sources */,
+				F40D077C26F6710200C8CC13 /* JFReportCategoryViewController.swift in Sources */,
 				F307B7C526F538E7008727E5 /* EmptyInviteCell.swift in Sources */,
 				F307B68126F538E6008727E5 /* JFProfilePrivacyCustomCell.swift in Sources */,
 				F307B55126F538E6008727E5 /* URLExtension.swift in Sources */,
@@ -4063,6 +4090,7 @@
 				F307B65226F538E6008727E5 /* JFFAQAndHelpViewController.swift in Sources */,
 				F307B6F626F538E6008727E5 /* JFPersonalInfoTextFieldCustomCell.swift in Sources */,
 				F307B9D226F538E7008727E5 /* CRRefreshProtocol.swift in Sources */,
+				F40D077926F6710200C8CC13 /* JFReportCategoryViewController.swift in Sources */,
 				F307B7C226F538E7008727E5 /* EmptyInviteCell.swift in Sources */,
 				F307B67E26F538E6008727E5 /* JFProfilePrivacyCustomCell.swift in Sources */,
 				F307B54E26F538E6008727E5 /* URLExtension.swift in Sources */,
@@ -4500,7 +4528,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Hackfest-swvlDev.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UJTPUA5PDF;
+				DEVELOPMENT_TEAM = 3M6K7264C7;
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				INFOPLIST_FILE = "Hackfest-swvl/Supporting Files/Hackfest-swvlDev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -4529,7 +4557,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Hackfest-swvlDev.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UJTPUA5PDF;
+				DEVELOPMENT_TEAM = 3M6K7264C7;
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				INFOPLIST_FILE = "Hackfest-swvl/Supporting Files/Hackfest-swvlDev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;

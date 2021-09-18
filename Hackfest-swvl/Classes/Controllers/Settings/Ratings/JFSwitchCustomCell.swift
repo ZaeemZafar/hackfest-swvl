@@ -51,7 +51,7 @@ class JFSwitchCustomCell: UITableViewCell {
         }
         disclosureIndicatorImageView.isHidden = !(row.showArrow())
         titleLabel.text = row.getRowText()
-        titleLabel.textColor = row.isOrange() ? UIColor.jfDarkBrown : UIColor.jfDarkGray
+        titleLabel.textColor = row.isOrange() ? UIColor.swvlRed : UIColor.jfDarkGray
         toggleSwitch.isHidden = (row.showSwitch() == false)
         toggleSwitch.isOn = isOn
         changeEvent = completion

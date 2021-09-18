@@ -44,7 +44,7 @@ class JFNewNotificationIndicatorView: UIView {
     func setupUI() {
         circleView()
         if newNotificaton {
-            self.backgroundColor = UIColor.jfMediumBrown
+            self.backgroundColor = UIColor.swvlMediumRed
             
         } else {
             self.backgroundColor = UIColor.white

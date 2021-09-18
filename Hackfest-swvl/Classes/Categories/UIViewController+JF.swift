@@ -51,7 +51,6 @@ extension UIViewController {
     func addLeftBarButton(withImage image: UIImage?, text: String?, action: Selector?) {
         let barButton = UIBarButtonItem(title: text, style: .plain, target: self, action: action)
         barButton.image = image
-        barButton.tintColor = UIColor.darkGray
         barButton.fontsSettings()
         self.navigationItem.leftBarButtonItem = barButton
     }
@@ -59,7 +58,6 @@ extension UIViewController {
     func addRightBarButton(withImage image: UIImage?, text: String?, action: Selector?) {
         let barButton = UIBarButtonItem(title: text, style: .plain, target: self, action: action)
         barButton.image = image
-        barButton.tintColor = UIColor.darkGray
         barButton.fontsSettings()
         self.navigationItem.rightBarButtonItem = barButton
     }
@@ -93,6 +91,16 @@ extension UIViewController {
     func getSocialSignUpVC() -> JFSocialSignUpViewController {
         let socialSignUpVC = UIStoryboard.userRegistration.instantiateViewController(withIdentifier: "JFSocialSignUpViewController") as! JFSocialSignUpViewController
         return socialSignUpVC
+    }
+    
+    func getSignUpEmailVC() -> JFSignUpEmailViewController {
+        let signupEmailVC = UIStoryboard.userRegistration.instantiateViewController(withIdentifier: "JFSignUpEmailViewController") as! JFSignUpEmailViewController
+        return signupEmailVC
+    }
+    
+    func getLoginEmailVC() -> JFLoginViewController {
+        let jfLoginVC = UIStoryboard.userRegistration.instantiateViewController(withIdentifier: "JFLoginViewController") as! JFLoginViewController
+        return jfLoginVC
     }
     
     func getSignUpFacebookVC() -> JFSignUpFacebookViewController {

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yg4-TJ-QdM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,21 +25,21 @@
         <!--Landing View Controller-->
         <scene sceneID="Z8l-x7-06e">
             <objects>
-                <viewController storyboardIdentifier="JFLandingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bnF-Kd-1gc" customClass="JFLandingViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFLandingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bnF-Kd-1gc" customClass="JFLandingViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="08w-RJ-DiV">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85W-YF-Zrd">
-                                <rect key="frame" x="16" y="60" width="568" height="405.5"/>
+                                <rect key="frame" x="16" y="104" width="382" height="651"/>
                                 <subviews>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="GbW-r0-8jO">
-                                        <rect key="frame" x="223.5" y="270" width="121.5" height="27.5"/>
+                                        <rect key="frame" x="130.5" y="450.5" width="121.5" height="27.5"/>
                                         <color key="pageIndicatorTintColor" red="0.75839843750000002" green="0.8127790178571429" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="currentPageIndicatorTintColor" red="0.75839843750000002" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </pageControl>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CcS-aZ-sh8" userLabel="spacer view">
-                                        <rect key="frame" x="0.0" y="297.5" width="568" height="108"/>
+                                        <rect key="frame" x="0.0" y="478" width="382" height="173"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
@@ -51,10 +53,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="0vx-0V-nGx">
-                                <rect key="frame" x="20" y="485.5" width="560" height="89.5"/>
+                                <rect key="frame" x="20" y="775" width="374" height="62"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHa-si-Ydb" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="272" height="89.5"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHa-si-Ydb" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="62"/>
                                         <color key="backgroundColor" red="0.79348188639999995" green="0.51658278700000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="SIGN UP">
@@ -72,11 +74,11 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="signUpTapped:" destination="bnF-Kd-1gc" eventType="touchUpInside" id="8Ai-tL-Gwe"/>
-                                            <segue destination="vRZ-AP-Q1B" kind="show" id="Kgp-bd-Sd6"/>
+                                            <segue destination="0dj-q7-Xyg" kind="show" id="suy-mO-bm9"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLX-HF-9wg" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="288" y="0.0" width="272" height="89.5"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLX-HF-9wg" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="195" y="0.0" width="179" height="62"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="LOG IN">
@@ -94,7 +96,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="logInTapped:" destination="bnF-Kd-1gc" eventType="touchUpInside" id="QyR-Xd-hyJ"/>
-                                            <segue destination="N3e-9y-am3" kind="show" id="R7e-ic-88y"/>
+                                            <segue destination="aGG-Vp-QMz" kind="show" id="2Fp-wb-48u"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -128,29 +130,29 @@
         <!--Tutorial View Controller-->
         <scene sceneID="Unp-KL-Q7X">
             <objects>
-                <viewController storyboardIdentifier="JFTutorialViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DZl-fn-sKl" customClass="JFTutorialViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFTutorialViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DZl-fn-sKl" customClass="JFTutorialViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fdN-EJ-nGT">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rate_path_chart" translatesAutoresizingMaskIntoConstraints="NO" id="eaU-l0-TS1">
-                                <rect key="frame" x="60" y="70" width="480" height="480"/>
+                                <rect key="frame" x="60" y="114" width="294" height="294"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eaU-l0-TS1" secondAttribute="height" multiplier="1:1" id="Gcb-4K-z7W"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KaK-f5-TLh" userLabel="spacer view">
-                                <rect key="frame" x="0.0" y="440.5" width="600" height="159.5"/>
+                                <rect key="frame" x="0.0" y="624" width="414" height="238"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="eow-Sc-wrD">
-                                <rect key="frame" x="10" y="440.5" width="580" height="27"/>
+                                <rect key="frame" x="10" y="624" width="394" height="40.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
                                 <color key="textColor" red="0.28627450980392155" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="748" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="KMM-L4-Koz">
-                                <rect key="frame" x="25" y="475.5" width="550" height="37"/>
+                                <rect key="frame" x="25" y="672.5" width="364" height="56.5"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Welcome to Hackfest-swvl, an app that allows you to connect, follow and discover new people. It's a social platform that is both addictive and fun.</string>
@@ -196,13 +198,13 @@
         <!--Login View Controller-->
         <scene sceneID="VvC-rY-KxJ">
             <objects>
-                <viewController storyboardIdentifier="JFLoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aGG-Vp-QMz" customClass="JFLoginViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFLoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aGG-Vp-QMz" customClass="JFLoginViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kIz-4B-BTs">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="f9H-Zc-19r">
-                                <rect key="frame" x="187.5" y="88" width="225" height="45.5"/>
+                                <rect key="frame" x="49" y="44" width="316" height="45.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Please enter your email  and password.">
                                         <attributes>
@@ -214,8 +216,8 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hyi-1F-cAu" customClass="JFTextField" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                <rect key="frame" x="16" y="158.5" width="568" height="43"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hyi-1F-cAu" customClass="JFTextField" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                <rect key="frame" x="16" y="114.5" width="382" height="60.5"/>
                                 <color key="tintColor" red="0.1069475446" green="0.51658278700000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.28627450980392155" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
@@ -227,8 +229,8 @@
                                     <action selector="textChanged:" destination="aGG-Vp-QMz" eventType="editingChanged" id="T3r-N8-4NK"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x9i-as-sai" customClass="JFTextField" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                <rect key="frame" x="16" y="217.5" width="568" height="43.5"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x9i-as-sai" customClass="JFTextField" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                <rect key="frame" x="16" y="191" width="382" height="60.5"/>
                                 <color key="tintColor" red="1" green="0.36323457279999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.28627450980392155" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
@@ -241,16 +243,16 @@
                                 </connections>
                             </textField>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid email or password. Please try again." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kAq-IP-4RB">
-                                <rect key="frame" x="16" y="269" width="568" height="16.5"/>
+                                <rect key="frame" x="16" y="259.5" width="382" height="17.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                 <color key="textColor" red="0.90196078431372551" green="0.29803921568627451" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wa-Db-MWM" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                <rect key="frame" x="226" y="279" width="148" height="29"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wa-Db-MWM" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                <rect key="frame" x="130" y="269.5" width="154" height="30"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                                 <state key="normal" title="FORGOT PASSWORD?">
-                                    <color key="titleColor" red="0.79215686269999996" green="0.51764705879999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.99215686270000003" green="0.01176470588" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="addTextSpacing">
@@ -262,17 +264,17 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggn-Ar-DUT">
-                                <rect key="frame" x="0.0" y="469" width="600" height="131"/>
+                                <rect key="frame" x="0.0" y="717.5" width="414" height="90.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjK-XK-cg0" userLabel="Line separater">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
                                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="i9h-Fh-2sq"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80S-lQ-Slk" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="16" width="568" height="99"/>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80S-lQ-Slk" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="16" width="382" height="58.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="LOG IN">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -329,6 +331,7 @@
                             <constraint firstItem="x9i-as-sai" firstAttribute="height" secondItem="Hyi-1F-cAu" secondAttribute="height" id="ywi-dV-yVs"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="kkL-TG-Uqg"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="showNavigation" value="YES"/>
                     </userDefinedRuntimeAttributes>
@@ -349,13 +352,13 @@
         <!--Forgot Password View Controller-->
         <scene sceneID="xuQ-ny-z0o">
             <objects>
-                <viewController storyboardIdentifier="JFForgotPasswordViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jDw-w7-vvB" customClass="JFForgotPasswordViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFForgotPasswordViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jDw-w7-vvB" customClass="JFForgotPasswordViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MNe-5f-z2D">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9oI-y7-7Xg">
-                                <rect key="frame" x="20" y="99" width="560" height="45.5"/>
+                                <rect key="frame" x="20" y="55" width="374" height="45.5"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Please enter your email address
@@ -369,8 +372,8 @@ to reset your password.</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nv6-ba-rcE" customClass="JFTextField" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                <rect key="frame" x="16" y="164.5" width="568" height="43"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nv6-ba-rcE" customClass="JFTextField" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                <rect key="frame" x="16" y="120.5" width="382" height="60.5"/>
                                 <color key="textColor" red="0.28627450980392155" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
@@ -382,17 +385,17 @@ to reset your password.</string>
                                 </connections>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVn-C0-3aS">
-                                <rect key="frame" x="0.0" y="469" width="600" height="131"/>
+                                <rect key="frame" x="0.0" y="717.5" width="414" height="90.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hBx-dz-jGC" userLabel="Line separater">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="IdD-IG-w98"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqj-il-1ly" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="16" width="568" height="99"/>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqj-il-1ly" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="16" width="382" height="58.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="RESET PASSWORD">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -437,6 +440,7 @@ to reset your password.</string>
                             <constraint firstItem="9oI-y7-7Xg" firstAttribute="top" secondItem="RZJ-kM-rhP" secondAttribute="top" constant="55" id="xOR-fe-oUE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="f7q-8w-11N"/>
                     <connections>
                         <outlet property="emailTextField" destination="nv6-ba-rcE" id="fZ9-BH-yJL"/>
                         <outlet property="resetButton" destination="Rqj-il-1ly" id="0LX-wk-6u7"/>
@@ -450,13 +454,13 @@ to reset your password.</string>
         <!--Reset Password View Controller-->
         <scene sceneID="2Se-oo-Few">
             <objects>
-                <viewController storyboardIdentifier="JFResetPasswordViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jjv-t1-Tqd" customClass="JFResetPasswordViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFResetPasswordViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jjv-t1-Tqd" customClass="JFResetPasswordViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vWD-o4-6rW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JSm-aT-fPV" customClass="JFTextField" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                <rect key="frame" x="16" y="60" width="568" height="43"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JSm-aT-fPV" customClass="JFTextField" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                <rect key="frame" x="16" y="104" width="382" height="64.5"/>
                                 <color key="textColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -467,8 +471,8 @@ to reset your password.</string>
                                     <action selector="textChanged:" destination="Jjv-t1-Tqd" eventType="editingChanged" id="iIQ-Nm-HvN"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New password, again" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IZd-mx-hjQ" customClass="JFTextField" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                <rect key="frame" x="16" y="111" width="568" height="43.5"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New password, again" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IZd-mx-hjQ" customClass="JFTextField" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                <rect key="frame" x="16" y="176.5" width="382" height="64.5"/>
                                 <color key="textColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -480,17 +484,17 @@ to reset your password.</string>
                                 </connections>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nIM-Q3-GrE">
-                                <rect key="frame" x="0.0" y="469" width="600" height="131"/>
+                                <rect key="frame" x="0.0" y="771.5" width="414" height="90.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xS-ew-zdm" userLabel="Line separater">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="gOl-Tg-lSM"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fP3-LP-a2F" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="16" width="568" height="99"/>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fP3-LP-a2F" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="16" width="382" height="58.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="RESET PASSWORD">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -519,7 +523,7 @@ to reset your password.</string>
                                 </constraints>
                             </view>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password must be at least 8 characters long and include at least one letter, number, and special character." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Mbo-n1-ZVj">
-                                <rect key="frame" x="16" y="162.5" width="568" height="33"/>
+                                <rect key="frame" x="16" y="249" width="382" height="34.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                 <color key="textColor" red="0.90196078430000004" green="0.29803921570000003" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -560,10 +564,10 @@ to reset your password.</string>
         <!--Navigation Controller-->
         <scene sceneID="n5e-nh-qEK">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yg4-TJ-QdM" customClass="JFNavigationController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yg4-TJ-QdM" customClass="JFNavigationController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="left_arrow_grey" backIndicatorTransitionMaskImage="left_arrow_grey" id="8Vg-wM-CTp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -578,20 +582,20 @@ to reset your password.</string>
         <!--Social Login View Controller-->
         <scene sceneID="B1m-qX-hdy">
             <objects>
-                <viewController storyboardIdentifier="JFSocialLoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N3e-9y-am3" customClass="JFSocialLoginViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFSocialLoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N3e-9y-am3" customClass="JFSocialLoginViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a91-Su-TSc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1RB-TP-9gn">
-                                <rect key="frame" x="0.0" y="510.5" width="600" height="89.5"/>
+                                <rect key="frame" x="0.0" y="800" width="414" height="96"/>
                                 <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbI-xu-rVE" customClass="JFView" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                <rect key="frame" x="16" y="323" width="568" height="88"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbI-xu-rVE" customClass="JFView" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                <rect key="frame" x="16" y="460.5" width="382" height="60.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGu-k6-ydb" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="68" y="0.0" width="500" height="88"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGu-k6-ydb" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="40.5" y="0.0" width="341.5" height="60.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
                                         <state key="normal" title="CONTINUE WITH FACEBOOK">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -606,7 +610,7 @@ to reset your password.</string>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook_icon_white" translatesAutoresizingMaskIntoConstraints="NO" id="9kQ-bu-shU">
-                                        <rect key="frame" x="14" y="17" width="54" height="54"/>
+                                        <rect key="frame" x="14" y="17" width="26.5" height="26.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="9kQ-bu-shU" secondAttribute="height" multiplier="1:1" id="LNw-F4-Gpc"/>
                                         </constraints>
@@ -628,8 +632,8 @@ to reset your password.</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gd8-KI-4nh" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                <rect key="frame" x="16" y="434" width="568" height="88"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gd8-KI-4nh" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                <rect key="frame" x="16" y="544" width="382" height="61"/>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
                                 <state key="normal" title="LOG IN WITH EMAIL">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -647,8 +651,8 @@ to reset your password.</string>
                                     <segue destination="aGG-Vp-QMz" kind="show" id="FzY-HO-rso"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NC0-a7-o05" customClass="JFCustomButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                <rect key="frame" x="16" y="538" width="568" height="88"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NC0-a7-o05" customClass="JFCustomButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                <rect key="frame" x="16" y="621" width="382" height="60.5"/>
                                 <color key="backgroundColor" red="0.25882352941176467" green="0.40392156862745099" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="19"/>
                                 <state key="normal" title="CONTINUE WITH FACEBOOK" image="facebook_icon_white"/>
@@ -662,7 +666,7 @@ to reset your password.</string>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ck-fj-Fsg">
-                                <rect key="frame" x="0.0" y="510.5" width="600" height="89.5"/>
+                                <rect key="frame" x="0.0" y="800" width="414" height="62"/>
                                 <color key="backgroundColor" red="0.97247463464736938" green="0.97259098291397095" blue="0.97243505716323853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal">
@@ -670,7 +674,7 @@ to reset your password.</string>
                                         <fragment content="Don't have an account?">
                                             <attributes>
                                                 <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" metaFont="system" size="16"/>
+                                                <font key="NSFont" size="16" name="HelveticaNeue"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -682,8 +686,8 @@ to reset your password.</string>
                                         </fragment>
                                         <fragment content="SIGN UP">
                                             <attributes>
-                                                <color key="NSColor" red="0.792156862745098" green="0.51764705882352935" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" metaFont="system" size="16"/>
+                                                <color key="NSColor" red="0.99215686274509807" green="0.011764705882352941" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="HelveticaNeue-Medium"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -694,10 +698,10 @@ to reset your password.</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDt-T2-e1q" userLabel="logo image container view">
-                                <rect key="frame" x="0.0" y="44" width="600" height="279"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="416.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Vjc-1s-rYj">
-                                        <rect key="frame" x="65" y="-95.5" width="470" height="470"/>
+                                        <rect key="frame" x="65" y="66" width="284" height="284"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Vjc-1s-rYj" secondAttribute="height" multiplier="1:1" id="UU4-Mp-8Xw"/>
                                         </constraints>
@@ -753,20 +757,20 @@ to reset your password.</string>
         <!--Social Sign Up View Controller-->
         <scene sceneID="SP1-ET-p5V">
             <objects>
-                <viewController storyboardIdentifier="JFSocialSignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vRZ-AP-Q1B" customClass="JFSocialSignUpViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFSocialSignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vRZ-AP-Q1B" customClass="JFSocialSignUpViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KnE-Xe-zHQ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k59-SI-dDF">
-                                <rect key="frame" x="0.0" y="510.5" width="600" height="89.5"/>
+                                <rect key="frame" x="0.0" y="800" width="414" height="96"/>
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QwM-kq-HKn" customClass="JFView" customModule="JvstFamovsDev">
-                                <rect key="frame" x="16" y="323" width="568" height="88"/>
+                                <rect key="frame" x="16" y="460.5" width="382" height="60.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGJ-fi-YyO" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="68" y="0.0" width="500" height="88"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGJ-fi-YyO" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="40.5" y="0.0" width="341.5" height="60.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
                                         <state key="normal" title="CONTINUE WITH FACEBOOK">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -781,7 +785,7 @@ to reset your password.</string>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook_icon_white" translatesAutoresizingMaskIntoConstraints="NO" id="rLQ-rd-WZ4">
-                                        <rect key="frame" x="14" y="17" width="54" height="54"/>
+                                        <rect key="frame" x="14" y="17" width="26.5" height="26.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="rLQ-rd-WZ4" secondAttribute="height" multiplier="1:1" id="IUG-hX-cch"/>
                                         </constraints>
@@ -803,8 +807,8 @@ to reset your password.</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hf9-SB-2ot" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                <rect key="frame" x="16" y="434" width="568" height="88"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hf9-SB-2ot" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                <rect key="frame" x="16" y="544" width="382" height="61"/>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                 <state key="normal" title="SIGN UP WITH EMAIL">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -823,7 +827,7 @@ to reset your password.</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Cc-ic-JLF">
-                                <rect key="frame" x="0.0" y="510.5" width="600" height="89.5"/>
+                                <rect key="frame" x="0.0" y="800" width="414" height="62"/>
                                 <color key="backgroundColor" red="0.97247463460000005" green="0.97259098290000001" blue="0.97243505720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal">
@@ -831,7 +835,7 @@ to reset your password.</string>
                                         <fragment content="Already have an account?">
                                             <attributes>
                                                 <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" metaFont="system" size="16"/>
+                                                <font key="NSFont" size="16" name="HelveticaNeue"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -843,8 +847,8 @@ to reset your password.</string>
                                         </fragment>
                                         <fragment content="LOG IN">
                                             <attributes>
-                                                <color key="NSColor" red="0.792156862745098" green="0.51764705882352935" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" metaFont="system" size="16"/>
+                                                <color key="NSColor" red="0.99215686274509807" green="0.011764705882352941" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="HelveticaNeue-Medium"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -855,10 +859,10 @@ to reset your password.</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4yg-Y8-gI0" userLabel="logo image container view">
-                                <rect key="frame" x="0.0" y="44" width="600" height="279"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="416.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="epQ-oe-OH5">
-                                        <rect key="frame" x="65" y="-95.5" width="470" height="470"/>
+                                        <rect key="frame" x="65" y="66" width="284" height="284"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="epQ-oe-OH5" secondAttribute="height" multiplier="1:1" id="khF-WY-1Zg"/>
                                         </constraints>
@@ -910,28 +914,28 @@ to reset your password.</string>
         <!--Sign Up Email View Controller-->
         <scene sceneID="Mmd-BJ-liu">
             <objects>
-                <viewController storyboardIdentifier="JFSignUpEmailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0dj-q7-Xyg" customClass="JFSignUpEmailViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFSignUpEmailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0dj-q7-Xyg" customClass="JFSignUpEmailViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4cq-ot-eny">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U0K-NR-LCx">
-                                <rect key="frame" x="0.0" y="44" width="600" height="425"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="717.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NRA-kU-nj0">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="481.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="699.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yiR-4v-7G8" userLabel="Spacer View">
-                                                <rect key="frame" x="0.0" y="0.0" width="600" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
                                             </view>
                                             <view contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZL-7j-cGI">
-                                                <rect key="frame" x="242.5" y="34" width="115" height="115.5"/>
+                                                <rect key="frame" x="126" y="48" width="162" height="161.5"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_icon_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="pKR-Z4-KYb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="115" height="115.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="162" height="161.5"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oma-uw-2hH">
-                                                        <rect key="frame" x="0.0" y="0.0" width="115" height="115.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="162" height="161.5"/>
                                                         <connections>
                                                             <action selector="addProfileImageButtonTapped:" destination="0dj-q7-Xyg" eventType="touchUpInside" id="3f2-vT-QXj"/>
                                                         </connections>
@@ -951,8 +955,8 @@ to reset your password.</string>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2R8-2b-ge9">
-                                                <rect key="frame" x="321.5" y="34" width="36" height="36"/>
-                                                <color key="backgroundColor" red="0.79215686269999996" green="0.51764705879999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="237.5" y="48" width="50.5" height="50.5"/>
+                                                <color key="backgroundColor" red="0.99215686270000003" green="0.01176470588" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="2R8-2b-ge9" secondAttribute="height" multiplier="1:1" id="RRv-yt-oGw"/>
                                                 </constraints>
@@ -962,30 +966,30 @@ to reset your password.</string>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWm-6F-mfq" userLabel="Spacer View">
-                                                <rect key="frame" x="0.0" y="149.5" width="600" height="27"/>
+                                                <rect key="frame" x="0.0" y="209.5" width="414" height="38"/>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QWe-DN-se9">
-                                                <rect key="frame" x="16" y="176.5" width="568" height="220.5"/>
+                                                <rect key="frame" x="16" y="247.5" width="382" height="290.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="c7q-v2-7Hw">
-                                                        <rect key="frame" x="0.0" y="0.0" width="568" height="43"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="60.5"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sh1-4l-6Rb" customClass="JFTextField" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="276" height="43"/>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sh1-4l-6Rb" customClass="JFTextField" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="183" height="60.5"/>
                                                                 <color key="textColor" red="0.28627450980392155" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                                             </textField>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n91-O8-U5D" customClass="JFTextField" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                                                <rect key="frame" x="292" y="0.0" width="276" height="43"/>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n91-O8-U5D" customClass="JFTextField" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                                                <rect key="frame" x="199" y="0.0" width="183" height="60.5"/>
                                                                 <color key="textColor" red="0.28627450980392155" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDZ-N3-jbF" customClass="JFTextField" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="59" width="568" height="43"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDZ-N3-jbF" customClass="JFTextField" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="76.5" width="382" height="60.5"/>
                                                         <color key="textColor" red="0.28627450980392155" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
@@ -993,8 +997,8 @@ to reset your password.</string>
                                                             <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="email_icon_grey"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Create password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dqM-cc-y1v" customClass="JFTextField" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="118" width="568" height="43.5"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Create password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dqM-cc-y1v" customClass="JFTextField" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="153" width="382" height="60.5"/>
                                                         <color key="textColor" red="0.28627450980392155" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" secureTextEntry="YES"/>
@@ -1002,8 +1006,8 @@ to reset your password.</string>
                                                             <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="password_icon_grey"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HR4-O0-xvZ" customClass="JFTextField" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="177.5" width="568" height="43"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HR4-O0-xvZ" customClass="JFTextField" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="229.5" width="382" height="61"/>
                                                         <color key="textColor" red="0.28627450980392155" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" secureTextEntry="YES"/>
@@ -1012,22 +1016,22 @@ to reset your password.</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.85231584819999995" green="0.46274509800000002" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w4v-RA-lpa" userLabel="Spacer View">
-                                                <rect key="frame" x="0.0" y="397" width="600" height="27"/>
+                                                <rect key="frame" x="0.0" y="538" width="414" height="37.5"/>
                                             </view>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password must be at least 8 characters long and include at least one letter, number, and special character." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rOt-FM-z1v">
-                                                <rect key="frame" x="16" y="405" width="568" height="33"/>
+                                                <rect key="frame" x="16" y="546" width="382" height="34.5"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                                 <color key="textColor" red="0.90196078430000004" green="0.29803921570000003" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cp9-Pe-RK8">
-                                                <rect key="frame" x="25" y="424" width="550" height="36"/>
+                                                <rect key="frame" x="25" y="575.5" width="364" height="50.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="S4R-Jm-Zvj">
-                                                        <rect key="frame" x="0.0" y="0.0" width="550" height="36"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="364" height="50.5"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="By signing up, you agree to Hackfest-swvl ">
                                                                 <attributes>
@@ -1066,13 +1070,13 @@ to reset your password.</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xz-rM-L42">
-                                                        <rect key="frame" x="0.0" y="18" width="296" height="18"/>
+                                                        <rect key="frame" x="0.0" y="25.5" width="196" height="25"/>
                                                         <connections>
                                                             <action selector="termsButtonTapped:" destination="0dj-q7-Xyg" eventType="touchUpInside" id="VKK-gc-usR"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkZ-C0-hjn">
-                                                        <rect key="frame" x="359" y="18" width="191" height="18"/>
+                                                        <rect key="frame" x="237.5" y="25.5" width="126.5" height="25"/>
                                                         <connections>
                                                             <action selector="privacyButtonTapped:" destination="0dj-q7-Xyg" eventType="touchUpInside" id="Jej-q9-Y0N"/>
                                                         </connections>
@@ -1131,7 +1135,7 @@ to reset your password.</string>
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnd-xw-NCU" customClass="JFProgressView" customModule="JvstFamovsDev">
-                                <rect key="frame" x="0.0" y="44" width="600" height="10"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="10"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="Vk1-sc-yr7"/>
@@ -1144,17 +1148,17 @@ to reset your password.</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OLv-40-SYN">
-                                <rect key="frame" x="0.0" y="469" width="600" height="131"/>
+                                <rect key="frame" x="0.0" y="717.5" width="414" height="90.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wvh-Id-NL3" userLabel="Line separater">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="Ni0-Sm-2VY"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQe-0P-DRr" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="16" width="568" height="99"/>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQe-0P-DRr" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="16" width="382" height="58.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="NEXT">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1235,25 +1239,25 @@ to reset your password.</string>
         <!--Terms And Privacy View Controller-->
         <scene sceneID="rmr-9Z-7Cf">
             <objects>
-                <viewController storyboardIdentifier="JFTermsAndPrivacyViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pkq-6T-de6" customClass="JFTermsAndPrivacyViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFTermsAndPrivacyViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pkq-6T-de6" customClass="JFTermsAndPrivacyViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zLS-r9-aml">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5t-17-8gZ" customClass="JFView" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                <rect key="frame" x="8" y="0.0" width="584" height="592"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5t-17-8gZ" customClass="JFView" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                <rect key="frame" x="8" y="0.0" width="398" height="800"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJh-4M-U6K">
-                                        <rect key="frame" x="0.0" y="0.0" width="584" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="63"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPN-K9-dHp">
-                                                <rect key="frame" x="214" y="13" width="156.5" height="19"/>
+                                                <rect key="frame" x="111" y="21.5" width="176.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
                                                 <color key="textColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZI-cj-Ble">
-                                                <rect key="frame" x="538" y="7" width="38" height="31"/>
+                                                <rect key="frame" x="347" y="15.5" width="43" height="32"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                 <state key="normal" title="Done">
                                                     <color key="titleColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1263,7 +1267,7 @@ to reset your password.</string>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipl-hw-Bfe">
-                                                <rect key="frame" x="0.0" y="44" width="584" height="1"/>
+                                                <rect key="frame" x="0.0" y="62" width="398" height="1"/>
                                                 <color key="backgroundColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="EVq-Jh-mhd"/>
@@ -1282,14 +1286,14 @@ to reset your password.</string>
                                         </constraints>
                                     </view>
                                     <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbr-Wk-NkX">
-                                        <rect key="frame" x="0.0" y="45" width="584" height="547"/>
+                                        <rect key="frame" x="0.0" y="63" width="398" height="737"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="delegate" destination="pkq-6T-de6" id="f5h-5H-rqb"/>
                                         </connections>
                                     </webView>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="gDS-jE-9nK">
-                                        <rect key="frame" x="282" y="286" width="20" height="20"/>
+                                        <rect key="frame" x="189" y="390" width="20" height="20"/>
                                     </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1329,28 +1333,28 @@ to reset your password.</string>
         <!--Sign Up Facebook View Controller-->
         <scene sceneID="ZZl-TN-0hx">
             <objects>
-                <viewController storyboardIdentifier="JFSignUpFacebookViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="d8u-ms-Ecs" customClass="JFSignUpFacebookViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFSignUpFacebookViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="d8u-ms-Ecs" customClass="JFSignUpFacebookViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dhX-9o-194">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1NH-sw-OR3">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="469"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="727.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rem-tY-4jf">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="519.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="708"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vX4-eC-eJa" userLabel="Spacer View">
-                                                <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="64.5"/>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DM4-J3-Cez">
-                                                <rect key="frame" x="242.5" y="43" width="115" height="115.5"/>
+                                                <rect key="frame" x="121" y="64.5" width="172" height="172"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_icon_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="K9m-cK-oir">
-                                                        <rect key="frame" x="0.0" y="0.0" width="115" height="115.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="172"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVc-os-7Bh">
-                                                        <rect key="frame" x="0.0" y="0.0" width="115" height="115.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="172"/>
                                                         <connections>
                                                             <action selector="addProfileImageButtonTapped:" destination="d8u-ms-Ecs" eventType="touchUpInside" id="PYN-qh-7rq"/>
                                                         </connections>
@@ -1370,8 +1374,8 @@ to reset your password.</string>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scO-aQ-Ny5">
-                                                <rect key="frame" x="321.5" y="43" width="36" height="36"/>
-                                                <color key="backgroundColor" red="0.79215686269999996" green="0.51764705879999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="239" y="64.5" width="54" height="53.5"/>
+                                                <color key="backgroundColor" red="0.99215686270000003" green="0.01176470588" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="scO-aQ-Ny5" secondAttribute="height" multiplier="1:1" id="2GX-cR-EDE"/>
                                                 </constraints>
@@ -1381,13 +1385,13 @@ to reset your password.</string>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FiT-Fl-h1H" userLabel="Spacer View">
-                                                <rect key="frame" x="0.0" y="158.5" width="600" height="36"/>
+                                                <rect key="frame" x="0.0" y="236.5" width="414" height="53.5"/>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="3oe-rv-Tn2">
-                                                <rect key="frame" x="16" y="194.5" width="568" height="170.5"/>
+                                                <rect key="frame" x="16" y="290" width="382" height="237.5"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TeQ-N2-hue" customClass="JFTextField" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="568" height="45"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TeQ-N2-hue" customClass="JFTextField" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="67.5"/>
                                                         <color key="textColor" red="0.28627450980392155" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
@@ -1395,8 +1399,8 @@ to reset your password.</string>
                                                             <action selector="textChanged:" destination="d8u-ms-Ecs" eventType="editingChanged" id="amO-zQ-anE"/>
                                                         </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTs-wn-HX5" customClass="JFTextField" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="63" width="568" height="45"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTs-wn-HX5" customClass="JFTextField" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="85.5" width="382" height="67"/>
                                                         <color key="textColor" red="0.28627450980392155" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
@@ -1404,8 +1408,8 @@ to reset your password.</string>
                                                             <action selector="textChanged:" destination="d8u-ms-Ecs" eventType="editingChanged" id="RWQ-Fu-xQf"/>
                                                         </connections>
                                                     </textField>
-                                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="toW-Eo-JfU" customClass="JFTextField" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="126" width="568" height="44.5"/>
+                                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="toW-Eo-JfU" customClass="JFTextField" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="170.5" width="382" height="67"/>
                                                         <color key="textColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1417,16 +1421,16 @@ to reset your password.</string>
                                                         </connections>
                                                     </textField>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.85231584819999995" green="0.46274509800000002" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKH-zy-Ury" userLabel="Spacer View">
-                                                <rect key="frame" x="0.0" y="365" width="600" height="36"/>
+                                                <rect key="frame" x="0.0" y="527.5" width="414" height="54"/>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xp-38-yWl">
-                                                <rect key="frame" x="25" y="401" width="550" height="45"/>
+                                                <rect key="frame" x="25" y="581.5" width="364" height="67"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="vcV-SN-skS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="550" height="45"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="364" height="67"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="By signing up, you agree to Hackfest-swvl ">
                                                                 <attributes>
@@ -1465,13 +1469,13 @@ to reset your password.</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4t-fB-egQ">
-                                                        <rect key="frame" x="0.0" y="22.5" width="296" height="22.5"/>
+                                                        <rect key="frame" x="0.0" y="33.5" width="196" height="33.5"/>
                                                         <connections>
                                                             <action selector="termsButtonTapped:" destination="d8u-ms-Ecs" eventType="touchUpInside" id="HDf-zP-E3T"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWK-fI-JbS">
-                                                        <rect key="frame" x="359" y="22.5" width="191" height="22.5"/>
+                                                        <rect key="frame" x="237.5" y="33.5" width="126.5" height="33.5"/>
                                                         <connections>
                                                             <action selector="privacyButtonTapped:" destination="d8u-ms-Ecs" eventType="touchUpInside" id="IJf-zt-FmN"/>
                                                         </connections>
@@ -1527,7 +1531,7 @@ to reset your password.</string>
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0N3-o9-XHq" customClass="JFProgressView" customModule="JvstFamovsDev">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="10"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="10"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="cOg-kL-bpJ"/>
@@ -1539,17 +1543,17 @@ to reset your password.</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JI1-oj-Wkb">
-                                <rect key="frame" x="0.0" y="469" width="600" height="131"/>
+                                <rect key="frame" x="0.0" y="771.5" width="414" height="90.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="so5-yX-lQj" userLabel="Line separater">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="p97-lw-EvQ"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVp-5z-KRC" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="16" width="568" height="99"/>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVp-5z-KRC" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="16" width="382" height="58.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="NEXT">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1625,13 +1629,13 @@ to reset your password.</string>
         <!--Choose Categories View Controller-->
         <scene sceneID="sox-uz-5SD">
             <objects>
-                <viewController storyboardIdentifier="JFChooseCategoriesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IOa-ga-NhA" customClass="JFChooseCategoriesViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFChooseCategoriesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IOa-ga-NhA" customClass="JFChooseCategoriesViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="guL-pj-95n">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2K-CB-KxH" customClass="JFProgressView" customModule="JvstFamovsDev">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="10"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="10"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="AXG-wU-24d"/>
@@ -1643,8 +1647,8 @@ to reset your password.</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gCu-bu-g7e">
-                                <rect key="frame" x="30" y="90" width="540" height="45.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gCu-bu-g7e">
+                                <rect key="frame" x="30" y="90" width="354" height="45.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Which of the following categories would you like to be rated on?  (select all that apply)">
                                         <attributes>
@@ -1656,11 +1660,11 @@ to reset your password.</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lb4-0L-6rA">
-                                <rect key="frame" x="146.5" y="165.5" width="307.5" height="200"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lb4-0L-6rA">
+                                <rect key="frame" x="101" y="165.5" width="212" height="220"/>
                                 <subviews>
-                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATR-IO-wCa" customClass="JFCategoryButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="307.5" height="38"/>
+                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATR-IO-wCa" customClass="JFCategoryButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="212" height="43"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
                                         <state key="normal" title="Appearance" image="appearance_icon_grey">
                                             <color key="titleColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -1687,8 +1691,8 @@ to reset your password.</string>
                                             <action selector="categoryButtonTapped:" destination="IOa-ga-NhA" eventType="touchUpInside" id="77j-P5-3ND"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1k-XG-ODM" customClass="JFCategoryButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="54" width="307.5" height="38"/>
+                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1k-XG-ODM" customClass="JFCategoryButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="59" width="212" height="43"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
                                         <state key="normal" title="Personality" image="personality_icon_grey">
                                             <color key="titleColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -1715,8 +1719,8 @@ to reset your password.</string>
                                             <action selector="categoryButtonTapped:" destination="IOa-ga-NhA" eventType="touchUpInside" id="Rwn-MQ-SXz"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdv-Mj-Qly" customClass="JFCategoryButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="108" width="307.5" height="38"/>
+                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdv-Mj-Qly" customClass="JFCategoryButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="118" width="212" height="43"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
                                         <state key="normal" title="Intelligence" image="intellignce_bulb_icon_grey">
                                             <color key="titleColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -1743,8 +1747,8 @@ to reset your password.</string>
                                             <action selector="categoryButtonTapped:" destination="IOa-ga-NhA" eventType="touchUpInside" id="nSC-lG-l9f"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bu-am-dmK" customClass="JFCategoryButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="162" width="307.5" height="38"/>
+                                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bu-am-dmK" customClass="JFCategoryButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="177" width="212" height="43"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
                                         <state key="normal" title="None" image="uncheck_oval_grey">
                                             <color key="titleColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -1776,8 +1780,8 @@ to reset your password.</string>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="220" id="TZ2-Zn-d7Y"/>
                                 </constraints>
                             </stackView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="QZd-uY-9kU">
-                                <rect key="frame" x="30" y="395.5" width="540" height="33.5"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="QZd-uY-9kU">
+                                <rect key="frame" x="30" y="395.5" width="354" height="33.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="You can turn ratings on later in your Settings tab if you change your mind.">
                                         <attributes>
@@ -1790,17 +1794,17 @@ to reset your password.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4k-sh-gdk">
-                                <rect key="frame" x="0.0" y="449" width="600" height="131"/>
+                                <rect key="frame" x="0.0" y="717.5" width="414" height="90.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zz4-c9-uCr" userLabel="Line separater">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="4ET-Yf-Zhb"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rle-ez-zyP" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="16" width="568" height="99"/>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rle-ez-zyP" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="16" width="382" height="58.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="NEXT">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1851,6 +1855,7 @@ to reset your password.</string>
                             <constraint firstItem="lb4-0L-6rA" firstAttribute="width" secondItem="guL-pj-95n" secondAttribute="width" multiplier="164:320" id="zcP-Ef-x4w"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="7qL-Mc-bp8"/>
                     <connections>
                         <outlet property="labelTop" destination="oxq-zb-xBa" id="3os-ow-hvH"/>
                         <outlet property="nextButton" destination="Rle-ez-zyP" id="Koi-vD-zzN"/>
@@ -1869,13 +1874,13 @@ to reset your password.</string>
         <!--Privacy Settings View Controller-->
         <scene sceneID="9uv-jC-riX">
             <objects>
-                <viewController storyboardIdentifier="JFPrivacySettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IFU-7V-uYe" customClass="JFPrivacySettingsViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFPrivacySettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IFU-7V-uYe" customClass="JFPrivacySettingsViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tUP-Lz-3WK">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tIE-nc-3TG" customClass="JFProgressView" customModule="JvstFamovsDev">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="10"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="10"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="Ubu-C0-ThD"/>
@@ -1889,11 +1894,11 @@ to reset your password.</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJk-M6-OpR">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="78.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="113.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g7L-cR-Pz5">
-                                <rect key="frame" x="16" y="78.5" width="568" height="45.5"/>
+                                <rect key="frame" x="16" y="113.5" width="382" height="45.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Who should be able to rate and see your Hackfest-swvl scores?">
                                         <attributes>
@@ -1906,17 +1911,17 @@ to reset your password.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQn-pW-IxS">
-                                <rect key="frame" x="0.0" y="449" width="600" height="131"/>
+                                <rect key="frame" x="0.0" y="717.5" width="414" height="90.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QRG-lN-MyB" userLabel="Line separater">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="fqr-mi-x34"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQx-DL-syo" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="16" width="568" height="99"/>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQx-DL-syo" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="16" width="382" height="58.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="NEXT">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1946,18 +1951,18 @@ to reset your password.</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCG-FV-ZLL">
-                                <rect key="frame" x="0.0" y="124" width="600" height="39"/>
+                                <rect key="frame" x="0.0" y="159" width="414" height="57"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfd-Sq-IFb">
-                                <rect key="frame" x="0.0" y="163" width="65" height="100"/>
+                                <rect key="frame" x="0.0" y="216" width="94.5" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="AtN-9k-Cmf"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZq-xI-nsb" customClass="JFCategoryButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                <rect key="frame" x="65" y="163" width="535" height="23"/>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZq-xI-nsb" customClass="JFCategoryButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                <rect key="frame" x="94.5" y="216" width="319.5" height="23"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Everyone     " image="uncheck_oval_grey">
@@ -1985,8 +1990,8 @@ to reset your password.</string>
                                     <action selector="everyoneButtonTapped:" destination="IFU-7V-uYe" eventType="touchUpInside" id="6j2-dR-yxi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lel-k0-EZ3" customClass="JFCategoryButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                <rect key="frame" x="65" y="216" width="535" height="23"/>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lel-k0-EZ3" customClass="JFCategoryButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                <rect key="frame" x="94.5" y="269" width="319.5" height="23"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Only people I approve     " image="uncheck_oval_grey">
@@ -2047,6 +2052,7 @@ to reset your password.</string>
                             <constraint firstItem="nJk-M6-OpR" firstAttribute="height" secondItem="tUP-Lz-3WK" secondAttribute="height" multiplier="90:667" id="zEp-bZ-iDJ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="K6j-h8-SSE"/>
                     <connections>
                         <outlet property="nextButton" destination="TQx-DL-syo" id="Dxa-PD-xxX"/>
                         <outletCollection property="privacyButtons" destination="eZq-xI-nsb" collectionClass="NSMutableArray" id="QkY-yQ-j4e"/>
@@ -2061,13 +2067,13 @@ to reset your password.</string>
         <!--Notification Access View Controller-->
         <scene sceneID="ruh-n2-UeK">
             <objects>
-                <viewController storyboardIdentifier="JFNotificationAccessViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AVa-th-mFf" customClass="JFNotificationAccessViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFNotificationAccessViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AVa-th-mFf" customClass="JFNotificationAccessViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cyX-Sv-YIe">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHd-t6-B5L" customClass="JFProgressView" customModule="JvstFamovsDev">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="10"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="10"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="1iz-CZ-Uwz"/>
@@ -2081,11 +2087,11 @@ to reset your password.</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KvV-CV-jh7">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="78.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="113.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8HD-oW-7nL">
-                                <rect key="frame" x="16" y="78.5" width="568" height="45.5"/>
+                                <rect key="frame" x="16" y="113.5" width="382" height="45.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Hackfest-swvl would like to send you notifications.">
                                         <attributes>
@@ -2098,17 +2104,17 @@ to reset your password.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xQ-aZ-EEg">
-                                <rect key="frame" x="0.0" y="352" width="600" height="228"/>
+                                <rect key="frame" x="0.0" y="669.5" width="414" height="172.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xC-sV-8hJ" userLabel="Line separater">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="9XF-hd-3Lw"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43Z-kD-evl" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="17" width="568" height="89.5"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43Z-kD-evl" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="17" width="382" height="61.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="ALLOW">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2125,10 +2131,10 @@ to reset your password.</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83Z-Rx-Mk6">
-                                        <rect key="frame" x="16" y="122.5" width="568" height="89.5"/>
+                                        <rect key="frame" x="16" y="94.5" width="382" height="62"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="NOT ALLOW">
-                                            <color key="titleColor" red="0.792156862745098" green="0.51764705882352935" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.99215686270000003" green="0.01176470588" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="notAllowButtonTapped:" destination="AVa-th-mFf" eventType="touchUpInside" id="sZ8-Mf-kYH"/>
@@ -2170,6 +2176,7 @@ to reset your password.</string>
                             <constraint firstItem="31Q-I5-XWF" firstAttribute="trailing" secondItem="KvV-CV-jh7" secondAttribute="trailing" id="wAo-uz-rMk"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="v5x-iY-Pm2"/>
                     <connections>
                         <outlet property="allowButton" destination="43Z-kD-evl" id="tTc-fY-c4J"/>
                         <outlet property="notAllowButton" destination="83Z-Rx-Mk6" id="TBC-6e-JNx"/>
@@ -2183,13 +2190,13 @@ to reset your password.</string>
         <!--Location Access View Controller-->
         <scene sceneID="IEd-6P-gUj">
             <objects>
-                <viewController storyboardIdentifier="JFLocationAccessViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N9B-PU-SMC" customClass="JFLocationAccessViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFLocationAccessViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N9B-PU-SMC" customClass="JFLocationAccessViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7sd-yp-usw">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="He4-wz-ufE" customClass="JFProgressView" customModule="JvstFamovsDev">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="10"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="10"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="5op-Ci-vIH"/>
@@ -2202,17 +2209,17 @@ to reset your password.</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOo-fx-MPr">
-                                <rect key="frame" x="0.0" y="352" width="600" height="228"/>
+                                <rect key="frame" x="0.0" y="669.5" width="414" height="172.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DI6-UK-fHE" userLabel="Line separater">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="cAJ-Br-Kih"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wG-og-SFt" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="17" width="568" height="89.5"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wG-og-SFt" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="17" width="382" height="61.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="ALLOW">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2229,10 +2236,10 @@ to reset your password.</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yai-oi-K8d">
-                                        <rect key="frame" x="16" y="122.5" width="568" height="89.5"/>
+                                        <rect key="frame" x="16" y="94.5" width="382" height="62"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="NOT ALLOW">
-                                            <color key="titleColor" red="0.79215686269999996" green="0.51764705879999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.99215686270000003" green="0.01176470588" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="notAllowButtonTapped:" destination="N9B-PU-SMC" eventType="touchUpInside" id="tz0-KF-vXC"/>
@@ -2255,11 +2262,11 @@ to reset your password.</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYw-wy-5jw">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="78.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="113.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Utx-99-qnB">
-                                <rect key="frame" x="16" y="78.5" width="568" height="68.5"/>
+                                <rect key="frame" x="16" y="113.5" width="382" height="68.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Hackfest-swvl would like to access your location to help you find people near you.">
                                         <attributes>
@@ -2291,6 +2298,7 @@ to reset your password.</string>
                             <constraint firstAttribute="trailing" secondItem="vYw-wy-5jw" secondAttribute="trailing" id="zCp-42-NaX"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ACE-Rz-2m1"/>
                     <connections>
                         <outlet property="allowButton" destination="6wG-og-SFt" id="6Pa-29-AlR"/>
                         <outlet property="notAllowButton" destination="yai-oi-K8d" id="pQD-MH-waY"/>
@@ -2303,13 +2311,13 @@ to reset your password.</string>
         <!--Verification View Controller-->
         <scene sceneID="BOD-Al-f0o">
             <objects>
-                <viewController storyboardIdentifier="JFVerificationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6NH-aX-ABg" customClass="JFVerificationViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFVerificationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6NH-aX-ABg" customClass="JFVerificationViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q5a-lX-20t">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qkj-NB-jq4" customClass="JFProgressView" customModule="JvstFamovsDev">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="10"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="10"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="83n-xF-unn"/>
@@ -2322,8 +2330,8 @@ to reset your password.</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="(123) 456-7890" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xng-H6-n0y" customClass="JFTextField" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                <rect key="frame" x="16" y="151.5" width="568" height="46"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="(123) 456-7890" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xng-H6-n0y" customClass="JFTextField" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                <rect key="frame" x="16" y="174.5" width="382" height="64.5"/>
                                 <color key="textColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
@@ -2335,23 +2343,23 @@ to reset your password.</string>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carrier SMS charges may apply." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yo-XJ-FbR">
-                                <rect key="frame" x="16" y="213.5" width="568" height="17.5"/>
+                                <rect key="frame" x="16" y="255" width="382" height="18.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
                                 <color key="textColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gF-jj-sVO">
-                                <rect key="frame" x="0.0" y="449" width="600" height="131"/>
+                                <rect key="frame" x="0.0" y="717.5" width="414" height="90.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tjk-z8-NXs" userLabel="Line separater">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="Rky-MX-Hb0"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znr-sV-bbA" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="16" width="568" height="99"/>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znr-sV-bbA" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="16" width="382" height="58.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="NEXT">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2380,7 +2388,7 @@ to reset your password.</string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Yk-7a-bHg">
-                                <rect key="frame" x="20" y="90" width="560" height="45.5"/>
+                                <rect key="frame" x="20" y="90" width="374" height="68.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="A verification code will be sent to the following phone number to verify your account.">
                                         <attributes>
@@ -2432,13 +2440,13 @@ to reset your password.</string>
         <!--Enter Code View Controller-->
         <scene sceneID="iCR-UK-j1F">
             <objects>
-                <viewController storyboardIdentifier="JFEnterCodeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fpU-au-bUJ" customClass="JFEnterCodeViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFEnterCodeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fpU-au-bUJ" customClass="JFEnterCodeViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SYn-4S-lLa">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAx-UC-WCV" customClass="JFProgressView" customModule="JvstFamovsDev">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="10"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="10"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="Jkj-1f-LHy"/>
@@ -2453,7 +2461,7 @@ to reset your password.</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="S7w-rf-Q5N">
-                                <rect key="frame" x="40" y="90" width="520" height="23"/>
+                                <rect key="frame" x="40" y="90" width="334" height="45.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="A verification code has been sent. Please enter it below.">
                                         <attributes>
@@ -2466,10 +2474,10 @@ to reset your password.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZwV-mv-5Nn">
-                                <rect key="frame" x="80" y="153" width="440" height="127.5"/>
+                                <rect key="frame" x="80" y="175.5" width="254" height="67"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VXi-Bz-1o3">
-                                        <rect key="frame" x="0.0" y="0.0" width="98" height="127.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="51.5" height="67"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="VXi-Bz-1o3" secondAttribute="height" multiplier="10:13" id="70Z-us-ifX"/>
@@ -2486,7 +2494,7 @@ to reset your password.</string>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ygx-4F-4Wg">
-                                        <rect key="frame" x="114" y="0.0" width="98" height="127.5"/>
+                                        <rect key="frame" x="67.5" y="0.0" width="51.5" height="67"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -2500,7 +2508,7 @@ to reset your password.</string>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ija-wV-Pcc">
-                                        <rect key="frame" x="228" y="0.0" width="98" height="127.5"/>
+                                        <rect key="frame" x="135" y="0.0" width="51.5" height="67"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -2514,7 +2522,7 @@ to reset your password.</string>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VhA-RA-pnH">
-                                        <rect key="frame" x="342" y="0.0" width="98" height="127.5"/>
+                                        <rect key="frame" x="202.5" y="0.0" width="51.5" height="67"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -2529,8 +2537,8 @@ to reset your password.</string>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1O-TT-Knr" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                <rect key="frame" x="126.5" y="300.5" width="347" height="49.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1O-TT-Knr" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                <rect key="frame" x="87" y="262.5" width="240" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="L1O-TT-Knr" secondAttribute="height" multiplier="35:5" id="acZ-hA-crG"/>
                                 </constraints>
@@ -2547,16 +2555,16 @@ to reset your password.</string>
                                 </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VbQ-cj-wNC">
-                                <rect key="frame" x="0.0" y="359" width="600" height="90"/>
+                                <rect key="frame" x="0.0" y="655.5" width="414" height="62"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid code." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="2uu-VH-cNk">
-                                        <rect key="frame" x="15" y="37" width="80" height="16.5"/>
+                                        <rect key="frame" x="15" y="22.5" width="88.5" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                                         <color key="textColor" red="0.90196078431372551" green="0.29803921568627451" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoR-mL-4Tl">
-                                        <rect key="frame" x="514.5" y="10" width="69.5" height="70"/>
+                                        <rect key="frame" x="356" y="10" width="42" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="HoR-mL-4Tl" secondAttribute="height" multiplier="1:1" id="dcf-mA-9Ms"/>
                                         </constraints>
@@ -2576,17 +2584,17 @@ to reset your password.</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzp-ht-2J9">
-                                <rect key="frame" x="0.0" y="449" width="600" height="131"/>
+                                <rect key="frame" x="0.0" y="717.5" width="414" height="90.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ED7-ZC-rUz" userLabel="Line separater">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="7cv-XT-E2z"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIZ-fU-kfY" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="16" width="568" height="99"/>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIZ-fU-kfY" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="16" width="382" height="58.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="NEXT">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2641,6 +2649,7 @@ to reset your password.</string>
                             <constraint firstItem="L1O-TT-Knr" firstAttribute="width" secondItem="SYn-4S-lLa" secondAttribute="width" multiplier="217:375" id="xbe-Ce-gXE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="DUb-YW-XaO"/>
                     <connections>
                         <outlet property="errorLabel" destination="2uu-VH-cNk" id="GTo-Ex-E2y"/>
                         <outlet property="invalidView" destination="VbQ-cj-wNC" id="JDE-oL-19R"/>
@@ -2660,8 +2669,9 @@ to reset your password.</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Kh0-E5-rVX"/>
-        <segue reference="wDg-0R-VUB"/>
+        <segue reference="pLQ-iI-hy8"/>
+        <segue reference="xEv-3s-cFE"/>
+        <segue reference="Dbs-eU-fq5"/>
         <segue reference="FzY-HO-rso"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -2674,7 +2684,7 @@ to reset your password.</string>
         <image name="intelligence_bulb_icon_lightblue" width="25" height="25"/>
         <image name="intellignce_bulb_icon_grey" width="25" height="25"/>
         <image name="left_arrow_grey" width="9" height="17"/>
-        <image name="logo" width="191" height="20"/>
+        <image name="logo" width="192" height="20"/>
         <image name="password_icon_grey" width="19" height="24"/>
         <image name="personality_icon_grey" width="23" height="22"/>
         <image name="personality_icon_lightred" width="23" height="22"/>

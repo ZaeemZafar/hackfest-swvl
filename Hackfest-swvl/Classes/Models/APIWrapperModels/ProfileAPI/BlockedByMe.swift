@@ -21,7 +21,7 @@ struct BlockedByMe : Codable {
 
 		case id = "id"
 		case userId = "userId"
-		case blockUserId = "blockUserId"
+		case blockUserId = "reportUserId"
 	}
 
 	init(from decoder: Decoder) throws {

@@ -11,7 +11,7 @@ import UIKit
 // @IBDesignable
 class JFProgressView: UIView {
     @IBInspectable var trackColor: UIColor = UIColor.white
-    @IBInspectable var barColor: UIColor = UIColor.jfDarkBrown
+    @IBInspectable var barColor: UIColor = UIColor.swvlRed
     
     @IBInspectable var progressValue: Int = 0 {
         

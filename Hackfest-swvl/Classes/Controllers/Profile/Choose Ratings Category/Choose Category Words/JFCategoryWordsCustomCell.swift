@@ -52,7 +52,7 @@ class JFCategoryWordsCustomCell: UICollectionViewCell {
     func selectedLayout() {
         containerView.layer.borderWidth = 0.0
         tickImageView.isHidden = false
-        containerView.backgroundColor = UIColor.jfMediumBrown
+        containerView.backgroundColor = UIColor.swvlMediumRed
         wordsTitleLabel.textColor = UIColor.white
     }
 }

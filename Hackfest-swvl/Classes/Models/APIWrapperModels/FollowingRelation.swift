@@ -17,7 +17,6 @@ struct FollowingRelation : Codable {
 	let isSeen : Bool?
     
 	enum CodingKeys: String, CodingKey {
-
 		case acceptRequest = "acceptRequest"
 		case isSeen = "isSeen"
 	}

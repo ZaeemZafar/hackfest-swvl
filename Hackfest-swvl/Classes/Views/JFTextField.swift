@@ -170,7 +170,7 @@ class JFTextField: UITextField {
             if crossButton {
                 crosButton.isHidden = false
             }
-            imageView?.tintColor = UIColor.jfMediumBrown
+            imageView?.tintColor = UIColor.swvlMediumRed
         } else {
             if crossButton {
                 crosButton.isHidden = true
@@ -196,13 +196,13 @@ class JFTextField: UITextField {
     
     func setBorder(enabled: Bool = true) {
         if !hasErrorMessage {
-            tintColor = UIColor.jfMediumBrown // set cursor color
+            tintColor = UIColor.swvlMediumRed // set cursor color
             borderStyle = .none
             layer.masksToBounds = false
             layer.backgroundColor = UIColor.white.cgColor
             
             if enabled {
-                layer.shadowColor = UIColor.jfMediumBrown.cgColor
+                layer.shadowColor = UIColor.swvlMediumRed.cgColor
                 
             } else {
                 self.layer.shadowColor = UIColor.jfLightGray.cgColor

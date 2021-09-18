@@ -132,9 +132,9 @@ class JFGraphCustomCell: UITableViewCell {
         durationSegmentedControl.selectedItemHighlightStyle = .bottomEdge
         durationSegmentedControl.segmentTitle = JFGraphXValueType.titles
         durationSegmentedControl.backgroundColor = UIColor.clear
-        durationSegmentedControl.highlightTint = .jfDarkBrown
-        durationSegmentedControl.highlightColor = .jfDarkBrown
-        durationSegmentedControl.tint = .jfLightBrown
+        durationSegmentedControl.highlightTint = .swvlRed
+        durationSegmentedControl.highlightColor = .swvlRed
+        durationSegmentedControl.tint = .swvlLightRed
         durationSegmentedControl.delegate = self
     }
     

@@ -199,7 +199,7 @@ extension JFProfile {
         lastName = profileData.lastName ?? ""
         imagePath = profileData.image
         
-        profilePrivacy = (profileData.settings?.isPublicProfile ?? false) ? .publicProfile : .privateProfile
+        profilePrivacy = (profileData.settings?.isCaptainProfile ?? false) ? .publicProfile : .privateProfile
         acceptRating = profileData.settings?.acceptRating ?? false
         acceptAnonymousRating =  profileData.settings?.acceptAnonymousRating ?? false
         
@@ -216,7 +216,7 @@ extension JFProfile {
         punctualityIndex = JFIndexInfo(withJFIndex: profileData.indexMultiplier?.trait8Average, jfMultiplier: nil, jfRateOfChange: nil)
         appearanceIndex = JFIndexInfo(withJFIndex: profileData.indexMultiplier?.trait9Average, jfMultiplier: nil, jfRateOfChange: nil)
         
-        followingState = profileData.followingRelation != nil ? ((profileData.followingRelation?.acceptRequest ?? false) ? .following : .requested) : FollowingStatus.none
+        followingState = profileData.friendRelation != nil ? ((profileData.friendRelation?.acceptRequest ?? false) ? .following : .requested) : FollowingStatus.none
         followedByState = profileData.followedByRelation != nil ? ((profileData.followedByRelation?.acceptRequest ?? false) ? .following : .requested) : FollowingStatus.none
         
         ratingsGiven = profileData.multiplierInfo?.ratingsGiven ?? 0
@@ -243,7 +243,7 @@ extension JFProfile {
         lastName = profileData.lastName ?? ""
         facebookId = profileData.facebookId ?? ""
         fbProfileLink = profileData.fbProfileLink ?? ""
-        profilePrivacy = (profileData.settings?.isPublicProfile ?? false) ? .publicProfile : .privateProfile
+        profilePrivacy = (profileData.settings?.isCaptainProfile ?? false) ? .publicProfile : .privateProfile
         imagePath = profileData.image
         locationLongitude = profileData.longitude
         locationLatitude = profileData.latitude
@@ -258,7 +258,7 @@ extension JFProfile {
         
         displayFacebookProfileLink = profileData.settings?.displayFacebookProfile ?? false
         
-        followingState = profileData.followingRelation != nil ? ((profileData.followingRelation?.acceptRequest ?? false) ? .following : .requested) : FollowingStatus.none
+        followingState = profileData.friendRelation != nil ? ((profileData.friendRelation?.acceptRequest ?? false) ? .following : .requested) : FollowingStatus.none
         followedByState = profileData.followedByRelation != nil ? ((profileData.followedByRelation?.acceptRequest ?? false) ? .following : .requested) : FollowingStatus.none
         
         if profileData.blockedByMe != nil && profileData.blockedByThem != nil {
@@ -334,17 +334,17 @@ extension JFProfile {
         id = "\(profileData?.id ?? 0)"
         firstName = profileData?.firstName ?? ""
         lastName = profileData?.lastName ?? ""
-        profilePrivacy = (profileData?.settings?.isPublicProfile ?? false) ? .publicProfile : .privateProfile
+        profilePrivacy = (profileData?.settings?.isCaptainProfile ?? false) ? .publicProfile : .privateProfile
         imagePath = profileData?.image ?? ""
     }
     
-    convenience init(userID: String?, first_name: String?, last_name: String?, isPublicProfile: Bool = false, image_path: String?) {
+    convenience init(userID: String?, first_name: String?, last_name: String?, isCaptainProfile: Bool = false, image_path: String?) {
         self.init()
         
         id = userID ?? ""
         firstName = first_name ?? ""
         lastName = last_name ?? ""
-        profilePrivacy = isPublicProfile ? .publicProfile : .privateProfile
+        profilePrivacy = isCaptainProfile ? .publicProfile : .privateProfile
         imagePath = image_path
     }
     
@@ -357,11 +357,11 @@ extension JFProfile {
         imagePath = profileData?.image
         phone = profileData?.phoneNumber ?? ""
         
-        profilePrivacy = (profileData?.settings?.isPublicProfile ?? false) ? .publicProfile : .privateProfile
+        profilePrivacy = (profileData?.settings?.isCaptainProfile ?? false) ? .publicProfile : .privateProfile
         acceptRating = profileData?.settings?.acceptRating ?? false
         acceptAnonymousRating =  profileData?.settings?.acceptAnonymousRating ?? false
         
-        followingState = profileData?.followingRelation != nil ? ((profileData?.followingRelation?.acceptRequest ?? false) ? .following : .requested) : FollowingStatus.none
+        followingState = profileData?.friendRelation != nil ? ((profileData?.friendRelation?.acceptRequest ?? false) ? .following : .requested) : FollowingStatus.none
         
         jfIndex = JFIndexInfo(withJFIndex: profileData?.indexMultiplier?.jfIndex, jfMultiplier: profileData?.indexMultiplier?.jfMultiplier, jfRateOfChange: profileData?.indexMultiplier?.rateOfChange)
     }

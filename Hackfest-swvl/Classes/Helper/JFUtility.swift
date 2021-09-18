@@ -169,10 +169,11 @@ final class JFUtility {
     class func setupAppAppearance() {
         // UITabbar
         let titleFontAll : UIFont = UIFont.medium(fontSize: 11)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font : titleFontAll], for: .normal)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font : titleFontAll], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font : titleFontAll, .foregroundColor: UIColor.jfMediumGray], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font : titleFontAll, .foregroundColor: UIColor.swvlRed], for: .selected)
         UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -4)
-        
+        UITabBar.appearance().tintColor = UIColor.swvlRed
+
         // UIPageControl
         let pageControl = UIPageControl.appearance()
         pageControl.pageIndicatorTintColor = UIColor.jfLightGray
@@ -180,12 +181,20 @@ final class JFUtility {
         
         // UINavigationBar
         let attrs = [
-            NSAttributedStringKey.foregroundColor: UIColor.jfDarkGray,
+            NSAttributedStringKey.foregroundColor: UIColor.swvlRed,
             NSAttributedStringKey.font: UIFont.medium(fontSize: 14.0)
         ]
         
+        UIBarButtonItem.appearance().setTitleTextAttributes([
+            NSAttributedStringKey.foregroundColor: UIColor.swvlRed
+        ], for: .normal)
+        UIBarButtonItem.appearance().setTitleTextAttributes([
+            NSAttributedStringKey.foregroundColor: UIColor.jfLightGray
+        ], for: .disabled)
+        
+        
         UINavigationBar.appearance().barTintColor = .white
-        UINavigationBar.appearance().tintColor = .black
+        UINavigationBar.appearance().tintColor = UIColor.swvlRed
         UINavigationBar.appearance().titleTextAttributes = attrs
         UINavigationBar.appearance().isTranslucent = false
     }

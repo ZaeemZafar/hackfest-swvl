@@ -143,7 +143,7 @@ class JFSearchTextField: UITextField {
         // Valid
         // Update color of left image
         if hasText {
-            imageView?.tintColor = UIColor.jfDarkBrown
+            imageView?.tintColor = UIColor.swvlRed
         } else {
             imageView?.tintColor = UIColor.jfLightGray
         }
@@ -151,7 +151,7 @@ class JFSearchTextField: UITextField {
     
     @objc func editingBegin() {
         setBorder()
-        imageView?.tintColor = UIColor.jfDarkBrown
+        imageView?.tintColor = UIColor.swvlRed
         self.placeholder = selectedPlaceHolderText//"Search for anyone on Hackfest-swvl"
     }
     @objc func editingEnd() {
@@ -172,13 +172,13 @@ class JFSearchTextField: UITextField {
     
     func setBorder(enabled: Bool = true) {
         if !hasErrorMessage {
-            tintColor = UIColor.jfMediumBrown // set cursor color
+            tintColor = UIColor.swvlMediumRed // set cursor color
             borderStyle = .none
             layer.masksToBounds = false
             layer.backgroundColor = UIColor.white.cgColor
 
             if enabled {
-                layer.shadowColor = UIColor.jfMediumBrown.cgColor
+                layer.shadowColor = UIColor.swvlMediumRed.cgColor
                 
             } else {
                 self.layer.shadowColor = UIColor.jfLightGray.cgColor

@@ -115,22 +115,22 @@ class JFUserRatingTableViewCell: UITableViewCell {
         
         // Update button state for Rate Again
         if userProfile.hasBeenRated {
-            self.rateUserButton.customizeButton(titleColor: UIColor.white, backgroundColor: userProfile.canRateAgain ? UIColor.jfDarkBrown : UIColor.jfLightBrown, borderColor: UIColor.clear, withRoundCorner: true, cornerRadius: 5)
+            self.rateUserButton.customizeButton(titleColor: UIColor.white, backgroundColor: userProfile.canRateAgain ? UIColor.swvlRed : UIColor.swvlLightRed, borderColor: UIColor.clear, withRoundCorner: true, cornerRadius: 5)
         }
         
         if userProfile.hasBeenRequested {
-            self.requestRatings.customizeButton(titleColor: UIColor.white, backgroundColor: userProfile.canRequestAgain ? UIColor.jfDarkBrown : UIColor.jfLightBrown, borderColor: UIColor.clear, withRoundCorner: true, cornerRadius: 5)
-            self.requestRatingButton.customizeButton(titleColor: UIColor.white, backgroundColor: userProfile.canRequestAgain ? UIColor.jfDarkBrown : UIColor.jfLightBrown, borderColor: UIColor.clear, withRoundCorner: true, cornerRadius: 5)
+            self.requestRatings.customizeButton(titleColor: UIColor.white, backgroundColor: userProfile.canRequestAgain ? UIColor.swvlRed : UIColor.swvlLightRed, borderColor: UIColor.clear, withRoundCorner: true, cornerRadius: 5)
+            self.requestRatingButton.customizeButton(titleColor: UIColor.white, backgroundColor: userProfile.canRequestAgain ? UIColor.swvlRed : UIColor.swvlLightRed, borderColor: UIColor.clear, withRoundCorner: true, cornerRadius: 5)
         }
 
     }
     
     @objc func resetButtonAppearanceToEnable(button: JFButton) {
-           button.customizeButton(titleColor: UIColor.white, backgroundColor: UIColor.jfDarkBrown, borderColor: UIColor.clear, withRoundCorner: true, cornerRadius: 5)
+           button.customizeButton(titleColor: UIColor.white, backgroundColor: UIColor.swvlRed, borderColor: UIColor.clear, withRoundCorner: true, cornerRadius: 5)
     }
     
     func customAppearanceOfButton(title: String)  {
         self.rateUserButton.addSpacingWithTitle(spacing: 2.0, title: title)
-        self.rateUserButton.customizeButton(titleColor: UIColor.white, backgroundColor: UIColor.jfLightBrown, borderColor: UIColor.clear, withRoundCorner: true, cornerRadius: 5)
+        self.rateUserButton.customizeButton(titleColor: UIColor.white, backgroundColor: UIColor.swvlLightRed, borderColor: UIColor.clear, withRoundCorner: true, cornerRadius: 5)
     }
 }

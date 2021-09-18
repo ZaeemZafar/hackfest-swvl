@@ -27,7 +27,6 @@ class JFNotificationManager: NSObject {
         }
         
         setupPushNotification()
-        configureGoogleFirebaseMessaging()
         JFUtility.checkPushNotificationPermissionWRTPreferences()
     }
     
@@ -40,13 +39,6 @@ class JFNotificationManager: NSObject {
             completionHandler: {_, _ in })
         
         UIApplication.shared.registerForRemoteNotifications()
-    }
-    
-    func configureGoogleFirebaseMessaging() {
-        let filePath = Bundle.main.path(forResource: JFAppTarget.current.googleFirebaseIdentifier, ofType: "plist")!
-        let options = FirebaseOptions(contentsOfFile: filePath)
-        FirebaseApp.configure(options: options!)
-        Messaging.messaging().delegate = self
     }
     
     func notificationManager(didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {

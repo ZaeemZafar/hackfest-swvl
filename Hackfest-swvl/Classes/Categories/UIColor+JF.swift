@@ -15,16 +15,16 @@ extension UIColor {
         return UIColor(red: (red/255.0), green: (green/255.0), blue: (blue/255.0), alpha: 1.0)
     }
     
-    class var jfDarkBrown: UIColor {
-        return UIColor.fromRGB(red: 202.0, green: 132.0, blue: 0.0)
+    class var swvlRed: UIColor {
+        return jfRed
     }
     
-    class var jfMediumBrown: UIColor {
-        return UIColor.fromRGB(red: 233.0, green: 173.0, blue: 84.0)
+    class var swvlMediumRed: UIColor {
+        return UIColor.fromRGB(red: 255.0, green: 47.0, blue: 71.0)
     }
     
-    class var jfLightBrown: UIColor {
-        return UIColor.fromRGB(red: 226.0, green: 188.0, blue: 115.0)
+    class var swvlLightRed: UIColor {
+        return swvlMediumRed.withAlphaComponent(0.7)
     }
     
     class var jfDarkGray: UIColor {
@@ -40,7 +40,7 @@ extension UIColor {
     }
 
     class var jfRed: UIColor {
-        return UIColor.fromRGB(red: 230.0, green: 76.0, blue: 39.0)
+        return UIColor.fromRGB(red: 253.0, green: 2.0, blue: 47.0)
     }
     
     class var jfFacebookLink: UIColor {

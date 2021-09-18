@@ -149,18 +149,6 @@ class JFSearchUsersViewController: JFViewController, KeyboardProtocol {
         
         self.navigationItem.title = "SEARCH"
         addBackButton()
-        btnRight = UIButton(type: .custom)
-        
-        if isFilterActive {
-            btnRight.setImage(#imageLiteral(resourceName: "menu_icon_yellow"), for: .normal)
-        } else {
-            btnRight.setImage(#imageLiteral(resourceName: "menu_more_icon_grey"), for: .normal)
-        }
-        btnRight.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
-        btnRight.addTarget(self, action: #selector(showRefineResaultScreen), for: .touchUpInside)
-        let rightButtomItem = UIBarButtonItem(customView: btnRight)
-        customRightButton(button: rightButtomItem)
-        
     }
     
     @objc func showRefineResaultScreen() {
