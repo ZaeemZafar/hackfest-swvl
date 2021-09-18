@@ -46,7 +46,7 @@ enum JFAppTarget: Int {
             return "http://dev.justfamous.com:4001/"
             
         case .staging:
-            return "http://dev.justfamous.com:4002/"
+            return "http://18.234.149.76:4000/"
             
         case .appStore:
             return "https://api.justfamous.com/"
