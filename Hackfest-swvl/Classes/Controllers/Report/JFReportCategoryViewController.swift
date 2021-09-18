@@ -18,10 +18,15 @@ class JFReportCategoryViewController: UIViewController {
     // MARK: - UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+     
+        setupView()
     }
     
+    func setupView() {
+        navigationItem.title = "CHOOSE"
+    }
     
+    // MARK: User Actions
     @IBAction func emergencyReportButtonTapped(_ sender: Any) {
     }
     
