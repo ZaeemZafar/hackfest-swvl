@@ -107,7 +107,7 @@ extension JFProfilePrivacyViewController {
         
         MBProgressHUD.showCustomHUDAddedTo(view: self.tabBarController?.view, title: JFLoadingTitles.settingPrivacy, animated: true)
         
-        let endPoint = JFUserEndpoint.settingsPrivacy(isPublicProfile: (settingsPrivacy?.isCaptainProfile ?? false))
+        let endPoint = JFUserEndpoint.settingsPrivacy(isCaptainProfile: (settingsPrivacy?.isCaptainProfile ?? false))
         
         JFWSAPIManager.shared.sendJFAPIRequest(apiConfig: endPoint) { [weak self] (response: JFWepAPIResponse<SettingsAPIBase>) in
             

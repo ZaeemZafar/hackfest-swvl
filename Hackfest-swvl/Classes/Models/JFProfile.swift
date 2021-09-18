@@ -300,17 +300,17 @@ extension JFProfile {
         id = "\(profileData?.id ?? 0)"
         firstName = profileData?.firstName ?? ""
         lastName = profileData?.lastName ?? ""
-        profilePrivacy = (profileData?.settings?.isPublicProfile ?? false) ? .publicProfile : .privateProfile
+        profilePrivacy = (profileData?.settings?.isCaptainProfile ?? false) ? .publicProfile : .privateProfile
         imagePath = profileData?.image ?? ""
     }
     
-    convenience init(userID: String?, first_name: String?, last_name: String?, isPublicProfile: Bool = false, image_path: String?) {
+    convenience init(userID: String?, first_name: String?, last_name: String?, isCaptainProfile: Bool = false, image_path: String?) {
         self.init()
         
         id = userID ?? ""
         firstName = first_name ?? ""
         lastName = last_name ?? ""
-        profilePrivacy = isPublicProfile ? .publicProfile : .privateProfile
+        profilePrivacy = isCaptainProfile ? .publicProfile : .privateProfile
         imagePath = image_path
     }
     
@@ -323,7 +323,7 @@ extension JFProfile {
         imagePath = profileData?.image
         phone = profileData?.phoneNumber ?? ""
         
-        profilePrivacy = (profileData?.settings?.isPublicProfile ?? false) ? .publicProfile : .privateProfile
+        profilePrivacy = (profileData?.settings?.isCaptainProfile ?? false) ? .publicProfile : .privateProfile
         acceptRating = profileData?.settings?.acceptRating ?? false
         acceptAnonymousRating =  profileData?.settings?.acceptAnonymousRating ?? false
         

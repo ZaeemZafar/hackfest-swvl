@@ -43,7 +43,7 @@ enum JFUserEndpoint: JFAPIConfig {
     case settings
     case connectWithFacebook(flag: Bool, facebookId: String, fbProfileLink: String)
     case fbLinkVisibility(makeFbLinkVisible: Bool)
-    case settingsPrivacy(isPublicProfile: Bool)
+    case settingsPrivacy(isCaptainProfile: Bool)
     case settingsToggleRatingsAcceptance(acceptRatings: Bool, acceptAnonymousRatings: Bool, traitAppearance: Bool, traitPersonality: Bool, traitIntelligence: Bool)
     
     case getMyNetwork(page: Int, limit: Int)
@@ -354,7 +354,7 @@ enum JFUserEndpoint: JFAPIConfig {
             params["traitNone"] = userInfo.traitNone
             params["notificationsEnabled"] = userInfo.notificationsEnabled
             params["locationEnabled"] = userInfo.locationEnabled
-            params["isPublicProfile"] = userInfo.isPublicProfile
+            params["isCaptainProfile"] = userInfo.isCaptainProfile
             params["deviceUid"] = userInfo.deviceUID
             if JFNotificationManager.shared.fcmPushToken.isEmpty == false {
                 params["deviceToken"] = JFNotificationManager.shared.fcmPushToken
@@ -378,7 +378,7 @@ enum JFUserEndpoint: JFAPIConfig {
             params["traitNone"] = userInfo.traitNone
             params["notificationsEnabled"] = userInfo.notificationsEnabled
             params["locationEnabled"] = userInfo.locationEnabled
-            params["isPublicProfile"] = userInfo.isPublicProfile
+            params["isCaptainProfile"] = userInfo.isCaptainProfile
             params["fbProfileLink"] = userInfo.facebookProfileLink
             params["deviceUid"] = userInfo.deviceUID
             params["deviceType"] = userInfo.deviceType
@@ -461,9 +461,9 @@ enum JFUserEndpoint: JFAPIConfig {
             
         case .settings:
             return nil
-        case .settingsPrivacy(let isPublicProfile):
+        case .settingsPrivacy(let isCaptainProfile):
             var params = [String: Any]()
-            params["isPublicProfile"] = isPublicProfile
+            params["isCaptainProfile"] = isCaptainProfile
             return params
         case .connectWithFacebook(let flag, let facebookId, let fbProfileLink):
             var params = [String: Any]()

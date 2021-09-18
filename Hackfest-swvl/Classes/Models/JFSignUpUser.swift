@@ -24,7 +24,7 @@ class JFSignUpUser {
     var traitNone: Bool
     var notificationsEnabled: Bool
     var locationEnabled: Bool
-    var isPublicProfile: Bool
+    var isCaptainProfile: Bool
     var deviceUID: String
     var deviceType: String
     var facebookID: String
@@ -69,7 +69,7 @@ class JFSignUpUser {
         traitNone = false
         notificationsEnabled = false
         locationEnabled = false
-        isPublicProfile = true
+        isCaptainProfile = true
         deviceUID = ""
         deviceType = ""
         facebookID = ""

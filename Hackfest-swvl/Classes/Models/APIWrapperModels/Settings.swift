@@ -13,13 +13,13 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 
 import Foundation
 struct Settings : Codable {
-	let isPublicProfile : Bool?
+	let isCaptainProfile : Bool?
 	let acceptRating : Bool?
 	let acceptAnonymousRating : Bool?
     
 	enum CodingKeys: String, CodingKey {
 
-		case isPublicProfile = "isPublicProfile"
+		case isCaptainProfile = "isCaptainProfile"
 		case acceptRating = "acceptRating"
 		case acceptAnonymousRating = "acceptAnonymousRating"
 	}
@@ -27,7 +27,7 @@ struct Settings : Codable {
 	init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
-		isPublicProfile = try container.decodeIfPresent(Bool.self, forKey: .isPublicProfile)
+		isCaptainProfile = try container.decodeIfPresent(Bool.self, forKey: .isCaptainProfile)
 		acceptRating = try container.decodeIfPresent(Bool.self, forKey: .acceptRating)
 		acceptAnonymousRating = try container.decodeIfPresent(Bool.self, forKey: .acceptAnonymousRating)
 	}
