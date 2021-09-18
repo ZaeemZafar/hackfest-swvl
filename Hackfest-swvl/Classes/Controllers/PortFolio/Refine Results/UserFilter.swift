@@ -266,7 +266,7 @@ class UserFilter {
         }
         
         if peopleInMyPortfolio {
-            textArray.append(peopleRatedByMe ? "In My Network" : "People In My Network")
+            textArray.append(peopleRatedByMe ? "In Community" : "People In Community")
         }
         
         textArray = textArray.filter { $0 != "" }

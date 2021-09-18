@@ -311,6 +311,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.99215686270000003" green="0.01176470588" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="0.9137254901960784" green="0.67843137254901964" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -318,9 +319,10 @@
                         </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
-                        <segue destination="ZnQ-Fg-PVI" kind="relationship" relationship="viewControllers" id="72R-E6-4yo"/>
-                        <segue destination="pyo-p6-JcB" kind="relationship" relationship="viewControllers" id="ONh-cp-xR4"/>
-                        <segue destination="GJn-kE-wTU" kind="relationship" relationship="viewControllers" id="e4s-aT-Vhu"/>
+                        <segue destination="pyo-p6-JcB" kind="relationship" relationship="viewControllers" id="qKX-aV-HUP"/>
+                        <segue destination="Ux7-Kn-HUt" kind="relationship" relationship="viewControllers" id="Xic-Xl-RQV"/>
+                        <segue destination="ZnQ-Fg-PVI" kind="relationship" relationship="viewControllers" id="hkf-79-F9b"/>
+                        <segue destination="GJn-kE-wTU" kind="relationship" relationship="viewControllers" id="eAe-rZ-m1M"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GqU-Tc-s8I" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -345,7 +347,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DlG-5b-0dW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="486" y="-667"/>
+            <point key="canvasLocation" x="462" y="-528"/>
+        </scene>
+        <!--Report-->
+        <scene sceneID="H3w-Gz-cBQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Report" id="Ux7-Kn-HUt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="kyi-xH-IoA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ie-Nx-KIf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="473" y="-598"/>
         </scene>
         <!--PROFILE-->
         <scene sceneID="qR0-My-nLD">

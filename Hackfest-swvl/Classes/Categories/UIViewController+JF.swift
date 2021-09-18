@@ -51,7 +51,6 @@ extension UIViewController {
     func addLeftBarButton(withImage image: UIImage?, text: String?, action: Selector?) {
         let barButton = UIBarButtonItem(title: text, style: .plain, target: self, action: action)
         barButton.image = image
-        barButton.tintColor = UIColor.darkGray
         barButton.fontsSettings()
         self.navigationItem.leftBarButtonItem = barButton
     }
@@ -59,7 +58,6 @@ extension UIViewController {
     func addRightBarButton(withImage image: UIImage?, text: String?, action: Selector?) {
         let barButton = UIBarButtonItem(title: text, style: .plain, target: self, action: action)
         barButton.image = image
-        barButton.tintColor = UIColor.darkGray
         barButton.fontsSettings()
         self.navigationItem.rightBarButtonItem = barButton
     }

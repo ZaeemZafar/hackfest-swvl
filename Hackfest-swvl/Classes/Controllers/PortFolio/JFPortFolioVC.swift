@@ -187,8 +187,8 @@ class JFPortFolioVC: JFViewController, XMSegmentedControlDelegate {
     
     func setupNavigation() {
         title = "PORTFOLIO"
-        addRightBarButton(withImage: #imageLiteral(resourceName: "search_icon_grey"), text: nil, action: #selector(searchPorfolio))
-        addLeftBarButton(withImage: #imageLiteral(resourceName: "profile_icon_with_plus_icon"), text: nil, action: #selector(invitePeople))
+        addRightBarButton(withImage: #imageLiteral(resourceName: "search_icon_grey").withRenderingMode(.alwaysTemplate), text: nil, action: #selector(searchPorfolio))
+        addLeftBarButton(withImage: #imageLiteral(resourceName: "profile_icon_with_plus_icon").withRenderingMode(.alwaysTemplate), text: nil, action: #selector(invitePeople))
     }
    
     @objc func searchPorfolio() {

@@ -177,13 +177,13 @@ enum JFUserEndpoint: JFAPIConfig {
             
             
         case .getMyFollowing:
-            return "api/network/following"
+            return "api/network/friends"
             
         case .getMyNetwork:
             return "api/network"
             
         case .followUser:
-            return "api/network/request/follow"
+            return "api/network/request/makefriend"
             
         case .unFollowUser:
             return "api/network/unfollow"
@@ -549,7 +549,7 @@ enum JFUserEndpoint: JFAPIConfig {
             return params
         case .unblock(let blockUserId):
             var params = [String: Any]()
-            params["blockUserId"] = blockUserId
+            params["reportUserId"] = blockUserId
             return params
         case .blockList(let page, let limit):
             var params = [String: Any]()

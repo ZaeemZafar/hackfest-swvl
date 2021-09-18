@@ -24,7 +24,7 @@ struct BlockListData : Codable {
 
 		case id = "id"
 		case userId = "userId"
-		case blockUserId = "blockUserId"
+		case blockUserId = "reportUserId"
 		case blockedUserRelation = "blockedUserRelation"
         
         case parentKeyName = "data"

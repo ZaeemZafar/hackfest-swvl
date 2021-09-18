@@ -397,7 +397,7 @@ class JFConstants: NSObject {
     static let formattedPhoneNumberDigits = 16
     static let maximumRating = 20
     static let portfolioTitles = [
-        "Following", "My Network", "Discover"
+        "Friends", "Community", "Discover"
     ]
     
     struct JFUserDefaults {

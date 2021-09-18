@@ -40,7 +40,7 @@ enum FilterType {
         case .peopleIHaveRated:
             return "People I've Rated"
         case .peopleInMyPortfolio:
-            return "People In My Network"
+            return "People In Community"
         case .sort:
             return "Sort"
         case .highToLow:

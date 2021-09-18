@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rvK-Nc-aP5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,13 +25,13 @@
         <!--Multiplier View Controller-->
         <scene sceneID="SgR-Wo-iiU">
             <objects>
-                <viewController storyboardIdentifier="JFMultiplierViewController" id="CPf-5g-cVe" customClass="JFMultiplierViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFMultiplierViewController" id="CPf-5g-cVe" customClass="JFMultiplierViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Vc-AQ-ZIS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6oG-5f-Drb">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="q5R-5T-Q06"/>
                                 </constraints>
@@ -48,28 +50,28 @@
                                 </connections>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HQl-Mu-ysl">
-                                <rect key="frame" x="0.0" y="45" width="600" height="555"/>
+                                <rect key="frame" x="0.0" y="89" width="414" height="773"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="JFMultiplierTableViewCell" id="cg4-fy-NJd" customClass="JFMultiplierTableViewCell" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="600" height="42.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="JFMultiplierTableViewCell" id="cg4-fy-NJd" customClass="JFMultiplierTableViewCell" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cg4-fy-NJd" id="XIe-0Z-qAJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="42.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0VX-9A-XIe">
-                                                    <rect key="frame" x="16" y="11" width="568" height="20.5"/>
+                                                    <rect key="frame" x="20" y="11" width="374" height="21.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQD-P7-1mI">
-                                                            <rect key="frame" x="0.0" y="0.0" width="526" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="329" height="21.5"/>
                                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                             <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="RMh-mY-i5s">
-                                                            <rect key="frame" x="526" y="0.0" width="42" height="20.5"/>
+                                                            <rect key="frame" x="329" y="0.0" width="45" height="21.5"/>
                                                             <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
                                                             <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -115,28 +117,29 @@
         <!--Alert View Controller-->
         <scene sceneID="2rv-CB-f53">
             <objects>
-                <viewController storyboardIdentifier="JFAlertViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="bGJ-pu-wRl" customClass="JFAlertViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFAlertViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="bGJ-pu-wRl" customClass="JFAlertViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WhZ-sr-qhX">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ye-6B-00a" customClass="JFView" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                <rect key="frame" x="8" y="280" width="584" height="312"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ye-6B-00a" customClass="JFView" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                <rect key="frame" x="8" y="568.5" width="398" height="285.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email_success_icon_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="IFH-hm-m74">
-                                        <rect key="frame" x="260" y="25" width="64" height="64"/>
+                                        <rect key="frame" x="177" y="25" width="44" height="44.5"/>
+                                        <color key="tintColor" red="0.99215686270000003" green="0.01176470588" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="IFH-hm-m74" secondAttribute="height" multiplier="1:1" id="Jlo-jy-3NO"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opN-ag-1n5">
-                                        <rect key="frame" x="266.5" y="109" width="51.5" height="21"/>
+                                        <rect key="frame" x="172" y="89.5" width="54" height="22"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
                                         <color key="textColor" red="0.28627450980392155" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" text="Please check your email, we've sent you a link to reset your password." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="7v9-qg-m1l">
-                                        <rect key="frame" x="30" y="150" width="524" height="20"/>
+                                        <rect key="frame" x="30" y="131.5" width="338" height="39.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="wtU-3z-O4G"/>
                                         </constraints>
@@ -144,8 +147,8 @@
                                         <color key="textColor" red="0.46274509803921571" green="0.46274509803921571" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBQ-tq-UCB" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="24" y="200" width="536" height="88"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBQ-tq-UCB" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="201" width="350" height="60.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="OKAY">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -162,7 +165,7 @@
                                         </connections>
                                     </button>
                                     <button hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvt-N5-vTw">
-                                        <rect key="frame" x="520" y="16" width="48" height="48"/>
+                                        <rect key="frame" x="349" y="16" width="33" height="33"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Jvt-N5-vTw" secondAttribute="height" multiplier="1:1" id="qBe-eb-WVs"/>
                                         </constraints>
@@ -218,22 +221,22 @@
         <!--Enter Code View Controller-->
         <scene sceneID="Mzo-Jo-nbn">
             <objects>
-                <viewController id="ywH-5u-wmz" customClass="JFEnterCodeViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ywH-5u-wmz" customClass="JFEnterCodeViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gK7-R2-0mu">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A verification code has been sent. Please enter it below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFY-Rx-Yft">
-                                <rect key="frame" x="40" y="90" width="520" height="23.5"/>
+                                <rect key="frame" x="40" y="134" width="334" height="49"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="aqG-aH-lQu">
-                                <rect key="frame" x="80" y="153.5" width="440" height="127.5"/>
+                                <rect key="frame" x="80" y="223" width="254" height="67"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jpa-7w-hRx">
-                                        <rect key="frame" x="0.0" y="0.0" width="98" height="127.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="51.5" height="67"/>
                                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="jpa-7w-hRx" secondAttribute="height" multiplier="10:13" id="dTL-QF-Gcm"/>
@@ -242,7 +245,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7GS-qz-20f">
-                                        <rect key="frame" x="114" y="0.0" width="98" height="127.5"/>
+                                        <rect key="frame" x="67.5" y="0.0" width="51.5" height="67"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="7GS-qz-20f" secondAttribute="height" multiplier="10:13" id="5nQ-mm-AEe"/>
@@ -251,7 +254,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zwg-Np-NCz">
-                                        <rect key="frame" x="228" y="0.0" width="98" height="127.5"/>
+                                        <rect key="frame" x="135" y="0.0" width="51.5" height="67"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Zwg-Np-NCz" secondAttribute="height" multiplier="10:13" id="Rev-lx-fTd"/>
@@ -260,7 +263,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bqK-zN-Usq">
-                                        <rect key="frame" x="342" y="0.0" width="98" height="127.5"/>
+                                        <rect key="frame" x="202.5" y="0.0" width="51.5" height="67"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="bqK-zN-Usq" secondAttribute="height" multiplier="10:13" id="cYt-t6-pYT"/>
@@ -302,22 +305,22 @@
         <!--Choose Categories View Controller-->
         <scene sceneID="a14-rZ-KTE">
             <objects>
-                <viewController id="rvK-Nc-aP5" customClass="JFChooseCategoriesViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rvK-Nc-aP5" customClass="JFChooseCategoriesViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0B8-tV-BSm">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which of the following categories would you like to be rated on? (select all that apply)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9x-RK-McY">
-                                <rect key="frame" x="30" y="90" width="540" height="70"/>
+                                <rect key="frame" x="30" y="134" width="354" height="73.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="v3W-hw-gvT">
-                                <rect key="frame" x="221.5" y="190" width="157" height="228"/>
+                                <rect key="frame" x="90" y="237.5" width="234" height="316.5"/>
                                 <subviews>
-                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Na7-Ua-ra6" customClass="JFCategoryButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="157" height="45"/>
+                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Na7-Ua-ra6" customClass="JFCategoryButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="234" height="67"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Na7-Ua-ra6" secondAttribute="height" multiplier="174:50" id="pLa-yl-P4l"/>
                                         </constraints>
@@ -334,8 +337,8 @@
                                             <action selector="categoryButtonTapped:" destination="rvK-Nc-aP5" eventType="touchUpInside" id="2MF-T5-OUT"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjC-R0-cvy" customClass="JFCategoryButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="61" width="157" height="45"/>
+                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjC-R0-cvy" customClass="JFCategoryButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="83" width="234" height="67.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                         <state key="normal" title="Personality" image="button:wjC-R0-cvy:image">
                                             <color key="titleColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -349,8 +352,8 @@
                                             <action selector="categoryButtonTapped:" destination="rvK-Nc-aP5" eventType="touchUpInside" id="M1C-bK-2FK"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGF-et-xHP" customClass="JFCategoryButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="122" width="157" height="45"/>
+                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGF-et-xHP" customClass="JFCategoryButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="166.5" width="234" height="67"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                         <state key="normal" title="Intelligence" image="button:XGF-et-xHP:image">
                                             <color key="titleColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -364,8 +367,8 @@
                                             <action selector="categoryButtonTapped:" destination="rvK-Nc-aP5" eventType="touchUpInside" id="DWh-eY-8vc"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOT-ut-sEg" customClass="JFCategoryButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="183" width="157" height="45"/>
+                                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOT-ut-sEg" customClass="JFCategoryButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="249.5" width="234" height="67"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                         <state key="normal" title="None" image="button:gOT-ut-sEg:image">
                                             <color key="titleColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -382,7 +385,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can turn ratings on later in your Settings tab if you change your mind" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypI-jc-WDz">
-                                <rect key="frame" x="30" y="448" width="540" height="44.5"/>
+                                <rect key="frame" x="30" y="584" width="354" height="46.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -418,23 +421,23 @@
             <objects>
                 <viewController id="ZbE-43-kg7" customClass="JFSignUpViewController" customModule="JvstFamovsDev" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8WP-v0-T6B">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mmi-at-MTc" userLabel="Spacer View">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="34"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
                             </view>
                             <view contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IIv-NZ-dQT">
-                                <rect key="frame" x="242.5" y="34" width="115" height="115.5"/>
+                                <rect key="frame" x="121" y="95" width="172" height="172"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_icon_grey" translatesAutoresizingMaskIntoConstraints="NO" id="crR-I1-t0r">
-                                        <rect key="frame" x="43" y="43.5" width="29" height="28.5"/>
+                                        <rect key="frame" x="64.5" y="64.5" width="43" height="43"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="crR-I1-t0r" secondAttribute="height" multiplier="1:1" id="loq-Lr-346"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqi-xV-iw5">
-                                        <rect key="frame" x="79" y="0.0" width="36" height="36"/>
+                                        <rect key="frame" x="118" y="0.0" width="54" height="54"/>
                                         <color key="backgroundColor" red="0.79215686269999996" green="0.51764705879999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="fqi-xV-iw5" secondAttribute="height" multiplier="1:1" id="EBI-N5-lVc"/>
@@ -457,44 +460,44 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6I-xV-zxi" userLabel="Spacer View">
-                                <rect key="frame" x="0.0" y="149.5" width="600" height="27"/>
+                                <rect key="frame" x="0.0" y="267" width="414" height="40.5"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="SkS-tU-Qdm">
-                                <rect key="frame" x="20" y="176.5" width="560" height="239"/>
+                                <rect key="frame" x="20" y="307.5" width="374" height="308.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vbb-pQ-03I">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="47.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="65"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="scJ-Zb-iTI" customClass="JFTextField" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="272" height="47.5"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="scJ-Zb-iTI" customClass="JFTextField" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="179" height="65"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FB2-dL-HFj" customClass="JFTextField" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                                <rect key="frame" x="288" y="0.0" width="272" height="47.5"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FB2-dL-HFj" customClass="JFTextField" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                                <rect key="frame" x="195" y="0.0" width="179" height="65"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j7V-vv-Vdi" customClass="JFTextField" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="63.5" width="560" height="48"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j7V-vv-Vdi" customClass="JFTextField" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="81" width="374" height="65"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="email_icon_grey"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Create password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mWr-4S-VdR" customClass="JFTextField" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="127.5" width="560" height="47.5"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Create password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mWr-4S-VdR" customClass="JFTextField" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="162" width="374" height="65"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="password_icon_grey"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2VV-lJ-2Vg" customClass="JFTextField" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="191" width="560" height="48"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2VV-lJ-2Vg" customClass="JFTextField" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="243" width="374" height="65.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
@@ -505,10 +508,10 @@
                                 <color key="backgroundColor" red="0.85231584819999995" green="0.46274509800000002" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T39-LX-7Fb" userLabel="Spacer View">
-                                <rect key="frame" x="0.0" y="415.5" width="600" height="22.5"/>
+                                <rect key="frame" x="0.0" y="616" width="414" height="33.5"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="By signing up, you agree to Hackfest-swvl's Terms and Conditions and Privacy Policy." textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x2y-li-tO0">
-                                <rect key="frame" x="25" y="438" width="550" height="45.5"/>
+                                <rect key="frame" x="25" y="649.5" width="364" height="68.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.83744419640000001" green="0.46274509800000002" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -568,19 +571,19 @@
         <!--Send Invite Alert View Controller-->
         <scene sceneID="CUz-4j-HHr">
             <objects>
-                <viewController storyboardIdentifier="JFSendInviteAlertViewController" modalTransitionStyle="crossDissolve" id="Shp-b0-mx9" customClass="JFSendInviteAlertViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFSendInviteAlertViewController" modalTransitionStyle="crossDissolve" id="Shp-b0-mx9" customClass="JFSendInviteAlertViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SQQ-SO-NHU">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujF-CD-JeJ" userLabel="ContainerView">
-                                <rect key="frame" x="0.0" y="153.5" width="600" height="446.5"/>
+                                <rect key="frame" x="0.0" y="553.5" width="414" height="308.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYL-Qf-Cue">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="68.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send invite via:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nd-8h-pzF">
-                                                <rect key="frame" x="252.5" y="41.5" width="95" height="16.5"/>
+                                                <rect key="frame" x="154.5" y="25.5" width="105" height="17.5"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                                 <color key="textColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="0.85632491438356162" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -593,13 +596,13 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nRk-j0-UMw">
-                                        <rect key="frame" x="0.0" y="100" width="600" height="231"/>
+                                        <rect key="frame" x="0.0" y="69" width="414" height="159.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lac-jR-Hfi">
-                                                <rect key="frame" x="0.0" y="0.0" width="600" height="115"/>
+                                            <view userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lac-jR-Hfi">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="79.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLo-Kn-2i8">
-                                                        <rect key="frame" x="8" y="8" width="584" height="99"/>
+                                                        <rect key="frame" x="8" y="8" width="398" height="63.5"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                         <state key="normal">
@@ -615,10 +618,10 @@
                                                         </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="more_icon_grey_white" translatesAutoresizingMaskIntoConstraints="NO" id="wG9-zO-2G6">
-                                                        <rect key="frame" x="16" y="46" width="22" height="23"/>
+                                                        <rect key="frame" x="16" y="28.5" width="22" height="23"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcO-hE-A3X">
-                                                        <rect key="frame" x="46" y="49.5" width="30.5" height="16.5"/>
+                                                        <rect key="frame" x="46" y="31" width="30.5" height="17.5"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                                         <color key="textColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="0.89956121575342463" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -637,10 +640,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Axi-Bn-0aR">
-                                                <rect key="frame" x="0.0" y="115.5" width="600" height="115.5"/>
+                                                <rect key="frame" x="0.0" y="80" width="414" height="79.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjw-Fu-BPx">
-                                                        <rect key="frame" x="8" y="8" width="584" height="99.5"/>
+                                                        <rect key="frame" x="8" y="8" width="398" height="63.5"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                         <state key="normal">
@@ -656,10 +659,10 @@
                                                         </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email_icon_darkgrey" translatesAutoresizingMaskIntoConstraints="NO" id="aK7-Dg-fs5">
-                                                        <rect key="frame" x="16" y="50.5" width="18" height="14"/>
+                                                        <rect key="frame" x="16" y="33" width="18" height="14"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAP-xx-bce">
-                                                        <rect key="frame" x="42" y="49.5" width="34.5" height="16.5"/>
+                                                        <rect key="frame" x="42" y="31" width="40.5" height="17.5"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                                         <color key="textColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="0.89661815068493156" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -680,13 +683,13 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9y-MI-DUa">
-                                        <rect key="frame" x="0.0" y="331.5" width="600" height="115"/>
+                                        <rect key="frame" x="0.0" y="229" width="414" height="79.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yv8-Po-asH">
-                                                <rect key="frame" x="8" y="8" width="584" height="99"/>
+                                                <rect key="frame" x="8" y="8" width="398" height="63.5"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
                                                 <state key="normal" title="CANCEL">
-                                                    <color key="titleColor" red="0.79215686269999996" green="0.51764705879999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.99215686270000003" green="0.01176470588" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="addTextSpacing">
@@ -747,13 +750,13 @@
         <!--Ratings History View Controller-->
         <scene sceneID="mhA-yU-sx3">
             <objects>
-                <viewController storyboardIdentifier="JFRatingsHistoryViewController" id="h6Y-ec-mR3" customClass="JFRatingsHistoryViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFRatingsHistoryViewController" id="h6Y-ec-mR3" customClass="JFRatingsHistoryViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pg0-gK-5iy">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0m-ks-IcX">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="dUk-3z-sWf"/>
                                 </constraints>
@@ -772,20 +775,20 @@
                                 </connections>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zg0-QZ-9LH">
-                                <rect key="frame" x="0.0" y="45" width="600" height="555"/>
+                                <rect key="frame" x="0.0" y="89" width="414" height="773"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" systemColor="darkTextColor"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="JFRatingsHistoryTableViewCell" id="rVz-hR-p2i" customClass="JFRatingsHistoryTableViewCell" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="600" height="42.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="JFRatingsHistoryTableViewCell" id="rVz-hR-p2i" customClass="JFRatingsHistoryTableViewCell" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rVz-hR-p2i" id="zUy-ya-xCq">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="42.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGF-Ya-gzd">
-                                                    <rect key="frame" x="16" y="11" width="568" height="20.5"/>
+                                                    <rect key="frame" x="20" y="11" width="374" height="21.5"/>
                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                     <color key="textColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>

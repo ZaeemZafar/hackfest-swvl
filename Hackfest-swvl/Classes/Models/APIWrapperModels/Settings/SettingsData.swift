@@ -71,9 +71,9 @@ struct SettingsData : Codable {
             if acceptRating == true {
                 var numberOfCategoriesOn = 0
                 numberOfCategoriesOn += (
-                    (traitAppearance! ? 1 : 0) +
-                    (traitPersonality! ? 1 : 0) +
-                    (traitIntelligence! ? 1 : 0)
+                    (traitAppearance ?? false ? 1 : 0) +
+                    (traitPersonality ?? false ? 1 : 0) +
+                    (traitIntelligence ?? false ? 1 : 0)
                 )
                 
                 return (numberOfCategoriesOn == 0) ? "On" : (numberOfCategoriesOn == 1 ? "On, 1 Category" : (numberOfCategoriesOn > 1) ? "On, \(numberOfCategoriesOn) Categories" : "On")

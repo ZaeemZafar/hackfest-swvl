@@ -228,7 +228,7 @@ class JFUserWithImageCustomCell: UITableViewCell {
         case CellType.following:
             self.indexLabel.isHidden = true
             self.indexoRArrowButton.isHidden = false
-            self.indexoRArrowButton.setTitle("FOLLOWING", for: .normal)
+            self.indexoRArrowButton.setTitle("FRIENDS", for: .normal)
             self.indexoRArrowButton.setImage(UIImage(), for: .normal)
             self.indexoRArrowButton.setTitleColor(UIColor.swvlLightRed, for: .normal)
             self.indexoRArrowButton.customButton(titleColor: UIColor.swvlLightRed, backGroundColor: UIColor.clear, borderColor: UIColor.swvlLightRed, withRoundCorner: true)

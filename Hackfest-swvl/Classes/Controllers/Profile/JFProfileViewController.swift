@@ -245,10 +245,11 @@ class JFProfileViewController: JFViewController {
     
     func configureRightBarButton() {
         print("Notification Badge Count \(UIApplication.notificationBadgeCount)")
-        let btn = UIButton(type: .custom)
+        let btn = UIButton(type: .system)
         let imageName = UIApplication.hasNotifications ? "more_icon_grey_yellow_white_with_notification" : "more_icon_grey_white"
         btn.setImage(UIImage(named: imageName), for: .normal)
         btn.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
+        btn.tintColor = UIColor.swvlRed
         btn.addTarget(self, action: #selector(openNotifications), for: .touchUpInside)
         let rightButtomItem = UIBarButtonItem(customView: btn)
         customRightButton(button: rightButtomItem)
