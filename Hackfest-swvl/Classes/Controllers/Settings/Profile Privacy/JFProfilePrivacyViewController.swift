@@ -70,8 +70,8 @@ class JFProfilePrivacyViewController: JFViewController {
     }
     
     func updateModel() {
-        model[0].selected = (settingsPrivacy?.isPublicProfile ?? false)
-        model[1].selected = !(settingsPrivacy?.isPublicProfile ?? false)
+        model[0].selected = (settingsPrivacy?.isCaptainProfile ?? false)
+        model[1].selected = !(settingsPrivacy?.isCaptainProfile ?? false)
     }
 }
 
@@ -92,10 +92,10 @@ extension JFProfilePrivacyViewController: UITableViewDelegate, UITableViewDataSo
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            settingsPrivacy?.isPublicProfile = true
+            settingsPrivacy?.isCaptainProfile = true
             
         } else {
-            settingsPrivacy?.isPublicProfile = false
+            settingsPrivacy?.isCaptainProfile = false
         }
         updatePrivacyData()
     }
@@ -107,7 +107,7 @@ extension JFProfilePrivacyViewController {
         
         MBProgressHUD.showCustomHUDAddedTo(view: self.tabBarController?.view, title: JFLoadingTitles.settingPrivacy, animated: true)
         
-        let endPoint = JFUserEndpoint.settingsPrivacy(isPublicProfile: (settingsPrivacy?.isPublicProfile ?? false))
+        let endPoint = JFUserEndpoint.settingsPrivacy(isPublicProfile: (settingsPrivacy?.isCaptainProfile ?? false))
         
         JFWSAPIManager.shared.sendJFAPIRequest(apiConfig: endPoint) { [weak self] (response: JFWepAPIResponse<SettingsAPIBase>) in
             

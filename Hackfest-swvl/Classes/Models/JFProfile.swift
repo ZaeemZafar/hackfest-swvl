@@ -192,7 +192,7 @@ extension JFProfile {
         lastName = profileData.lastName ?? ""
         imagePath = profileData.image
         
-        profilePrivacy = (profileData.settings?.isPublicProfile ?? false) ? .publicProfile : .privateProfile
+        profilePrivacy = (profileData.settings?.isCaptainProfile ?? false) ? .publicProfile : .privateProfile
         acceptRating = profileData.settings?.acceptRating ?? false
         acceptAnonymousRating =  profileData.settings?.acceptAnonymousRating ?? false
         
@@ -202,7 +202,7 @@ extension JFProfile {
         intelligenceIndex = JFIndexInfo(withJFIndex: profileData.indexMultiplier?.intelligenceAverage, jfMultiplier: nil, jfRateOfChange: nil)
         personalityIndex = JFIndexInfo(withJFIndex: profileData.indexMultiplier?.personalityAverage, jfMultiplier: nil, jfRateOfChange: nil)
         
-        followingState = profileData.followingRelation != nil ? ((profileData.followingRelation?.acceptRequest ?? false) ? .following : .requested) : FollowingStatus.none
+        followingState = profileData.friendRelation != nil ? ((profileData.friendRelation?.acceptRequest ?? false) ? .following : .requested) : FollowingStatus.none
         followedByState = profileData.followedByRelation != nil ? ((profileData.followedByRelation?.acceptRequest ?? false) ? .following : .requested) : FollowingStatus.none
         
         ratingsGiven = profileData.multiplierInfo?.ratingsGiven ?? 0
@@ -224,7 +224,7 @@ extension JFProfile {
         lastName = profileData.lastName ?? ""
         facebookId = profileData.facebookId ?? ""
         fbProfileLink = profileData.fbProfileLink ?? ""
-        profilePrivacy = (profileData.settings?.isPublicProfile ?? false) ? .publicProfile : .privateProfile
+        profilePrivacy = (profileData.settings?.isCaptainProfile ?? false) ? .publicProfile : .privateProfile
         imagePath = profileData.image
         locationLongitude = profileData.longitude
         locationLatitude = profileData.latitude
@@ -239,7 +239,7 @@ extension JFProfile {
         
         displayFacebookProfileLink = profileData.settings?.displayFacebookProfile ?? false
         
-        followingState = profileData.followingRelation != nil ? ((profileData.followingRelation?.acceptRequest ?? false) ? .following : .requested) : FollowingStatus.none
+        followingState = profileData.friendRelation != nil ? ((profileData.friendRelation?.acceptRequest ?? false) ? .following : .requested) : FollowingStatus.none
         followedByState = profileData.followedByRelation != nil ? ((profileData.followedByRelation?.acceptRequest ?? false) ? .following : .requested) : FollowingStatus.none
         
         if profileData.blockedByMe != nil && profileData.blockedByThem != nil {
@@ -327,7 +327,7 @@ extension JFProfile {
         acceptRating = profileData?.settings?.acceptRating ?? false
         acceptAnonymousRating =  profileData?.settings?.acceptAnonymousRating ?? false
         
-        followingState = profileData?.followingRelation != nil ? ((profileData?.followingRelation?.acceptRequest ?? false) ? .following : .requested) : FollowingStatus.none
+        followingState = profileData?.friendRelation != nil ? ((profileData?.friendRelation?.acceptRequest ?? false) ? .following : .requested) : FollowingStatus.none
         
         jfIndex = JFIndexInfo(withJFIndex: profileData?.indexMultiplier?.jfIndex, jfMultiplier: profileData?.indexMultiplier?.jfMultiplier, jfRateOfChange: profileData?.indexMultiplier?.rateOfChange)
     }

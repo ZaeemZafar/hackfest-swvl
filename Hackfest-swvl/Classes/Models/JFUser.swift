@@ -47,7 +47,7 @@ class JFUser: Codable {
         self.id = "\(profileData.id ?? 0)"
         self.firstName = profileData.firstName ?? ""
         self.lastName = profileData.lastName ?? ""
-        self.profilePrivacy = (profileData.settings?.isPublicProfile ?? false) ? .publicProfile : .privateProfile
+        self.profilePrivacy = (profileData.settings?.isCaptainProfile ?? false) ? .publicProfile : .privateProfile
         self.imagePath = profileData.image
         
     }

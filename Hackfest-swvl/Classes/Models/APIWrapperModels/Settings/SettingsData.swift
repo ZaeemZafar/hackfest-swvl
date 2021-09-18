@@ -22,7 +22,7 @@ struct SettingsData : Codable {
 	var notificationsEnabled : Bool?
 	var locationEnabled : Bool?
 	let scoreScope : String?
-    var isPublicProfile : Bool?
+    var isCaptainProfile : Bool?
 	var acceptAnonymousRating : Bool?
 	var facebookConnected : Bool?
 	var displayFacebookProfile : Bool?
@@ -40,7 +40,7 @@ struct SettingsData : Codable {
         case notificationsEnabled = "notificationsEnabled"
         case locationEnabled = "locationEnabled"
         case scoreScope = "scoreScope"
-        case isPublicProfile = "isPublicProfile"
+        case isCaptainProfile = "isCaptainProfile"
         case acceptAnonymousRating = "acceptAnonymousRating"
         case facebookConnected = "facebookConnected"
         case displayFacebookProfile = "displayFacebookProfile"
@@ -59,7 +59,7 @@ struct SettingsData : Codable {
 		notificationsEnabled = try container.decodeIfPresent(Bool.self, forKey: .notificationsEnabled)
 		locationEnabled = try container.decodeIfPresent(Bool.self, forKey: .locationEnabled)
 		scoreScope = try container.decodeIfPresent(String.self, forKey: .scoreScope)
-		isPublicProfile = try container.decodeIfPresent(Bool.self, forKey: .isPublicProfile)
+        isCaptainProfile = try container.decodeIfPresent(Bool.self, forKey: .isCaptainProfile)
 		acceptAnonymousRating = try container.decodeIfPresent(Bool.self, forKey: .acceptAnonymousRating)
 		facebookConnected = try container.decodeIfPresent(Bool.self, forKey: .facebookConnected)
 		displayFacebookProfile = try container.decodeIfPresent(Bool.self, forKey: .displayFacebookProfile)
