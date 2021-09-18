@@ -40,7 +40,7 @@ enum JFAppTarget: Int {
         switch self {
             
         case .development:
-            return "http://dev.justfamous.com:4000/"
+            return "http://18.234.149.76:4000/"
             
         case .qa:
             return "http://dev.justfamous.com:4001/"

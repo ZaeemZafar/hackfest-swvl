@@ -193,10 +193,10 @@ class JFProfileInfoCustomCell: UITableViewCell {
             break
             
         case .requested, .blocked:
-            self.editProfileButton.customizeButton(titleColor: UIColor.jfLightBrown, backgroundColor: UIColor.clear, borderColor: UIColor.jfLightBrown, withRoundCorner: true , cornerRadius: 5.0)
+            self.editProfileButton.customizeButton(titleColor: UIColor.swvlLightRed, backgroundColor: UIColor.clear, borderColor: UIColor.swvlLightRed, withRoundCorner: true , cornerRadius: 5.0)
             
         case .follow:
-            self.editProfileButton.customizeButton(titleColor: UIColor.jfDarkBrown, backgroundColor: UIColor.clear, borderColor: UIColor.jfLightBrown, withRoundCorner: true , cornerRadius: 5.0)
+            self.editProfileButton.customizeButton(titleColor: UIColor.swvlRed, backgroundColor: UIColor.clear, borderColor: UIColor.swvlLightRed, withRoundCorner: true , cornerRadius: 5.0)
         
         case .editProfile:
             break
@@ -206,6 +206,6 @@ class JFProfileInfoCustomCell: UITableViewCell {
     
     func customAppearanceOfButton(title: String)  {
         self.editProfileButton.addSpacingWithTitle(spacing: 2.0, title: title)
-        self.editProfileButton.customizeButton(titleColor: UIColor.white, backgroundColor: UIColor.jfLightBrown, borderColor: UIColor.clear, withRoundCorner: true, cornerRadius: 5)
+        self.editProfileButton.customizeButton(titleColor: UIColor.white, backgroundColor: UIColor.swvlLightRed, borderColor: UIColor.clear, withRoundCorner: true, cornerRadius: 5)
     }
 }

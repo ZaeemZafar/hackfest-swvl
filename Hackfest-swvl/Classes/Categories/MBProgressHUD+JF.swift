@@ -25,7 +25,7 @@ extension MBProgressHUD {
         containerView.backgroundColor = UIColor.clear
         
         let activityView = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
-        activityView.color = UIColor.jfDarkBrown
+        activityView.color = UIColor.swvlRed
         
         activityView.startAnimating()
         
@@ -54,10 +54,10 @@ extension MBProgressHUD {
         progressHUD.label.text = title
         
         progressHUD.label.font = UIFont.normal(fontSize: 14)
-        progressHUD.label.textColor = UIColor.jfDarkBrown
+        progressHUD.label.textColor = UIColor.swvlRed
         
         progressHUD.detailsLabel.font = UIFont.normal(fontSize: 12.0)
-        progressHUD.detailsLabel.textColor = UIColor.jfDarkBrown
+        progressHUD.detailsLabel.textColor = UIColor.swvlRed
 
         
         progressHUD.show(animated: true)
@@ -105,7 +105,7 @@ extension MBProgressHUD {
         progressHUD.label.textColor = UIColor.jfDarkGray
         
         progressHUD.detailsLabel.font = UIFont.normal(fontSize: 12.0)
-        progressHUD.detailsLabel.textColor = UIColor.jfDarkBrown
+        progressHUD.detailsLabel.textColor = UIColor.swvlRed
         
         progressHUD.show(animated: true)
 

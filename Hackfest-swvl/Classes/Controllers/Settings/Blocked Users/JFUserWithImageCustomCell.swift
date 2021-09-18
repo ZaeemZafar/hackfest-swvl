@@ -210,8 +210,8 @@ class JFUserWithImageCustomCell: UITableViewCell {
             self.indexoRArrowButton.isHidden = false
             self.indexoRArrowButton.setImage(UIImage(), for: .normal)
             self.indexoRArrowButton.setTitle("REQUESTED", for: .normal)
-            self.indexoRArrowButton.setTitleColor(UIColor.jfLightBrown, for: .normal)
-            self.indexoRArrowButton.customButton(titleColor: UIColor.jfLightBrown, backGroundColor: UIColor.clear, borderColor: UIColor.jfLightBrown, withRoundCorner: true)
+            self.indexoRArrowButton.setTitleColor(UIColor.swvlLightRed, for: .normal)
+            self.indexoRArrowButton.customButton(titleColor: UIColor.swvlLightRed, backGroundColor: UIColor.clear, borderColor: UIColor.swvlLightRed, withRoundCorner: true)
             self.indexoRArrowButton.tag = CellType.requested.rawValue
             self.indexoRArrowButton.contentHorizontalAlignment = .center
 
@@ -221,7 +221,7 @@ class JFUserWithImageCustomCell: UITableViewCell {
             self.indexoRArrowButton.setImage(UIImage(), for: .normal)
             self.indexoRArrowButton.setTitle("+ FOLLOW", for: .normal)
             self.indexoRArrowButton.setTitleColor(UIColor.white, for: .normal)
-            self.indexoRArrowButton.customButton(titleColor: UIColor.white, backGroundColor: UIColor.jfDarkBrown, borderColor: UIColor.clear, withRoundCorner: true)
+            self.indexoRArrowButton.customButton(titleColor: UIColor.white, backGroundColor: UIColor.swvlRed, borderColor: UIColor.clear, withRoundCorner: true)
             self.indexoRArrowButton.tag = CellType.follow.rawValue
             self.indexoRArrowButton.contentHorizontalAlignment = .center
 
@@ -230,8 +230,8 @@ class JFUserWithImageCustomCell: UITableViewCell {
             self.indexoRArrowButton.isHidden = false
             self.indexoRArrowButton.setTitle("FOLLOWING", for: .normal)
             self.indexoRArrowButton.setImage(UIImage(), for: .normal)
-            self.indexoRArrowButton.setTitleColor(UIColor.jfLightBrown, for: .normal)
-            self.indexoRArrowButton.customButton(titleColor: UIColor.jfLightBrown, backGroundColor: UIColor.clear, borderColor: UIColor.jfLightBrown, withRoundCorner: true)
+            self.indexoRArrowButton.setTitleColor(UIColor.swvlLightRed, for: .normal)
+            self.indexoRArrowButton.customButton(titleColor: UIColor.swvlLightRed, backGroundColor: UIColor.clear, borderColor: UIColor.swvlLightRed, withRoundCorner: true)
             self.indexoRArrowButton.tag = CellType.following.rawValue
             self.indexoRArrowButton.contentHorizontalAlignment = .center
 
@@ -241,7 +241,7 @@ class JFUserWithImageCustomCell: UITableViewCell {
             self.indexoRArrowButton.setImage(UIImage(), for: .normal)
             self.indexoRArrowButton.setTitle("+ INVITE", for: .normal)
             self.indexoRArrowButton.setTitleColor(UIColor.white, for: .normal)
-            self.indexoRArrowButton.customButton(titleColor: UIColor.white, backGroundColor: UIColor.jfDarkBrown, borderColor: UIColor.clear, withRoundCorner: true)
+            self.indexoRArrowButton.customButton(titleColor: UIColor.white, backGroundColor: UIColor.swvlRed, borderColor: UIColor.clear, withRoundCorner: true)
             self.indexoRArrowButton.tag = CellType.invite.rawValue
             self.indexoRArrowButton.contentHorizontalAlignment = .center
 
@@ -250,8 +250,8 @@ class JFUserWithImageCustomCell: UITableViewCell {
             self.indexoRArrowButton.isHidden = false
             self.indexoRArrowButton.setTitle("INVITED", for: .normal)
             self.indexoRArrowButton.setImage(UIImage(), for: .normal)
-            self.indexoRArrowButton.setTitleColor(UIColor.jfLightBrown, for: .normal)
-            self.indexoRArrowButton.customButton(titleColor: UIColor.jfLightBrown, backGroundColor: UIColor.clear, borderColor: UIColor.jfLightBrown, withRoundCorner: true)
+            self.indexoRArrowButton.setTitleColor(UIColor.swvlLightRed, for: .normal)
+            self.indexoRArrowButton.customButton(titleColor: UIColor.swvlLightRed, backGroundColor: UIColor.clear, borderColor: UIColor.swvlLightRed, withRoundCorner: true)
             self.indexoRArrowButton.tag = CellType.invited.rawValue
             self.indexoRArrowButton.contentHorizontalAlignment = .center
         }
@@ -268,8 +268,8 @@ class JFUserWithImageCustomCell: UITableViewCell {
             self.indexLabel.isHidden = true
             self.indexoRArrowButton.isHidden = false
             self.indexoRArrowButton.setTitle("INVITED", for: .normal)
-            self.indexoRArrowButton.setTitleColor(UIColor.jfLightBrown, for: .normal)
-            self.indexoRArrowButton.customButton(titleColor: UIColor.jfLightBrown, backGroundColor: UIColor.clear, borderColor: UIColor.jfLightBrown, withRoundCorner: true)
+            self.indexoRArrowButton.setTitleColor(UIColor.swvlLightRed, for: .normal)
+            self.indexoRArrowButton.customButton(titleColor: UIColor.swvlLightRed, backGroundColor: UIColor.clear, borderColor: UIColor.swvlLightRed, withRoundCorner: true)
             self.indexoRArrowButton.tag = CellType.invited.rawValue
             
         } else {
@@ -277,7 +277,7 @@ class JFUserWithImageCustomCell: UITableViewCell {
             self.indexoRArrowButton.isHidden = false
             self.indexoRArrowButton.setTitle("+ INVITE", for: .normal)
             self.indexoRArrowButton.setTitleColor(UIColor.white, for: .normal)
-            self.indexoRArrowButton.customButton(titleColor: UIColor.white, backGroundColor: UIColor.jfDarkBrown, borderColor: UIColor.clear, withRoundCorner: true)
+            self.indexoRArrowButton.customButton(titleColor: UIColor.white, backGroundColor: UIColor.swvlRed, borderColor: UIColor.clear, withRoundCorner: true)
             self.indexoRArrowButton.tag = CellType.invite.rawValue
         }
     }
@@ -297,15 +297,15 @@ class JFUserWithImageCustomCell: UITableViewCell {
         self.indexoRArrowButton.isHidden = false
         self.indexoRArrowButton.setTitle("+ INVITE", for: .normal)
         self.indexoRArrowButton.setTitleColor(UIColor.white, for: .normal)
-        self.indexoRArrowButton.customButton(titleColor: UIColor.white, backGroundColor: UIColor.jfDarkBrown, borderColor: UIColor.clear, withRoundCorner: true)
+        self.indexoRArrowButton.customButton(titleColor: UIColor.white, backGroundColor: UIColor.swvlRed, borderColor: UIColor.clear, withRoundCorner: true)
         self.indexoRArrowButton.tag = CellType.invite.rawValue
         
         case CellType.invited.rawValue:
         self.indexLabel.isHidden = true
         self.indexoRArrowButton.isHidden = false
         self.indexoRArrowButton.setTitle("INVITED", for: .normal)
-        self.indexoRArrowButton.setTitleColor(UIColor.jfLightBrown, for: .normal)
-        self.indexoRArrowButton.customButton(titleColor: UIColor.jfLightBrown, backGroundColor: UIColor.clear, borderColor: UIColor.jfLightBrown, withRoundCorner: true)
+        self.indexoRArrowButton.setTitleColor(UIColor.swvlLightRed, for: .normal)
+        self.indexoRArrowButton.customButton(titleColor: UIColor.swvlLightRed, backGroundColor: UIColor.clear, borderColor: UIColor.swvlLightRed, withRoundCorner: true)
         self.indexoRArrowButton.tag = CellType.invited.rawValue
         
         default:

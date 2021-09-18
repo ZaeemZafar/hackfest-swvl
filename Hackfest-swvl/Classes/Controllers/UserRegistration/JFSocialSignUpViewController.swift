@@ -39,10 +39,10 @@ class JFSocialSignUpViewController: UIViewController {
     
     @IBAction func loginButtonTapped(_ sender: Any) {
         
-       if self.navigationController?.popToViewController(vcClass: JFSocialLoginViewController.self) ?? false {
+       if self.navigationController?.popToViewController(vcClass: JFLoginViewController.self) ?? false {
             // already navigated
         } else {
-            let socialLoginVC = getSocialLoginVC()
+            let socialLoginVC = getLoginEmailVC()
             self.navigationController?.pushViewController(socialLoginVC, animated: true)
         }
         

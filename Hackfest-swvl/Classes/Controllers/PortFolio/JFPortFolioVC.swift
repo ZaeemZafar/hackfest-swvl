@@ -178,7 +178,7 @@ class JFPortFolioVC: JFViewController, XMSegmentedControlDelegate {
         segmentedControl.segmentTitle = JFConstants.portfolioTitles
         segmentedControl.backgroundColor = UIColor.clear
         segmentedControl.highlightTint = .jfDarkGray
-        segmentedControl.highlightColor = .jfMediumBrown
+        segmentedControl.highlightColor = .swvlMediumRed
         segmentedControl.tint = .lightGray
         segmentedControl.font = UIFont.normal(fontSize: 14.0)
         segmentedControl.delegate = self

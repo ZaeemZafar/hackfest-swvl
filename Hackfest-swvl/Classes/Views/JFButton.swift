@@ -16,15 +16,15 @@ class JFButton: UIButton {
     @IBInspectable var orangeButton: Bool = true { //Used to change background color, title color, border color & width accordingly
         didSet {
             if orangeButton {
-                backgroundColor = UIColor.jfDarkBrown
+                backgroundColor = UIColor.swvlRed
                 setTitleColor(UIColor.white, for: .normal)
                 
                 
             } else  {
                 backgroundColor = UIColor.white
                 layer.borderWidth = 1.7
-                layer.borderColor = UIColor.jfDarkBrown.cgColor
-                setTitleColor(UIColor.jfDarkBrown, for: .normal)
+                layer.borderColor = UIColor.swvlRed.cgColor
+                setTitleColor(UIColor.swvlRed, for: .normal)
             }
         }
     }

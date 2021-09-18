@@ -170,21 +170,35 @@ extension JFSignUpEmailViewController {
         JFWSAPIManager.shared.checkEmailExists(email: emailTextField.text ?? "") { [weak self] (success, errorMessage) in
             guard let strongSelf = self else { return }
             
-            MBProgressHUD.hide(for: (strongSelf.navigationController?.view)!, animated: true)
-            
             if (success) {
                 if let firstName = strongSelf.firstNameTextField.text, let lastName = strongSelf.lastNameTextField.text, let email = strongSelf.emailTextField.text, let password = strongSelf.createPasswordTextField.text {
                     strongSelf.signUpUser.firstName = firstName
                     strongSelf.signUpUser.lastName = lastName
                     strongSelf.signUpUser.email = email
                     strongSelf.signUpUser.password = password
+                    strongSelf.signUpUser.phoneNumber = "5555555555"
                 }
                 
-                let vc = strongSelf.getVerificationVC()
-                vc.signUpUser = strongSelf.signUpUser
-                strongSelf.navigationController?.pushViewController(vc, animated: true)
+                JFWSAPIManager.shared.signUpWithInfo(userInfo: strongSelf.signUpUser) { [weak self] (success, errorMessage) in
+                    guard let strongSelf = self else { return }
+                    MBProgressHUD.hide(for: (strongSelf.navigationController?.view)!, animated: true)
+                    
+                    if success {
+                        JFSession.shared.setLogInStatus()
+                        
+                        let vc = strongSelf.getNotificationAccessVC()
+                        strongSelf.navigationController?.pushViewController(vc, animated: true)
+                        
+                    } else {
+                        let alertType = (errorMessage ?? "" == JFLocalizableConstants.NetworkError) ? AlertType.networkError : AlertType.defaultSystemAlert(message: errorMessage ?? "")
+                        
+                        JFAlertViewController.presentAlertController(with: alertType, fromViewController: self) { _ in }
+                    }
+                }
                 
             } else {
+                MBProgressHUD.hide(for: (strongSelf.navigationController?.view)!, animated: true)
+                
                 let alertType = (errorMessage ?? "" == JFLocalizableConstants.NetworkError) ? AlertType.networkError : AlertType.defaultSystemAlert(message: errorMessage ?? "")
                 
                 JFAlertViewController.presentAlertController(with: alertType, fromViewController: self) { success in

@@ -95,6 +95,16 @@ extension UIViewController {
         return socialSignUpVC
     }
     
+    func getSignUpEmailVC() -> JFSignUpEmailViewController {
+        let signupEmailVC = UIStoryboard.userRegistration.instantiateViewController(withIdentifier: "JFSignUpEmailViewController") as! JFSignUpEmailViewController
+        return signupEmailVC
+    }
+    
+    func getLoginEmailVC() -> JFLoginViewController {
+        let jfLoginVC = UIStoryboard.userRegistration.instantiateViewController(withIdentifier: "JFLoginViewController") as! JFLoginViewController
+        return jfLoginVC
+    }
+    
     func getSignUpFacebookVC() -> JFSignUpFacebookViewController {
         let signUpFacebookVC = UIStoryboard.userRegistration.instantiateViewController(withIdentifier: "JFSignUpFacebookViewController") as! JFSignUpFacebookViewController
         return signUpFacebookVC
