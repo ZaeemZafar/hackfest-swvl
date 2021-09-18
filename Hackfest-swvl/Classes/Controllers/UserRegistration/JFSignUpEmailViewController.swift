@@ -177,6 +177,7 @@ extension JFSignUpEmailViewController {
                     strongSelf.signUpUser.email = email
                     strongSelf.signUpUser.password = password
                     strongSelf.signUpUser.phoneNumber = "5555555555"
+                    strongSelf.signUpUser.deviceType = "ios"
                 }
                 
                 JFWSAPIManager.shared.signUpWithInfo(userInfo: strongSelf.signUpUser) { [weak self] (success, errorMessage) in
