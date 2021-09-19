@@ -4528,7 +4528,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Hackfest-swvlDev.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3M6K7264C7;
+				DEVELOPMENT_TEAM = N4UCH5237X;
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				INFOPLIST_FILE = "Hackfest-swvl/Supporting Files/Hackfest-swvlDev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -4539,7 +4539,7 @@
 					"-l\"c++\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DDEVELOPMENT -DDEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hackfest.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Citrusbits.MyTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/Hackfest-swvl-Bridging-Header.h";
@@ -4557,7 +4557,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Hackfest-swvlDev.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3M6K7264C7;
+				DEVELOPMENT_TEAM = N4UCH5237X;
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				INFOPLIST_FILE = "Hackfest-swvl/Supporting Files/Hackfest-swvlDev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -4568,7 +4568,7 @@
 					"-l\"c++\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DDEVELOPMENT";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hackfest.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Citrusbits.MyTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/Hackfest-swvl-Bridging-Header.h";

@@ -15,6 +15,8 @@ class JFCategoryWordsCustomCell: UICollectionViewCell {
     @IBOutlet weak var tickImageView: UIImageView!
     @IBOutlet weak var wordsTitleLabel: UILabel!
     
+    var customBackgroundColor: UIColor?
+    
     //MARK:- UITableViewCell lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -40,6 +42,8 @@ class JFCategoryWordsCustomCell: UICollectionViewCell {
         containerView.layer.cornerRadius = 4.0
         wordsTitleLabel.text = wordsArray[indexPath.row]
         containerView.backgroundColor = JFSelectedCategory.colorArray[indexPath.row]
+        customBackgroundColor = JFSelectedCategory.colorArray[indexPath.row]
+        tickImageView.isHidden = true
         
         // Setting border color to following cells
         if indexPath.row == 9 || indexPath.row == 10 || indexPath.row == 11 {
@@ -59,6 +63,7 @@ class JFCategoryWordsCustomCell: UICollectionViewCell {
     func defaultLayout() {
         tickImageView.isHidden = true
         wordsTitleLabel.textColor = UIColor.jfChooseWordsBlack
+        containerView.backgroundColor = customBackgroundColor
     }
     func selectedLayout() {
         containerView.layer.borderWidth = 0.0
