@@ -571,15 +571,15 @@ enum JFUserEndpoint: JFAPIConfig {
             // Developer's Note: '+1' is for consider indexpath in category table view: /JW/ We should use enum approach
             // TODO:
             
-            let friendlyValues = ratingCategory[.friendly]?.first ?? 0
-            let dressingValues = ratingCategory[.dressing]?.first ?? 0
-            let iqLevelValues = ratingCategory[.iqLevel]?.first ?? 0
-            let communicationValues = ratingCategory[.communication]?.first ?? 0
-            let personalityValues = ratingCategory[.personality]?.first ?? 0
-            let behaviorValues = ratingCategory[.behavior]?.first ?? 0
-            let cleanlinessValues = ratingCategory[.cleanliness]?.first ?? 0
-            let punctualityValues = ratingCategory[.punctuality]?.first ?? 0
-            let appearanceValues = ratingCategory[.appearance]?.first ?? 0
+            let friendlyValues = ratingCategory[.friendly]?.first
+            let dressingValues = ratingCategory[.dressing]?.first
+            let iqLevelValues = ratingCategory[.iqLevel]?.first
+            let communicationValues = ratingCategory[.communication]?.first
+            let personalityValues = ratingCategory[.personality]?.first
+            let behaviorValues = ratingCategory[.behavior]?.first
+            let cleanlinessValues = ratingCategory[.cleanliness]?.first
+            let punctualityValues = ratingCategory[.punctuality]?.first
+            let appearanceValues = ratingCategory[.appearance]?.first
         
             
             params["trait1"] = friendlyValues
