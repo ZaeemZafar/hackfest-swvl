@@ -118,9 +118,9 @@ enum SortFilter: Int {
     var getHeaderText: String? {
         switch self {
         case .highestToLowest:
-            return "Sorted by JF Index: Highest - Lowest"
+            return "Sorted by SWVL Persona Highest - Lowest"
         case .lowestToHighest:
-            return "Sorted by JF Index: Lowest - Highest"
+            return "Sorted by SWVL Persona Lowest - Highest"
         case .aToZ:
             return "Sorted by Alphabetical: A - Z"
         case .zToA:
@@ -308,17 +308,17 @@ struct JFLoadingTitles {
     static let gettingFacebookFriends = NSLocalizedString("Getting facebook friends...", comment: "")
     static let invitingUser = NSLocalizedString("Inviting...", comment: "")
     
-    static let loadingNetworkData = NSLocalizedString("Loading network...", comment: "")
-    static let loadingFollowing = NSLocalizedString("Loading following...", comment: "")
+    static let loadingNetworkData = NSLocalizedString("Loading community...", comment: "")
+    static let loadingFollowing = NSLocalizedString("Loading friends...", comment: "")
     static let loadingDiscoverData = NSLocalizedString("Loading discover...", comment: "")
     
-    static let sendingFollowingRequest = NSLocalizedString("Following request...", comment: "")
-    static let sendingUnFollowingRequest = NSLocalizedString("Stop following...", comment: "")
+    static let sendingFollowingRequest = NSLocalizedString("Friend request...", comment: "")
+    static let sendingUnFollowingRequest = NSLocalizedString("Unfriend...", comment: "")
     static let sendingCancellingRequest = NSLocalizedString("Cancelling request...", comment: "")
     
-    static let loadingUsers = NSLocalizedString("Loading users...", comment: "")
-    static let searchingUsers = NSLocalizedString("Searching users...", comment: "")
-    static let ratingUser = NSLocalizedString("Rating user...", comment: "")
+    static let loadingUsers = NSLocalizedString("Loading travellers...", comment: "")
+    static let searchingUsers = NSLocalizedString("Searching travellers...", comment: "")
+    static let ratingUser = NSLocalizedString("Rating traveller...", comment: "")
 }
 
 

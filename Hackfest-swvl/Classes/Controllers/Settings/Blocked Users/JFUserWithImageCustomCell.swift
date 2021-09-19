@@ -96,7 +96,7 @@ class JFUserWithImageCustomCell: UITableViewCell {
                 jfIndexString = blockUser.indexMultiplier(forType: .jfIndex)?.jfimValue ?? "0000"
 //            }
             
-            subTitleLabel.text = "JF Index: \(jfIndexString)"
+            subTitleLabel.text = "SWVL Persona \(jfIndexString)"
         }
         self.indexoRArrowButton.isHidden = true
         self.indexLabel.isHidden = true
@@ -176,7 +176,7 @@ class JFUserWithImageCustomCell: UITableViewCell {
 //        } else {
             
             if cellData.acceptRating {
-                subTitleLabel.text = "JF Index: \(jfIndexString)"
+                subTitleLabel.text = "SWVL Persona: \(jfIndexString)"
             } else {
                 subTitleLabel.text = "NOT ACCEPTING RATINGS"
             }

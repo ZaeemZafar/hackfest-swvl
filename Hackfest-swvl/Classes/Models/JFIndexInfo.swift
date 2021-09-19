@@ -27,7 +27,6 @@ enum JFIndexMultiplierType: Int, Codable {
         case .cleanliness: return .clean
         case .punctuality: return .punctuanlity
         case .appearance: return .appearance
-        default: return UIColor.red
         }
     }
     

@@ -15,6 +15,7 @@ import Foundation
 struct NotificationFollowAPIResponse : Codable {
 	let id : Int?
 	let fromUserId : Int?
+    let friendUserId: Int?
 	let createdAt : String?
 	let updatedAt : String?
 	let followerDetail : FollowerDetail?
@@ -24,6 +25,7 @@ struct NotificationFollowAPIResponse : Codable {
 
 		case id = "id"
 		case fromUserId = "fromUserId"
+        case friendUserId = "friendUserId"
 		case createdAt = "createdAt"
 		case updatedAt = "updatedAt"
 		case followerDetail = "followerDetail"
@@ -35,6 +37,7 @@ struct NotificationFollowAPIResponse : Codable {
 		let values = try decoder.container(keyedBy: CodingKeys.self)
 		id = try values.decodeIfPresent(Int.self, forKey: .id)
 		fromUserId = try values.decodeIfPresent(Int.self, forKey: .fromUserId)
+        friendUserId = try values.decodeIfPresent(Int.self, forKey: .friendUserId)
 		createdAt = try values.decodeIfPresent(String.self, forKey: .createdAt)
 		updatedAt = try values.decodeIfPresent(String.self, forKey: .updatedAt)
         

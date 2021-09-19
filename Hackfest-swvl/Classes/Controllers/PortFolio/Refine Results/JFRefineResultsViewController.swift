@@ -44,9 +44,9 @@ enum FilterType {
         case .sort:
             return "Sort"
         case .highToLow:
-            return "JF Index: Highest - Lowest"
+            return "SWVL Persona Highest - Lowest"
         case .lowToHigh:
-            return "JF Index: Lowest -  Highest"
+            return "SWVL Persona Lowest -  Highest"
         case .aToZ:
             return "Alphabetical: A - Z"
         case .zToA:
@@ -63,7 +63,7 @@ enum FilterType {
         case .ratings:
             return ["View All", "Accepting Ratings", "Not Accepting Ratings", "Accepting Anonymous Ratings"]
         case .sort:
-            return ["JF Index: Highest - Lowest", "JF Index: Lowest -  Highest", "Alphabetical: A - Z", "Alphabetical: Z - A"]
+            return ["SWVL Persona Highest - Lowest", "SWVL Persona Lowest -  Highest", "Alphabetical: A - Z", "Alphabetical: Z - A"]
         default:
             return []
         }

@@ -2,22 +2,21 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "connecting_people_icon_yellow.png",
       "scale" : "1x"
     },
     {
+      "filename" : "WhatsApp Image 2021-09-19 at 12.55.57 PM 2.jpeg",
       "idiom" : "universal",
-      "filename" : "connecting_people_icon_yellow@2x.png",
       "scale" : "2x"
     },
     {
+      "filename" : "WhatsApp Image 2021-09-19 at 12.55.57 PM.jpeg",
       "idiom" : "universal",
-      "filename" : "connecting_people_icon_yellow@3x.png",
       "scale" : "3x"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }

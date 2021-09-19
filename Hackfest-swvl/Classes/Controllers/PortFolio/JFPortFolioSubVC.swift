@@ -16,7 +16,7 @@ class JFPortFolioSubVC: UIViewController {
     @IBOutlet weak var emptyView: UIView!
 
     //MARK:- Private properties
-    private let myNetworkArray = ["Expand Your Network", "Current Network"]
+    private let myNetworkArray = ["Build Your Community", "Your Community"]
     
     //MARK:- Public properties
     var selectedTab: SelectedCategory = .following

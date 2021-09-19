@@ -7,7 +7,7 @@
 		<string>Who is Hackfest-swvl?</string>
 		<key>description</key>
 		<array>
-			<string>A young, ambitious and creative Company founded in 2018 (Justfamous Inc.) who is bringing to the World a disruptive social network.</string>
+			<string>A young, ambitious and creative Company founded in 2018 (hackfest-swvl Inc.) who is bringing to the World a disruptive social network.</string>
 		</array>
 		<key>opened</key>
 		<false/>
@@ -52,10 +52,10 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>What is the JF Index all about?</string>
+		<string>What is the SWVL Persona all about?</string>
 		<key>description</key>
 		<array>
-			<string>The JF Index is “your number”. A universal measure that lets you understand and then improve Human Brand Equity for yourself and also for people around you. It is measured and obtained exclusively through the Hackfest-swvl app. The sophisticated algorithms will first take into account your category specific scores and then layer in behavioral data from your in-app activities. You will then witness your personal Human Brand Equity evolve in real time.</string>
+			<string>The SWVL Persona is “your number”. A universal measure that lets you understand and then improve Human Brand Equity for yourself and also for people around you. It is measured and obtained exclusively through the Hackfest-swvl app. The sophisticated algorithms will first take into account your category specific scores and then layer in behavioral data from your in-app activities. You will then witness your personal Human Brand Equity evolve in real time.</string>
 		</array>
 		<key>opened</key>
 		<false/>
@@ -90,7 +90,7 @@
 			<string>You can also opt out of being rated entirely, choosing instead to participate only as a truth giver</string>
 			<string>Hackfest-swvl prevents users from rating the same person more than once every 60 minutes, encouraging thoughtful ratings</string>
 			<string>You are also given the option to block users if needed</string>
-			<string>Any suspected harassment or bullying could be immediately reported to Hackfest-swvl: support@justfamous.com</string>
+			<string>Any suspected harassment or bullying could be immediately reported to Hackfest-swvl: support@hackfest-swvl.com</string>
 		</array>
 		<key>opened</key>
 		<false/>
@@ -102,19 +102,7 @@
 		<string>Could I suggest Hackfest-swvl ways to improve the Product?</string>
 		<key>description</key>
 		<array>
-			<string>Yes, you can share your thoughts with us directly: support@justfamous.com</string>
-		</array>
-		<key>opened</key>
-		<false/>
-		<key>showBullets</key>
-		<false/>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Are you open for financial Investments?</string>
-		<key>description</key>
-		<array>
-			<string>Always happy to consider, thanks to contact us directly: support@justfamous.com</string>
+			<string>Yes, you can share your thoughts with us directly: support@hackfest-swvl.com</string>
 		</array>
 		<key>opened</key>
 		<false/>

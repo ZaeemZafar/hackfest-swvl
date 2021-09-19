@@ -86,7 +86,7 @@ extension JFFollowRequestViewController: UITableViewDelegate, UITableViewDataSou
             jfIndex = "\(Int(jfimValue))".leftPadding(toLength: 4, withPad: "0")
         }
         
-        cell.subTitleLabel.text = "JF Index: \(jfIndex)"
+        cell.subTitleLabel.text = "SWVL Persona \(jfIndex)"
         
         return cell
     }
@@ -185,7 +185,7 @@ extension JFFollowRequestViewController {
         var endPoint: JFUserEndpoint?
         
         if action {
-            endPoint = JFUserEndpoint.acceptFollowRequest(userID: "\(currentProfile.fromUserId ?? 0)", requestID: "\(currentProfile.id ?? 0)")
+            endPoint = JFUserEndpoint.acceptFollowRequest(userID: "\(currentProfile.friendUserId ?? 0)", requestID: "\(currentProfile.id ?? 0)")
             
         } else {
             endPoint = JFUserEndpoint.declineFollowRequest(requestID: "\(currentProfile.id ?? 0)")

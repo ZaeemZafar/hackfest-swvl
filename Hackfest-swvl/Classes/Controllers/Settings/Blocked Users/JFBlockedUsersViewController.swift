@@ -45,7 +45,7 @@ class JFBlockedUsersViewController: JFViewController {
     
     //MARK:- Helper methods
     func setupNavigation() {
-        title = "BLOCKED USERS"
+        title = "BLOCKED TRAVELLERS"
         addBackButton()
     }
 }

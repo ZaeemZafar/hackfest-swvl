@@ -36,7 +36,7 @@ enum JFSettingRows {
         case .currentLocation:
             return "Current Location"
         case .blockedUsers:
-                return "Blocked Users"
+                return "Blocked Travellers"
         case .ratings:
             return "Ratings"
         case .notifications:
@@ -653,7 +653,7 @@ extension JFSettingsViewController {
                 let appDelegate: AppDelegate? = UIApplication.shared.delegate as? AppDelegate
                 
                 // set root view controller to social login
-                appDelegate?.setRootViewController(withAnimation: true)
+                appDelegate?.setLandingScreen()
                 
             } else {
                 let alertType = (errorMessage ?? "" == JFLocalizableConstants.NetworkError) ? AlertType.networkError : AlertType.defaultSystemAlert(message: errorMessage ?? "")

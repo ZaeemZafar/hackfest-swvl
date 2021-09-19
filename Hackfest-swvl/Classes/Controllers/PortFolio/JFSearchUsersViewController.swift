@@ -249,7 +249,7 @@ extension JFSearchUsersViewController: UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let cell = tableView.dequeueReusableCell(withIdentifier: "JFHeaderCustomCell") as! JFHeaderCustomCell
         
-        cell.headerLabel.text = filter.filterActive ? headerText : isSearchActive ? "Search Results (\(metadata?.totalCount ?? 0))" : "Top Users"
+        cell.headerLabel.text = filter.filterActive ? headerText : isSearchActive ? "Search Results (\(metadata?.totalCount ?? 0))" : "Top Travellers"
         
         return cell
     }

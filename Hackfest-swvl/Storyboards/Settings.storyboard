@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uJ0-mc-g97">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uJ0-mc-g97">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,7 +25,7 @@
         <!--Profile Privacy View Controller-->
         <scene sceneID="z83-kH-aEu">
             <objects>
-                <viewController storyboardIdentifier="JFProfilePrivacyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i6l-0p-yex" customClass="JFProfilePrivacyViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFProfilePrivacyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i6l-0p-yex" customClass="JFProfilePrivacyViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eq9-qB-yhx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,6 +36,7 @@
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qm2-3o-2U8"/>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="th5-XL-wct" firstAttribute="leading" secondItem="Qm2-3o-2U8" secondAttribute="leading" id="XFb-3B-faC"/>
@@ -46,7 +44,6 @@
                             <constraint firstItem="th5-XL-wct" firstAttribute="top" secondItem="eq9-qB-yhx" secondAttribute="top" id="qrs-rW-hqG"/>
                             <constraint firstItem="Qm2-3o-2U8" firstAttribute="trailing" secondItem="th5-XL-wct" secondAttribute="trailing" id="ztA-gW-J9f"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Qm2-3o-2U8"/>
                     </view>
                     <connections>
                         <outlet property="profilePrivacyTableView" destination="th5-XL-wct" id="6NO-Xy-Z8l"/>
@@ -59,7 +56,7 @@
         <!--Settings View Controller-->
         <scene sceneID="djl-d6-NJc">
             <objects>
-                <viewController id="2tx-aT-GGw" customClass="JFSettingsViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2tx-aT-GGw" customClass="JFSettingsViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bm4-nT-Gkh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,6 +67,7 @@
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="NEl-b4-bhM"/>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pPl-ma-4ub" firstAttribute="top" secondItem="Bm4-nT-Gkh" secondAttribute="top" id="R0Z-qz-lSS"/>
@@ -77,7 +75,6 @@
                             <constraint firstItem="pPl-ma-4ub" firstAttribute="leading" secondItem="NEl-b4-bhM" secondAttribute="leading" id="fAd-9Z-J4e"/>
                             <constraint firstItem="NEl-b4-bhM" firstAttribute="bottom" secondItem="pPl-ma-4ub" secondAttribute="bottom" id="gGq-iF-8tx"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="NEl-b4-bhM"/>
                     </view>
                     <navigationItem key="navigationItem" id="NCS-5U-JWG"/>
                     <connections>
@@ -91,37 +88,37 @@
         <!--And Help View Controller-->
         <scene sceneID="LHb-zT-Ywv">
             <objects>
-                <viewController storyboardIdentifier="JFFAQAndHelpViewController" id="6gX-RV-cbO" customClass="JFFAQAndHelpViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFFAQAndHelpViewController" id="6gX-RV-cbO" customClass="JFFAQAndHelpViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vTS-3T-d9b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HHD-hc-pSQ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="uP9-3V-qmD">
-                                    <rect key="frame" x="0.0" y="128" width="375" height="210"/>
+                                    <rect key="frame" x="0.0" y="149.00000034679067" width="375" height="210"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="251" scrollEnabled="NO" editable="NO" text="For more info please check our webpage: www.justfamous.com" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qP-mc-xH3">
-                                            <rect key="frame" x="16" y="35" width="343" height="50.5"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="251" scrollEnabled="NO" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qP-mc-xH3">
+                                            <rect key="frame" x="16" y="35" width="343" height="33.5"/>
                                             <color key="textColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" shipmentTrackingNumber="YES" flightNumber="YES" lookupSuggestion="YES"/>
                                         </textView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="G7X-Xn-6HX">
-                                            <rect key="frame" x="40" y="105.5" width="295" height="64.5"/>
+                                            <rect key="frame" x="40" y="88.5" width="295" height="81.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Don't see what you're looking for?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53e-jI-MhB">
-                                                    <rect key="frame" x="0.0" y="0.0" width="295" height="28.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="295" height="37"/>
                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                                     <color key="textColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqQ-ug-m4e" customClass="JFButton" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="36.5" width="295" height="28"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqQ-ug-m4e" customClass="JFButton" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="45" width="295" height="36.5"/>
                                                     <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
                                                     <state key="normal" title="CONTACT US"/>
                                                     <userDefinedRuntimeAttributes>
@@ -148,15 +145,15 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="JFFAQTitleCustomCell" rowHeight="50" id="mOo-ti-N6f" customClass="JFFAQTitleCustomCell" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="50"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="JFFAQTitleCustomCell" rowHeight="50" id="mOo-ti-N6f" customClass="JFFAQTitleCustomCell" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mOo-ti-N6f" id="EUu-BN-Ul5">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xC-Rv-Mx4">
-                                                    <rect key="frame" x="15" y="15" width="316" height="20"/>
+                                                    <rect key="frame" x="16" y="15" width="315" height="20"/>
                                                     <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                                                     <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -183,22 +180,22 @@
                                             <outlet property="titleLabel" destination="2xC-Rv-Mx4" id="UiT-aI-DMv"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="JFFAQDescriptionCustomCell" rowHeight="50" id="ey1-O1-55H" customClass="JFFAQDescriptionCustomCell" customModule="JvstFamovsAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="78" width="375" height="50"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="JFFAQDescriptionCustomCell" rowHeight="50" id="ey1-O1-55H" customClass="JFFAQDescriptionCustomCell" customModule="Hackfest_swvlAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="74.5" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ey1-O1-55H" id="Jen-to-x5c">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="TextView" translatesAutoresizingMaskIntoConstraints="NO" id="Oxl-re-5PR">
-                                                    <rect key="frame" x="15" y="11" width="345" height="28"/>
+                                                    <rect key="frame" x="16" y="11" width="343" height="28"/>
                                                     <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                                 </textView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="TextView" translatesAutoresizingMaskIntoConstraints="NO" id="ea0-86-r1m">
-                                                    <rect key="frame" x="15" y="11" width="345" height="28"/>
+                                                    <rect key="frame" x="16" y="11" width="343" height="28"/>
                                                     <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -224,6 +221,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="XBq-md-mxN"/>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HHD-hc-pSQ" firstAttribute="top" secondItem="XBq-md-mxN" secondAttribute="top" id="3et-Cw-Mxs"/>
@@ -231,7 +229,6 @@
                             <constraint firstItem="XBq-md-mxN" firstAttribute="bottom" secondItem="HHD-hc-pSQ" secondAttribute="bottom" id="bKg-zN-ETv"/>
                             <constraint firstItem="HHD-hc-pSQ" firstAttribute="leading" secondItem="XBq-md-mxN" secondAttribute="leading" id="moc-sx-XEm"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="XBq-md-mxN"/>
                     </view>
                     <connections>
                         <outlet property="faqTableView" destination="HHD-hc-pSQ" id="xaM-hs-5Cp"/>
@@ -244,7 +241,7 @@
         <!--Rating View Controller-->
         <scene sceneID="Jq1-GJ-RUU">
             <objects>
-                <viewController storyboardIdentifier="JFRatingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YjV-fp-Ny0" customClass="JFRatingViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFRatingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YjV-fp-Ny0" customClass="JFRatingViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1ij-X5-q8C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -255,14 +252,14 @@
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RatingFooterCell" rowHeight="111" id="9YA-nn-uN6">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="111"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="111"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9YA-nn-uN6" id="qv5-fl-mDa">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="110.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDb-hA-9ij">
-                                                    <rect key="frame" x="35" y="11" width="305" height="89"/>
+                                                    <rect key="frame" x="36" y="11" width="303" height="89"/>
                                                     <string key="text">Choose the categories you want to be rated on. The individual scores for the categories you choose will be displayed on your profile.</string>
                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
                                                     <color key="textColor" red="0.28627450980392155" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -281,6 +278,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="eRM-9x-MX4"/>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eRM-9x-MX4" firstAttribute="trailing" secondItem="7cl-Nu-yTk" secondAttribute="trailing" id="7uu-eX-4rO"/>
@@ -288,7 +286,6 @@
                             <constraint firstItem="7cl-Nu-yTk" firstAttribute="top" secondItem="1ij-X5-q8C" secondAttribute="top" id="ixV-u2-Usr"/>
                             <constraint firstItem="eRM-9x-MX4" firstAttribute="bottom" secondItem="7cl-Nu-yTk" secondAttribute="bottom" id="yGg-g9-XU7"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="eRM-9x-MX4"/>
                     </view>
                     <connections>
                         <outlet property="ratingsTableView" destination="7cl-Nu-yTk" id="9fX-UW-tKP"/>
@@ -301,7 +298,7 @@
         <!--Blocked Users View Controller-->
         <scene sceneID="wSP-ia-qLX">
             <objects>
-                <viewController storyboardIdentifier="JFBlockedUsersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0K8-DR-f0z" customClass="JFBlockedUsersViewController" customModule="JvstFamovsAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JFBlockedUsersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0K8-DR-f0z" customClass="JFBlockedUsersViewController" customModule="Hackfest_swvlAppStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BLP-Ae-BaP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -312,19 +309,19 @@
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vf7-bR-xKW">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blocked_user_icon_grey" translatesAutoresizingMaskIntoConstraints="NO" id="oAS-4q-gj2">
-                                        <rect key="frame" x="140" y="226" width="95" height="55"/>
+                                        <rect key="frame" x="140" y="236" width="95" height="55"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't blocked anyone." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZC-1A-NSX">
-                                        <rect key="frame" x="20" y="297" width="335" height="18.5"/>
+                                        <rect key="frame" x="20" y="307" width="335" height="18.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
                                         <color key="textColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="0.837890625" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWi-8v-H3W">
-                                        <rect key="frame" x="20" y="323.5" width="335" height="0.0"/>
+                                        <rect key="frame" x="20" y="333.5" width="335" height="0.0"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                         <color key="textColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -343,6 +340,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="CRG-gZ-cfF"/>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Vf7-bR-xKW" firstAttribute="trailing" secondItem="CRG-gZ-cfF" secondAttribute="trailing" id="Djr-vA-FPh"/>
@@ -354,7 +352,6 @@
                             <constraint firstItem="CRG-gZ-cfF" firstAttribute="bottom" secondItem="Wcc-fe-Y00" secondAttribute="bottom" id="xWZ-rW-lm6"/>
                             <constraint firstItem="CRG-gZ-cfF" firstAttribute="bottom" secondItem="Vf7-bR-xKW" secondAttribute="bottom" id="zlh-xW-aw6"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="CRG-gZ-cfF"/>
                     </view>
                     <connections>
                         <outlet property="blockedUsersTableView" destination="Wcc-fe-Y00" id="xPg-40-y8l"/>
@@ -372,7 +369,7 @@
                     <tabBarItem key="tabBarItem" title="SETTINGS" image="setting_icon_grey" selectedImage="setting_icon_yellow" id="mAe-NK-hij"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NIm-8t-1xC">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

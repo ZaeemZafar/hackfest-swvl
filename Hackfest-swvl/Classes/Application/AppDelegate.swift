@@ -162,6 +162,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         let navViewController = UINavigationController(rootViewController: rootVC)
+        
         if (window == nil) {
             window = UIWindow(frame: UIScreen.main.bounds)
             window?.backgroundColor = .white

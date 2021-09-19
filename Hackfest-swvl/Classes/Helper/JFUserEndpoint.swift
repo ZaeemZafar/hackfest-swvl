@@ -189,13 +189,13 @@ enum JFUserEndpoint: JFAPIConfig {
             return "api/network/unfollow"
             
         case .acceptFollowRequest:
-            return "api/network/followrequest/accept"
+            return "api/network/friendrequest/accept"
             
         case .cancelFollowRequest:
             return "api/network/followrequest/cancel"
             
         case .declineFollowRequest:
-            return "api/network/followrequest/decline"
+            return "api/network/friendrequest/decline"
             
         case .notificationFollowListing:
             return "api/notifications/follow"

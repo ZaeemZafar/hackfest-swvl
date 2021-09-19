@@ -19,10 +19,10 @@ class JFTutorialViewController: UIViewController {
     //MARK:- Private properties
     private let numberOfLines = [5, 5, 5]
     private let images = ["logo", "connecting_people_icon_yellow", "rate_path_chart"]
-    private let titles = ["Welcome to Hackfest-swvl", "Connecting & Rating", "JF Index"]
-    private let descriptions = ["This is the disruptive social network! Join the movement to create human brand equity through honesty. Use the power of honest feedback to help each other unlock our potential.",
-                        "Connect with your friends & meet new ones. Rate and be rated. Experience how to create value for yourself and others. Honest feedback is a gift; give and receive it relentlessly!",
-                        "The JF algorithm transforms your ratings from the 3 categories and your in-app social behaviors into your personal JF Index score. Embrace this number to shine, grow, and seek new opportunities!"]
+    private let titles = ["Welcome to Hackfest SWVL", "Build Community & Trust", "SWVL Persona"]
+    private let descriptions = ["This is the SWVL travellers community! Join the movement to create SWVL travellers equity through honesty. Use the power of honest feedback to help each other to gain trust and feel safe around other travellers.",
+                        "Connect with your friends(travelled before on SEVL) & meet new ones. Rate and be rated. Experience how to create value for yourself as being a traveller of SWVL. Honest feedback is a gift; give and receive it relentlessly!",
+                        "The our AI based algortihm transforms your ratings from the 9 categories and your community behaviors into your SWVL Persona. Take this oppurtunity to become a good person to travel with!"]
     
     //MARK:- Public properties
     var index: Int!

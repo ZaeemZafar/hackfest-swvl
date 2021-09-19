@@ -33,7 +33,7 @@ extension UIViewController {
         }
     }
     
-    func openMailComposerWithJFDefaultFormat(toEmail email: String = "support@justfamous.com") {
+    func openMailComposerWithJFDefaultFormat(toEmail email: String = "support@hackfest-swvl.com") {
         let device = UIDevice.modelName
         let iosVersion = UIDevice.current.systemVersion
         let appVersion = Bundle.main.appVersion
