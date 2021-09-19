@@ -17,10 +17,16 @@ enum JFIndexMultiplierType: Int, Codable {
     
     var graphLineColor: UIColor {
         switch self {
-        case .jfIndex: return UIColor.jfChooseWordsBlack
-        case .iqLevel: return UIColor.jfCategoryBlue
-        case .personality: return UIColor.jfCategoryRed
-        case .appearance: return UIColor.jfCategoryOrange
+        case .jfIndex: return .jfChooseWordsBlack
+        case .friendly: return .friendly
+        case .dressing: return .dressing
+        case .iqLevel: return .iQLevel
+        case .communication: return .talktive
+        case .personality: return .personality
+        case .behavior: return .height
+        case .cleanliness: return .clean
+        case .punctuality: return .punctuanlity
+        case .appearance: return .appearance
         default: return UIColor.red
         }
     }
@@ -35,13 +41,13 @@ enum JFIndexMultiplierType: Int, Codable {
     var indexUI: (icon: UIImage, text: String) {
         switch self {
         case .friendly: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "friendly")
-        case .dressing: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "dressing")
-        case .iqLevel: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "iqLevel")
-        case .communication: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "communication")
-        case .personality: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "personality")
+        case .dressing: return ( #imageLiteral(resourceName: "dressing"), "dressing")
+        case .iqLevel: return ( #imageLiteral(resourceName: "intelligence_bulb_icon_lightblue"), "iqLevel")
+        case .communication: return ( #imageLiteral(resourceName: "talkative"), "communication")
+        case .personality: return ( #imageLiteral(resourceName: "appearance_icon_yellow"), "personality")
         case .behavior: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "behavior")
-        case .cleanliness: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "cleanliness")
-        case .punctuality: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "puctuality")
+        case .cleanliness: return ( #imageLiteral(resourceName: "cleanliness"), "cleanliness")
+        case .punctuality: return ( #imageLiteral(resourceName: "punctual"), "puctuality")
         case .appearance: return ( #imageLiteral(resourceName: "personality_icon_lightred"), "appearance")
         default:
             return (UIImage(), "")

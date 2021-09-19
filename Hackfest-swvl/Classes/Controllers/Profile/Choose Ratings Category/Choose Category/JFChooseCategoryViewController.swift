@@ -88,11 +88,11 @@ class JFChooseCategoryViewController: JFViewController {
             if case .none = trait {
                 print("None")
             } else {
-                if ratedUser.trait[trait] == true {
+//                if ratedUser.trait[trait] == true {
                     dataSourceArray.append(trait.categoryType)
-                } else {
-                    ratings.removeValue(forKey: trait.categoryType)
-                }
+//                } else {
+//                    ratings.removeValue(forKey: trait.categoryType)
+//                }
             }
             
         }

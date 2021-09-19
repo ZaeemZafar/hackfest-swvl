@@ -51,7 +51,7 @@ class JFFollowRequestViewController: JFViewController {
     
     //MARK:- Helper methods
     func setupNavigation() {
-        title = "FOLLOW REQUESTS"
+        title = "FRIEND REQUESTS"
         addBackButton()
     }
 }

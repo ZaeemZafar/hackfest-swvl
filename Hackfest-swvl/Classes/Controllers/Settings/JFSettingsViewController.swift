@@ -97,7 +97,10 @@ class JFSettingsViewController: JFViewController {
     var settingsData: SettingsData?
     var facebookWorkInProgress = false
     var locationManager: CLLocationManager!
-    let sections: [JFSettingSections] = [ .account, .ratings, .notifications, .about, .logout ]
+//    let sections: [JFSettingSections] = [ .account, .ratings, .notifications, .about, .logout ]
+    let sections: [JFSettingSections] = [ .account, .notifications, .about, .logout ]
+    
+    
     var rows: [JFSettingSections: [JFSettingRows]] = [:]
     
     //MARK:- UIViewController lifecycle
@@ -146,16 +149,23 @@ class JFSettingsViewController: JFViewController {
     //MARK:- Helper methods
     func reloadRowsData(showFbLink: Bool = true) {
         rows = [
-        .account: JFConstants.facebookDisabled
-            ? [ .profilePrivacy, .currentLocation, .blockedUsers ]
-            : showFbLink
-            ? [ .profilePrivacy, .currentLocation, .blockedUsers ]
-            : [ .profilePrivacy, .currentLocation, .blockedUsers ],
-        .ratings: [.ratings],
+        .account: [ .currentLocation, .blockedUsers ],
+//        .ratings: [.ratings],
         .notifications: [.notifications],
         .about: [.about, .terms, .privacy, .faq],
         .logout: [.logout, .delete]
         ]
+//        rows = [
+//        .account: JFConstants.facebookDisabled
+//            ? [ .profilePrivacy, .currentLocation, .blockedUsers ]
+//            : showFbLink
+//            ? [ .profilePrivacy, .currentLocation, .blockedUsers ]
+//            : [ .profilePrivacy, .currentLocation, .blockedUsers ],
+//        .ratings: [.ratings],
+//        .notifications: [.notifications],
+//        .about: [.about, .terms, .privacy, .faq],
+//        .logout: [.logout, .delete]
+//        ]
     }
     
     @objc func reloadTableView() {

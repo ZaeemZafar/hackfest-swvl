@@ -14,7 +14,7 @@ enum cellState: Int {
     var textString: String {
         switch self {
         case .editProfile: return "EDIT PROFILE"
-        case .follow: return "+ FOLLOW"
+        case .follow: return "+ FRIEND"
         case .following: return "FRIENDS"
         case .requested: return "REQUESTED"
         case .blocked: return "BLOCKED"

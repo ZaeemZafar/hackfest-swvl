@@ -11,6 +11,22 @@ import Foundation
 
 extension UIColor {
     
+    convenience init(red: Int, green: Int, blue: Int) {
+           assert(red >= 0 && red <= 255, "Invalid red component")
+           assert(green >= 0 && green <= 255, "Invalid green component")
+           assert(blue >= 0 && blue <= 255, "Invalid blue component")
+
+           self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+       }
+
+       convenience init(rgb: Int) {
+           self.init(
+               red: (rgb >> 16) & 0xFF,
+               green: (rgb >> 8) & 0xFF,
+               blue: rgb & 0xFF
+           )
+       }
+    
     class func fromRGB(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
         return UIColor(red: (red/255.0), green: (green/255.0), blue: (blue/255.0), alpha: 1.0)
     }
@@ -86,6 +102,19 @@ extension UIColor {
     class var jfChooseWordsRed: UIColor {
         return UIColor.fromRGB(red: 255.0, green: 59.0, blue: 48.0)
     }
+    
+    
+    
+    class var friendly: UIColor { return UIColor(rgb: 0xf91942) }
+    class var dressing: UIColor { return UIColor(rgb: 0xe70cc0) }
+    class var iQLevel: UIColor { return UIColor(rgb: 0x932efb) }
+    class var talktive: UIColor { return UIColor(rgb: 0x4157ff) }
+    class var personality: UIColor { return UIColor(rgb: 0x259df9) }
+    class var height: UIColor { return UIColor(rgb: 0x02d9c7) }
+    class var clean: UIColor { return UIColor(rgb: 0x06da5b) }
+    class var punctuanlity: UIColor { return UIColor(rgb: 0xfce80f) }
+    class var appearance: UIColor { return UIColor(rgb: 0xfe7a2a) }
+    
     
 }
 

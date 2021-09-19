@@ -88,12 +88,13 @@ class JFUserWithImageCustomCell: UITableViewCell {
         } else {
             var jfIndexString = ""
             
-            if blockUser.profilePrivacy == .privateProfile && blockUser.followingState != .following {
-                jfIndexString = "PRIVATE"
-                
-            } else {
+            // TODO: captain profile changes
+//            if blockUser.profilePrivacy == .privateProfile && blockUser.followingState != .following {
+//                jfIndexString = "PRIVATE"
+//
+//            } else {
                 jfIndexString = blockUser.indexMultiplier(forType: .jfIndex)?.jfimValue ?? "0000"
-            }
+//            }
             
             subTitleLabel.text = "JF Index: \(jfIndexString)"
         }
@@ -128,11 +129,11 @@ class JFUserWithImageCustomCell: UITableViewCell {
             
             for anIndexMultiplier in filter.indexMultipliers.enumerated() {
 
-                if cellData.profilePrivacy == .privateProfile && cellData.followingState != .following {
-                    //value = NSMutableAttributedString(string: "N/A", attributes: [.foregroundColor: UIColor.jfLightGray, .font: UIFont.semiBold(fontSize: 12)])
-                    coloredCategoriesIndexLabel.isHidden = true // to show only two labels
-                    
-                } else {
+//                if cellData.profilePrivacy == .privateProfile && cellData.followingState != .following {
+//                    //value = NSMutableAttributedString(string: "N/A", attributes: [.foregroundColor: UIColor.jfLightGray, .font: UIFont.semiBold(fontSize: 12)])
+//                    coloredCategoriesIndexLabel.isHidden = true // to show only two labels
+//
+//                } else {
                     
                     var extendedValue = cellData.indexMultiplier(forType: anIndexMultiplier.element)?.indexValue ?? "0000"
                     
@@ -144,7 +145,7 @@ class JFUserWithImageCustomCell: UITableViewCell {
                     
                     value.append(extendedAttributesString)
                     coloredCategoriesIndexLabel.isHidden = false //to show three labels
-                }
+//                }
                 
             }
             
@@ -156,30 +157,30 @@ class JFUserWithImageCustomCell: UITableViewCell {
         
         let jfIndexString = cellData.indexMultiplier(forType: .jfIndex)?.jfimValue ?? "0000"
         
-        if cellData.profilePrivacy == .privateProfile {
-            
-            switch cellData.followingState {
-            case .requested, .none:
-                subTitleLabel.text = "PRIVATE"
-                
-            case .following:
-                
-                if cellData.acceptRating {
-                    subTitleLabel.text = "JF Index: \(jfIndexString)"
-                } else {
-                    subTitleLabel.text = "NOT ACCEPTING RATINGS"
-                }
-                
-            }
-            
-        } else {
+//        if cellData.profilePrivacy == .privateProfile {
+//
+//            switch cellData.followingState {
+//            case .requested, .none:
+//                subTitleLabel.text = "PRIVATE"
+//
+//            case .following:
+//
+//                if cellData.acceptRating {
+//                    subTitleLabel.text = "JF Index: \(jfIndexString)"
+//                } else {
+//                    subTitleLabel.text = "NOT ACCEPTING RATINGS"
+//                }
+//
+//            }
+//
+//        } else {
             
             if cellData.acceptRating {
                 subTitleLabel.text = "JF Index: \(jfIndexString)"
             } else {
                 subTitleLabel.text = "NOT ACCEPTING RATINGS"
             }
-        }
+//        }
         
         
         self.indexoRArrowButton.isUserInteractionEnabled = isButtonTouchEnable
@@ -219,7 +220,7 @@ class JFUserWithImageCustomCell: UITableViewCell {
             self.indexLabel.isHidden = true
             self.indexoRArrowButton.isHidden = false
             self.indexoRArrowButton.setImage(UIImage(), for: .normal)
-            self.indexoRArrowButton.setTitle("+ FOLLOW", for: .normal)
+            self.indexoRArrowButton.setTitle("+ FRIEND", for: .normal)
             self.indexoRArrowButton.setTitleColor(UIColor.white, for: .normal)
             self.indexoRArrowButton.customButton(titleColor: UIColor.white, backGroundColor: UIColor.swvlRed, borderColor: UIColor.clear, withRoundCorner: true)
             self.indexoRArrowButton.tag = CellType.follow.rawValue

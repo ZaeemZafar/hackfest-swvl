@@ -16,16 +16,16 @@ enum CategoryTypes: Int, Codable, CaseIterable {
 extension CategoryTypes {
     var wordsArray: [String] {
         get {
-            return ["bad", "average", "good", "excellent"]
+            return JFCategoryWords.words
         }
     }
     
     var name: String {
         switch self {
-        case .friendly: return "friendly"
+        case .friendly: return "friendly behavior"
         case .dressing: return "dressing"
-        case .iqLevel: return "iqLevel"
-        case .communication: return "communication"
+        case .iqLevel: return "IQ level"
+        case .communication: return "communication skills"
         case .personality: return "personality"
         case .behavior: return "behavior"
         case .cleanliness: return "cleanliness"
@@ -36,8 +36,15 @@ extension CategoryTypes {
     
     var titleColor: UIColor {
         switch self {
-        case .appearance: return UIColor.jfCategoryOrange
-        case .personality: return UIColor.jfCategoryRed
+        case .friendly: return .friendly
+        case .dressing: return .dressing
+        case .iqLevel: return .iQLevel
+        case .communication: return .talktive
+        case .personality: return .personality
+        case .behavior: return .height
+        case .cleanliness: return .clean
+        case .punctuality: return .punctuanlity
+        case .appearance: return .appearance
         default: return UIColor.red
         }
     }
@@ -78,7 +85,7 @@ class JFChooseCategoryWordsViewController: JFViewController {
         super.viewDidLoad()
         
         wordsCollectionView.allowsSelection = true
-        wordsCollectionView.allowsMultipleSelection = true
+        wordsCollectionView.allowsMultipleSelection = false
         wordsCollectionView.contentInset = UIEdgeInsetsMake(0, 8, 16, 8)
         automaticallyAdjustsScrollViewInsets = false
     }
@@ -140,22 +147,22 @@ extension JFChooseCategoryWordsViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let ratingValue = JFCategoryWords.wordsScoreAtIndex[indexPath.row]
         print("Selected Cateogory score is \(ratingValue)")
+        ratings[selectedCategory] = [ratingValue]
+//        if ratings[selectedCategory]!.contains(ratingValue) {
+//            ratings[selectedCategory]!.remove(at: ratings[selectedCategory]!.index(of: ratingValue)!)
+//
+//        } else if ratings[selectedCategory]!.count <= 2 {
+//            ratings[selectedCategory]!.append(ratingValue)
+//        }
         
-        if ratings[selectedCategory]!.contains(ratingValue) {
-            ratings[selectedCategory]!.remove(at: ratings[selectedCategory]!.index(of: ratingValue)!)
-            
-        } else if ratings[selectedCategory]!.count <= 2 {
-            ratings[selectedCategory]!.append(ratingValue)
-        }
+//        updateView()
+//
+//        if let cell = collectionView.cellForItem(at: indexPath) {
+//            print(cell.bounds)
+//            collectionView.scrollToItem(at: indexPath, at: [.bottom], animated: true)
+//        }
         
-        updateView()
-        
-        if let cell = collectionView.cellForItem(at: indexPath) {
-            print(cell.bounds)
-            collectionView.scrollToItem(at: indexPath, at: [.bottom], animated: true)
-        }
-        
-        wordsCollectionView.reloadItems(at: [indexPath])
+//        wordsCollectionView.reloadItems(at: [indexPath])
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -166,7 +173,7 @@ extension JFChooseCategoryWordsViewController: UICollectionViewDelegate {
 
         let formattedString = NSMutableAttributedString()
         formattedString
-            .normal("Select up to 3 words that describe \n")
+            .normal("Select a word that describe \n")
             //.bold("Jamia Levan's ")
             .bold(userName)
             .normal("\(selectedCategory.name).")

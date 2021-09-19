@@ -24,6 +24,17 @@ class JFCategoryWordsCustomCell: UICollectionViewCell {
         }
     }
     
+    override var isSelected: Bool {
+        didSet {
+            if isSelected {
+                selectedLayout()
+            } else {
+                defaultLayout()
+            }
+            
+        }
+    }
+    
     //MARK:- Helper methods
     func configureCellWithData(indexPath: IndexPath, ratingValue: Int, selectedIndexs: [Int], wordsArray: [String]) {
         containerView.layer.cornerRadius = 4.0
@@ -38,12 +49,12 @@ class JFCategoryWordsCustomCell: UICollectionViewCell {
             containerView.layer.borderWidth = 0.0
         }
         
-        if selectedIndexs.contains(ratingValue) {
-            selectedLayout()
-            
-        } else {
-            defaultLayout()
-        }
+//        if selectedIndexs.contains(ratingValue) {
+//            selectedLayout()
+//            
+//        } else {
+//            defaultLayout()
+//        }
     }
     func defaultLayout() {
         tickImageView.isHidden = true

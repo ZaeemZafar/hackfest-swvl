@@ -40,7 +40,7 @@ struct NetworkData : Codable {
 		case indexMultiplier
 		case settings
 		case friendRelation
-        case followedByRelation
+        case followedByRelation = "friendsWithRelation"
 	}
 
 	init(from decoder: Decoder) throws {

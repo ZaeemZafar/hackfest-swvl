@@ -124,7 +124,7 @@ class JFUserProfileViewController: JFViewController {
     }
     
     @objc func blockUser() {
-        if userData.blockedByMe == false {
+        if userData.reportedByMe == false {
             UIAlertController.showSingleButtonAlert(inViewController: self, title: "", message: "", okButtonTitle: "Block", cancelButtonTitle: "Cancel", isActionSheet: true) { [weak self] (success) in
                 
                 guard let strongSelf = self else {return}
@@ -160,7 +160,7 @@ class JFUserProfileViewController: JFViewController {
         datasourceEnumArray.removeAll()
         datasourceEnumArray.append(.profileInfoCell)
         
-        if userData.blockedByThem {
+        if userData.reportedByThem {
             datasourceEnumArray.append(DataSourceEnum.profileLockedCell(state: .blocked))
             
         } else {
@@ -209,25 +209,25 @@ class JFUserProfileViewController: JFViewController {
 
             }
             
-            if userData.profilePrivacy == .privateProfile {
-                
-                switch userData.followingState {
-                case .none, .requested:
-                    
-                    if (userData.acceptRating) {
-                        datasourceEnumArray.append(DataSourceEnum.profileLockedCell(state: .bothLocked))
-                        
-                    } else {
-                        datasourceEnumArray.append(DataSourceEnum.profileLockedCell(state: .ratingReceiveDisabled))
-                    }
-                    
-                case .following:
-                    
-                    if (userData.acceptRating == false) {
-                        datasourceEnumArray.append(DataSourceEnum.profileLockedCell(state: .ratingDisabled))
-                    }
-                }
-            }
+//            if userData.profilePrivacy == .privateProfile {
+//                
+//                switch userData.followingState {
+//                case .none, .requested:
+//                    
+//                    if (userData.acceptRating) {
+//                        datasourceEnumArray.append(DataSourceEnum.profileLockedCell(state: .bothLocked))
+//                        
+//                    } else {
+//                        datasourceEnumArray.append(DataSourceEnum.profileLockedCell(state: .ratingReceiveDisabled))
+//                    }
+//                    
+//                case .following:
+//                    
+//                    if (userData.acceptRating == false) {
+//                        datasourceEnumArray.append(DataSourceEnum.profileLockedCell(state: .ratingDisabled))
+//                    }
+//                }
+//            }
         }
     }
     
@@ -310,7 +310,7 @@ class JFUserProfileViewController: JFViewController {
                     
                 case .rateAgain:
                     
-                    if strongSelf.userData.blockedByMe == false {
+                    if strongSelf.userData.reportedByMe == false {
                         
                         if strongSelf.userData.canRateAgain {
                             if strongSelf.userData.trait.count > 0 { //just to check if data loads on this viewController
@@ -335,7 +335,7 @@ class JFUserProfileViewController: JFViewController {
                     
                 case .requestRating:
                     
-                    if strongSelf.userData.blockedByMe == false {
+                    if strongSelf.userData.reportedByMe == false {
                         JFAlertViewController.presentAlertController(with: AlertType.requestRating(userName: strongSelf.userData.fullName), fromViewController: strongSelf.tabBarController) { success in
                             if success {
                                 
@@ -373,7 +373,7 @@ class JFUserProfileViewController: JFViewController {
                     
                 case .requestAgain:
                     
-                    if strongSelf.userData.blockedByMe == false {
+                    if strongSelf.userData.reportedByMe == false {
                         
                         if strongSelf.userData.canRequestAgain {
                             
@@ -414,7 +414,7 @@ class JFUserProfileViewController: JFViewController {
                     }
                     
                 case .rateUser:
-                    if strongSelf.userData.blockedByMe == false {
+                    if strongSelf.userData.reportedByMe == false {
                         // TODO: Jawad! why we are doing this!!
                         //                        if strongSelf.userData.trait.count > 0 {
                         let chooseVC = strongSelf.getRatingCategoryVC()
@@ -617,7 +617,7 @@ extension JFUserProfileViewController {
                 
                 UIAlertController.showAlert(inViewController: strongSelf, title: "\(strongSelf.userData.firstName + " " + strongSelf.userData.lastName) Blocked", message: JFLocalizableConstants.BlockConfirmationMessage2, okButtonTitle: "", cancelButtonTitle: "Dismiss", isActionSheet: false, isButtonTypeDestructive: false, isSingleButtonAlert: true, completion: { (success) in
                     
-                    strongSelf.userData.blockedByMe = true
+                    strongSelf.userData.reportedByMe = true
                     strongSelf.getUserProfile()
                     //strongSelf.userProfileTableView.reloadData()
                     
@@ -648,7 +648,7 @@ extension JFUserProfileViewController {
             if response.success { // successfully unblocked
                 UIAlertController.showAlert(inViewController: strongSelf, title: "\(strongSelf.userData.firstName + " " + strongSelf.userData.lastName) Unblocked", message: JFLocalizableConstants.UnBlockConfirmationMessage2, okButtonTitle: "", cancelButtonTitle: "Dismiss", isActionSheet: false, isButtonTypeDestructive: false, isSingleButtonAlert: true, completion: { (success) in
                     
-                    strongSelf.userData.blockedByMe = false
+                    strongSelf.userData.reportedByMe = false
                     strongSelf.getUserProfile()
                     //strongSelf.userProfileTableView.reloadData()
                 })

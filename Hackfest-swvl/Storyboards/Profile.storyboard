@@ -46,8 +46,8 @@
                                             <constraint firstAttribute="width" secondItem="0hP-Jc-5PZ" secondAttribute="height" multiplier="1:1" id="V9O-8W-xvg"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You don't have any follow request" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IEX-ow-jRO">
-                                        <rect key="frame" x="0.0" y="110" width="288" height="18.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You don't have any friend request" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IEX-ow-jRO">
+                                        <rect key="frame" x="0.0" y="110" width="288" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
                                         <color key="textColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="0.837890625" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1174,8 +1174,8 @@
         <image name="notification_icon_lightgrey" width="100" height="100"/>
         <image name="password_icon_grey" width="19" height="24"/>
         <image name="phone_icon_grey" width="21" height="20"/>
-        <image name="portfolio_icon_grey" width="17" height="16"/>
-        <image name="portfolio_icon_yellow" width="17" height="16"/>
+        <image name="portfolio_icon_grey" width="24" height="14"/>
+        <image name="portfolio_icon_yellow" width="17" height="10"/>
         <image name="profile_icon_grey" width="17" height="16"/>
         <image name="profile_icon_yellow" width="17" height="16"/>
         <image name="rating_submitted_icon_grey" width="32" height="24"/>

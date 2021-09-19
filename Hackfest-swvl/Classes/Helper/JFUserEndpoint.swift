@@ -44,7 +44,7 @@ enum JFUserEndpoint: JFAPIConfig {
     case connectWithFacebook(flag: Bool, facebookId: String, fbProfileLink: String)
     case fbLinkVisibility(makeFbLinkVisible: Bool)
     case settingsPrivacy(isCaptainProfile: Bool)
-    case settingsToggleRatingsAcceptance(acceptRatings: Bool, acceptAnonymousRatings: Bool, traitAppearance: Bool, traitPersonality: Bool, traitIntelligence: Bool)
+    case settingsToggleRatingsAcceptance(acceptRatings: Bool, acceptAnonymousRatings: Bool, trait1: Bool, trait2: Bool, trait3: Bool, trait4: Bool, trait5: Bool, trait6: Bool, trait7: Bool, trait8: Bool, trait9: Bool)
     
     case getMyNetwork(page: Int, limit: Int)
     case getMyFollowing(page: Int, limit: Int)
@@ -475,13 +475,19 @@ enum JFUserEndpoint: JFAPIConfig {
             var params = [String: Any]()
             params["makeFbLinkVisible"] = makeFbLinkVisible
             return params
-        case .settingsToggleRatingsAcceptance(let acceptRatings, let acceptAnonymousRatings, let traitAppearance, let traitPersonality, let traitIntelligence):
+        case .settingsToggleRatingsAcceptance(let acceptRatings, let acceptAnonymousRatings, let trait1, let trait2, let trait3, let trait4, let trait5, let trait6, let trait7, let trait8, let trait9):
             var params = [String: Any]()
             params["acceptRatings"] = acceptRatings
             params["acceptAnonymousRatings"] = acceptAnonymousRatings
-            params["traitAppearance"] = traitAppearance
-            params["traitIntelligence"] = traitIntelligence
-            params["traitPersonality"] = traitPersonality
+            params["trait1"] = trait1
+            params["trait2"] = trait2
+            params["trait3"] = trait3
+            params["trait4"] = trait4
+            params["trait5"] = trait5
+            params["trait6"] = trait6
+            params["trait7"] = trait7
+            params["trait8"] = trait8
+            params["trait9"] = trait9
             return params
             
         case .followUser(let userID):
@@ -565,15 +571,15 @@ enum JFUserEndpoint: JFAPIConfig {
             // Developer's Note: '+1' is for consider indexpath in category table view: /JW/ We should use enum approach
             // TODO:
             
-            let friendlyValues = ratingCategory[.friendly] ?? [Int]()
-            let dressingValues = ratingCategory[.dressing] ?? [Int]()
-            let iqLevelValues = ratingCategory[.iqLevel] ?? [Int]()
-            let communicationValues = ratingCategory[.communication] ?? [Int]()
-            let personalityValues = ratingCategory[.personality] ?? [Int]()
-            let behaviorValues = ratingCategory[.behavior] ?? [Int]()
-            let cleanlinessValues = ratingCategory[.cleanliness] ?? [Int]()
-            let punctualityValues = ratingCategory[.punctuality] ?? [Int]()
-            let appearanceValues = ratingCategory[.appearance] ?? [Int]()
+            let friendlyValues = ratingCategory[.friendly]?.first ?? 0
+            let dressingValues = ratingCategory[.dressing]?.first ?? 0
+            let iqLevelValues = ratingCategory[.iqLevel]?.first ?? 0
+            let communicationValues = ratingCategory[.communication]?.first ?? 0
+            let personalityValues = ratingCategory[.personality]?.first ?? 0
+            let behaviorValues = ratingCategory[.behavior]?.first ?? 0
+            let cleanlinessValues = ratingCategory[.cleanliness]?.first ?? 0
+            let punctualityValues = ratingCategory[.punctuality]?.first ?? 0
+            let appearanceValues = ratingCategory[.appearance]?.first ?? 0
         
             
             params["trait1"] = friendlyValues

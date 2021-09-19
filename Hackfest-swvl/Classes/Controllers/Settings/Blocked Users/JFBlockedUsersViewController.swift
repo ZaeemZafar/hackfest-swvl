@@ -74,7 +74,7 @@ extension JFBlockedUsersViewController: UITableViewDelegate, UITableViewDataSour
         let profileVC = getUserProfileVC()
         
         profileVC.userData = usersData[indexPath.row]
-        profileVC.userData.blockedByMe = true
+        profileVC.userData.reportedByMe = true
         self.navigationController?.pushViewController(profileVC, animated: true)
     }
 }

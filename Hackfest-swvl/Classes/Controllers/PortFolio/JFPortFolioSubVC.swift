@@ -336,16 +336,16 @@ extension JFPortFolioSubVC {
     }
     
     func filterDataSourceModelArray() {
-        switch selectedTab {
-        case .discover:
-            break
-            
-        case .myNetworks:
-            userProfileDataSource = userProfileDataSource.filter({$0.followingState == .following || $0.followedByState == .following})
-            
-        case .following:
-            userProfileDataSource = userProfileDataSource.filter({$0.followingState == .following})
-        }
+//        switch selectedTab {
+//        case .discover:
+//            break
+//            
+//        case .myNetworks:
+//            userProfileDataSource = userProfileDataSource.filter({$0.followingState == .following || $0.followedByState == .following})
+//            
+//        case .following:
+//            userProfileDataSource = userProfileDataSource.filter({$0.followingState == .following})
+//        }
     }
 
 }

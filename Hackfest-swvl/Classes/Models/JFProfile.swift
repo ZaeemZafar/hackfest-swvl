@@ -49,8 +49,8 @@ class JFProfile: Hashable, Equatable {
     
     var followingState: FollowingStatus
     var followedByState: FollowingStatus
-    var blockedByMe: Bool
-    var blockedByThem: Bool
+    var reportedByMe: Bool
+    var reportedByThem: Bool
     
     var trait: [Trait: Bool]
     var ratings = [CategoryTypes: [Int]]()
@@ -173,8 +173,8 @@ class JFProfile: Hashable, Equatable {
         ratingsReceived = 0
         followingState = .none
         followedByState = .none
-        blockedByMe = false
-        blockedByThem = false
+        reportedByMe = false
+        reportedByThem = false
         
         trait = [Trait: Bool]()
         address = ""
@@ -199,7 +199,7 @@ extension JFProfile {
         lastName = profileData.lastName ?? ""
         imagePath = profileData.image
         
-        profilePrivacy = (profileData.settings?.isCaptainProfile ?? false) ? .publicProfile : .privateProfile
+        profilePrivacy = (profileData.settings?.isCaptainProfile ?? false) ? .captainProfile : .publicProfile
         acceptRating = profileData.settings?.acceptRating ?? false
         acceptAnonymousRating =  profileData.settings?.acceptAnonymousRating ?? false
         
@@ -243,7 +243,7 @@ extension JFProfile {
         lastName = profileData.lastName ?? ""
         facebookId = profileData.facebookId ?? ""
         fbProfileLink = profileData.fbProfileLink ?? ""
-        profilePrivacy = (profileData.settings?.isCaptainProfile ?? false) ? .publicProfile : .privateProfile
+        profilePrivacy = (profileData.settings?.isCaptainProfile ?? false) ? .captainProfile : .publicProfile
         imagePath = profileData.image
         locationLongitude = profileData.longitude
         locationLatitude = profileData.latitude
@@ -262,16 +262,16 @@ extension JFProfile {
         followedByState = profileData.followedByRelation != nil ? ((profileData.followedByRelation?.acceptRequest ?? false) ? .following : .requested) : FollowingStatus.none
         
         if profileData.blockedByMe != nil && profileData.blockedByThem != nil {
-            blockedByThem = true
-            blockedByMe = true
+            reportedByThem = true
+            reportedByMe = true
             
         } else if profileData.blockedByMe != nil {
-            blockedByThem = false
-            blockedByMe = true
+            reportedByThem = false
+            reportedByMe = true
             
         } else if profileData.blockedByThem != nil {
-            blockedByThem = true
-            blockedByMe = false
+            reportedByThem = true
+            reportedByMe = false
         }
         
         
@@ -334,7 +334,7 @@ extension JFProfile {
         id = "\(profileData?.id ?? 0)"
         firstName = profileData?.firstName ?? ""
         lastName = profileData?.lastName ?? ""
-        profilePrivacy = (profileData?.settings?.isCaptainProfile ?? false) ? .publicProfile : .privateProfile
+        profilePrivacy = (profileData?.settings?.isCaptainProfile ?? false) ? .captainProfile : .publicProfile
         imagePath = profileData?.image ?? ""
     }
     
@@ -344,7 +344,7 @@ extension JFProfile {
         id = userID ?? ""
         firstName = first_name ?? ""
         lastName = last_name ?? ""
-        profilePrivacy = isCaptainProfile ? .publicProfile : .privateProfile
+        profilePrivacy = isCaptainProfile ? .captainProfile : .publicProfile
         imagePath = image_path
     }
     
@@ -357,7 +357,7 @@ extension JFProfile {
         imagePath = profileData?.image
         phone = profileData?.phoneNumber ?? ""
         
-        profilePrivacy = (profileData?.settings?.isCaptainProfile ?? false) ? .publicProfile : .privateProfile
+        profilePrivacy = (profileData?.settings?.isCaptainProfile ?? false) ? .captainProfile : .publicProfile
         acceptRating = profileData?.settings?.acceptRating ?? false
         acceptAnonymousRating =  profileData?.settings?.acceptAnonymousRating ?? false
         

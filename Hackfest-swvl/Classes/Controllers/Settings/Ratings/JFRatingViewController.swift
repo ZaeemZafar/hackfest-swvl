@@ -14,13 +14,13 @@ enum JFRatingTypes {
     func getImage(isEnabled: Bool) -> UIImage? {
         switch self {
         case .friendly: return isEnabled ? #imageLiteral(resourceName: "personality_icon_lightred") : #imageLiteral(resourceName: "personality_icon_grey")
-        case .dressing: return isEnabled ? #imageLiteral(resourceName: "personality_icon_lightred") : #imageLiteral(resourceName: "personality_icon_grey")
-        case .iqLevel: return isEnabled ? #imageLiteral(resourceName: "personality_icon_lightred") : #imageLiteral(resourceName: "personality_icon_grey")
-        case .communication: return isEnabled ? #imageLiteral(resourceName: "personality_icon_lightred") : #imageLiteral(resourceName: "personality_icon_grey")
-        case .personality: return isEnabled ? #imageLiteral(resourceName: "personality_icon_lightred") : #imageLiteral(resourceName: "personality_icon_grey")
+        case .dressing: return isEnabled ? #imageLiteral(resourceName: "dressing") : #imageLiteral(resourceName: "personality_icon_grey")
+        case .iqLevel: return isEnabled ? #imageLiteral(resourceName: "intelligence_bulb_icon_lightblue") : #imageLiteral(resourceName: "intellignce_bulb_icon_grey")
+        case .communication: return isEnabled ? #imageLiteral(resourceName: "talkative") : #imageLiteral(resourceName: "personality_icon_grey")
+        case .personality: return isEnabled ? #imageLiteral(resourceName: "appearance_icon_yellow") : #imageLiteral(resourceName: "appearance_icon_grey")
         case .behavior: return isEnabled ? #imageLiteral(resourceName: "personality_icon_lightred") : #imageLiteral(resourceName: "personality_icon_grey")
-        case .cleanliness: return isEnabled ? #imageLiteral(resourceName: "personality_icon_lightred") : #imageLiteral(resourceName: "personality_icon_grey")
-        case .punctuality: return isEnabled ? #imageLiteral(resourceName: "personality_icon_lightred") : #imageLiteral(resourceName: "personality_icon_grey")
+        case .cleanliness: return isEnabled ? #imageLiteral(resourceName: "cleanliness") : #imageLiteral(resourceName: "personality_icon_grey")
+        case .punctuality: return isEnabled ? #imageLiteral(resourceName: "punctual") : #imageLiteral(resourceName: "personality_icon_grey")
         case .appearance: return isEnabled ? #imageLiteral(resourceName: "personality_icon_lightred") : #imageLiteral(resourceName: "personality_icon_grey")
         
         default:
@@ -256,7 +256,19 @@ extension JFRatingViewController: UITableViewDelegate {
 extension JFRatingViewController {
     func toggleRatings(completion: CompletionBlockWithBool?) {
         
-        let endPoint = JFUserEndpoint.settingsToggleRatingsAcceptance(acceptRatings: model[0][0].enabled, acceptAnonymousRatings: model[1][0].enabled, traitAppearance: model[2][0].enabled, traitPersonality: model[2][1].enabled, traitIntelligence: model[2][2].enabled)
+        let endPoint = JFUserEndpoint.settingsToggleRatingsAcceptance(
+            acceptRatings: model[0][0].enabled,
+            acceptAnonymousRatings: model[1][0].enabled,
+            trait1: model[2][0].enabled,
+            trait2: model[2][1].enabled,
+            trait3: model[2][2].enabled,
+            trait4: model[2][3].enabled,
+            trait5: model[2][4].enabled,
+            trait6: model[2][5].enabled,
+            trait7: model[2][6].enabled,
+            trait8: model[2][7].enabled,
+            trait9: model[2][8].enabled
+        )
         
         JFWSAPIManager.shared.sendJFAPIRequest(apiConfig: endPoint) { [weak self] (response: JFWepAPIResponse<SettingsAPIBase>) in
             

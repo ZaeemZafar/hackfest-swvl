@@ -217,7 +217,7 @@ enum Trait: Int, Codable, CaseIterable {
 }
 
 enum ProfilePrivacyLevel: String, Codable {
-    case publicProfile, privateProfile
+    case publicProfile, captainProfile
 }
 
 // MARK:- Service call
@@ -267,9 +267,9 @@ struct JFSelectedCategory {
 
 struct JFCategoryWords {
     
-    static let wordsScoreAtIndex = [-1, 0, 1, 2]
+    static let wordsScoreAtIndex = [1, 2, 3, 4, 5]
     
-    static let words = ["Bad", "Average", "Good", "Excellent"]
+    static let words = ["Worse","Bad", "Average", "Good", "Excellent"]
 }
 
 // MARK:- Loading Titles
