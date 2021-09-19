@@ -788,7 +788,7 @@
                                         <rect key="frame" x="0.0" y="64" width="304" height="48"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="NO, REMAIN ANONYMOUS">
-                                            <color key="titleColor" red="0.792156862745098" green="0.51764705882352935" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.99215686270000003" green="0.01176470588" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="noButtonTapped:" destination="RrK-yi-a8X" eventType="touchUpInside" id="Tlt-5H-6vq"/>
