@@ -62,9 +62,7 @@ class JFPortFolioSubVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if userProfileDataSource.count < 1 {
-            loadDataForCategory(showLoader: JFServerManager.isConnectedToInternet)
-        }
+        loadDataForCategory(showLoader: userProfileDataSource.count < 1)
 
         if JFContacts.shared.hasBeenAuthorized {
             getContactFromDevice()
@@ -317,8 +315,12 @@ extension JFPortFolioSubVC {
             if response.success {
                 guard let apiNetworkData = response.data?.networkData else { return }
                 guard let apiMetaData = response.data?.metadata else { return }
-                
                 strongSelf.metadata = apiMetaData
+                
+                if currentPage == 1 {
+                    strongSelf.userProfileDataSource.removeAll()
+                }
+                
                 strongSelf.userProfileDataSource.append(contentsOf: apiNetworkData.map({JFProfile(profileData: $0)}))
 
                 self?.reloadTableView()
